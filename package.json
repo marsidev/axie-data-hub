@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "git": "git add . && git commit -m",
+    "postgit": "git push -u origin main",
+    "heroku": "git push heroku main"
   },
   "keywords": [],
   "author": "",

@@ -7,7 +7,7 @@ const { postRequest } = require('../utils')
 const { GRAPHQL_SERVER_URL } = process.env
 
 router.get('/', (req, res) => {
-  return res.status(400).send({ error: 'No currency symbol provided' })
+  return res.status(400).send({ error: 'No type provided' })
 })
 
 router.get('/onsale', cache(300), async (req, res, next) => {

@@ -51,7 +51,7 @@ router.get('/:axieId/name', validateAxieId, cache(300), async (req, res, next) =
   try {
     const response = await postRequest({ url: GRAPHQL_SERVER_URL, payload })
     const name = response.data.axie.name
-    res.json(name)
+    res.json({ name: name })
   } catch (error) {
     next(error)
   }

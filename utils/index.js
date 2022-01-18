@@ -14,7 +14,7 @@ const endpoints = [
   {
     method: 'GET',
     path: '/version',
-    description: 'Returns the version of the API'
+    description: 'Returns the current version of the API'
   },
   {
     method: 'GET',

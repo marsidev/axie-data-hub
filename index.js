@@ -2,7 +2,7 @@ require('dotenv').config()
 
 // import libs
 const express = require('express')
-// const cors = require('cors')
+const cors = require('cors')
 
 // middlewares
 const errorHandler = require('./middlewares/errorHandler')
@@ -26,7 +26,7 @@ const apiInfo = {
 
 // config
 const app = express()
-// app.use(cors())
+app.use(cors())
 app.use(express.json())
 
 // Sentry init

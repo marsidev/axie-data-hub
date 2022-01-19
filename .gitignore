@@ -3,3 +3,4 @@ redis
 tests
 node_modules
 requests
+requests/getEndpoints.rest

@@ -121,4 +121,11 @@ const endpoints = [
   }
 ]
 
-module.exports = { postRequest, endpoints }
+const isConnected = async () => {
+  const isConnected = !!(await require('dns')
+    .promises.resolve('google.com')
+    .catch(() => {}))
+  console.log(isConnected)
+}
+
+module.exports = { postRequest, isConnected, endpoints }

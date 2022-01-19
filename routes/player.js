@@ -33,7 +33,7 @@ router.get('/:address/mmr', validateRonin, cache(300), async (req, res, next) =>
     const response = await axios.get(url, {
       params: { client_id: address.replace('ronin:', '0x'), limit: 0, offset: 0 }
     })
-    const playerData = response.data.items?.[1]
+    const playerData = response.data.items.at(-1)
     res.json(playerData)
   } catch (error) {
     next(error)
@@ -48,7 +48,7 @@ router.get('/:address/mmr/previous', validateRonin, cache(300), async (req, res,
     const response = await axios.get(url, {
       params: { client_id: address.replace('ronin:', '0x'), limit: 0, offset: 0 }
     })
-    const playerData = response.data.items?.[1]
+    const playerData = response.data.items.at(-1)
     res.json(playerData)
   } catch (error) {
     next(error)

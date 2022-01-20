@@ -3,8 +3,16 @@ const router = express.Router()
 const axios = require('axios')
 const cache = require('../middlewares/cache')
 const { validateExchangeSymbol } = require('../middlewares/validation')
+const { validCurrencies } = require('../utils')
 
-router.get('/', (req, res) => res.status(400).send({ error: 'No currency symbol provided' }))
+router.get('/', (req, res) => {
+  res
+    .status(400)
+    .send({
+      error:
+        `No currency symbol provided. Available symbols: ${validCurrencies.join(', ')}`
+    })
+})
 
 router.get('/:symbol', validateExchangeSymbol, cache(60), async (req, res, next) => {
   const { symbol } = req.params

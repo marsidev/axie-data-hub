@@ -48,13 +48,21 @@ const endpoints = [
   },
   {
     method: 'GET',
-    endpoint: '/cards',
-    description: 'Get all cards data of current patch'
+    endpoint: '/cards/{patchId}',
+    description:
+      'Get ability cards data from certain patch. Fetch \'/cards/current\' to retrieve current patch\'s data.'
+  },
+  {
+    method: 'GET',
+    endpoint: '/cards/patches',
+    description: 'Retrieve data from different cards balance patches.'
   },
   {
     method: 'GET',
     endpoint: '/exchange/{symbol}',
-    description: `Get exchange data. Available symbols: ${validCurrencies.join(', ')}`
+    description: `Get exchange data. Available symbols: ${validCurrencies.join(
+      ', '
+    )}`
   },
   {
     method: 'GET',

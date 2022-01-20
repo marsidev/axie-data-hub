@@ -17,9 +17,11 @@ const leaderboardRouter = require('./routes/leaderboard')
 const exchangeRouter = require('./routes/exchange')
 const cardsRouter = require('./routes/cards')
 
-const { endpoints } = require('./utils')
+const endpoints = require('./utils/endpoints')
+const { API_VERSION, NODE_ENV, PORT } = process.env
+
 const apiInfo = {
-  version: process.env.API_VERSION,
+  version: API_VERSION,
   baseUrl: '/api/v1',
   endpoints
 }
@@ -30,7 +32,7 @@ app.use(cors())
 app.use(express.json())
 
 // Sentry init
-if (process.env.NODE_ENV !== 'test') {
+if (NODE_ENV !== 'test') {
   app.use(sentryInit)
   app.use(sentryRequestHandler)
   app.use(sentryTracingHandler)
@@ -40,7 +42,7 @@ if (process.env.NODE_ENV !== 'test') {
 app.get('/', (req, res) => res.json(apiInfo))
 app.get('/api/v1', (req, res) => res.json(apiInfo))
 app.get('/api/v1/info', (req, res) => res.json(apiInfo))
-app.use('/api/v1/version', (req, res) => res.json({ version: process.env.API_VERSION }))
+app.use('/api/v1/version', (req, res) => res.json({ version: API_VERSION }))
 app.use('/api/v1/endpoints', (req, res) => res.json(endpoints))
 app.use('/api/v1/axie', axieRouter)
 app.use('/api/v1/player', playerRouter)
@@ -50,10 +52,9 @@ app.use('/api/v1/exchange', exchangeRouter)
 app.use('/api/v1/cards', cardsRouter)
 
 app.use(notFoundHandler)
-if (process.env.NODE_ENV !== 'test') app.use(sentryErrorHandler)
+if (NODE_ENV !== 'test') app.use(sentryErrorHandler)
 app.use(errorHandler)
 
-const PORT = process.env.PORT || 3000
 const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })

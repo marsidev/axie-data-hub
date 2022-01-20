@@ -5,127 +5,48 @@ const postRequest = async ({ url, payload }) => {
   return response.data
 }
 
-const endpoints = [
-  {
-    method: 'GET',
-    path: '/info',
-    description: 'Returns information about the API'
-  },
-  {
-    method: 'GET',
-    path: '/version',
-    description: 'Returns the current version of the API'
-  },
-  {
-    method: 'GET',
-    endpoint: '/endpoints',
-    description: 'Get all available endpoints'
-  },
-  {
-    method: 'GET',
-    endpoint: '/auction/onsale',
-    description: 'Get latest axies on sale'
-  },
-  {
-    method: 'GET',
-    endpoint: '/auction/sold',
-    description: 'Get latest axies sold'
-  },
-  {
-    method: 'GET',
-    endpoint: '/axie/:axieId',
-    description: 'Get axie data'
-  },
-  {
-    method: 'GET',
-    endpoint: '/axie/:axieId/genes',
-    description: 'Get axie genes'
-  },
-  {
-    method: 'GET',
-    endpoint: '/axie/:axieId/name',
-    description: 'Get axie name'
-  },
-  {
-    method: 'GET',
-    endpoint: '/axie/:axieId/children',
-    description: 'Get axie childrens if has any'
-  },
-  {
-    method: 'GET',
-    endpoint: '/cards',
-    description: 'Get all cards data of current patch'
-  },
-  {
-    method: 'GET',
-    endpoint: '/exchange/:symbol',
-    description:
-      'Get exchange data - available symbols are ' +
-      process.env.EXCHANGE_SYMBOLS.split(',').join(', ')
-  },
-  {
-    method: 'GET',
-    endpoint: '/leaderboard',
-    description: 'Get MMR leaderboard of current season'
-  },
-  {
-    method: 'GET',
-    endpoint: '/leaderboard/previous',
-    description: 'Get MMR leaderboard of previous season'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/data',
-    description: 'Get player data'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/mmr',
-    description: 'Get player MMR data'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/mmr/previous',
-    description: 'Get player MMR data of previous season'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/axies',
-    description: 'Get player axies'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/name',
-    description: 'Get player name'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/battles',
-    description: 'Get player battles'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/battles/:battleType',
-    description:
-      'Get player battles of specific type - available types are \'pvp\' and \'pve\''
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/transactions',
-    description: 'Get latest player transactions'
-  },
-  {
-    method: 'GET',
-    endpoint: '/player/:roninAddress/tokens',
-    description: 'Get player tokens'
-  }
-]
-
 const isConnected = async () => {
-  const isConnected = !!(await require('dns')
+  return !!(await require('dns')
     .promises.resolve('google.com')
     .catch(() => {}))
-  console.log(isConnected)
 }
 
-module.exports = { postRequest, isConnected, endpoints }
+const validCurrencies = ['slp', 'axs', 'eth', 'ron', 'usdc']
+
+const fixCardsFormat = (data) => {
+  let newData = []
+  for (const part in data) {
+    const className = part.split('-')[0]
+    const bodyPart = part.split('-')[1]
+    const abilityIndex = part.split('-')[2]
+    const temp = {
+      className,
+      bodyPart,
+      abilityIndex,
+      ...data[part]
+    }
+    newData = [...newData, temp]
+  }
+
+  // console.log({ newData })
+  return newData
+}
+
+const patchFiles = []
+require('fs')
+  .readdirSync(require('path').join(__dirname, '../assets/cards-data'))
+  .forEach(
+    p => {
+      patchFiles[p.replace('.json', '')] =
+        require(`../assets/cards-data/${p}`)
+    })
+const patchIds = Object.entries(patchFiles).map(([k]) => k)
+
+module.exports = {
+  postRequest,
+  isConnected,
+  validCurrencies,
+  fixCardsFormat,
+  patchFiles,
+  patchIds
+}

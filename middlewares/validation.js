@@ -1,3 +1,5 @@
+const { validCurrencies } = require('../utils')
+
 const validateAxieId = (req, res, next) => {
   const { axieId } = req.params
   const isValid = !isNaN(axieId)
@@ -21,11 +23,11 @@ const validateBattleType = (req, res, next) => {
 }
 
 const validateExchangeSymbol = (req, res, next) => {
-  const validCurrencies = ['slp', 'axs', 'eth', 'ron', 'usdc']
   const { symbol } = req.params
-
   if (!validCurrencies.includes(symbol)) {
-    return res.status(400).send({ error: 'Invalid currency symbol' })
+    return res.status(400).send({
+      error: `Invalid currency symbol. Available symbols: ${validCurrencies.join(', ')}`
+    })
   }
   return next()
 }

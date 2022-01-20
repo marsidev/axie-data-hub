@@ -32,21 +32,12 @@ const fixCardsFormat = (data) => {
   return newData
 }
 
-const patchFiles = []
-require('fs')
-  .readdirSync(require('path').join(__dirname, '../assets/cards-data'))
-  .forEach(
-    p => {
-      patchFiles[p.replace('.json', '')] =
-        require(`../assets/cards-data/${p}`)
-    })
-const patchIds = Object.entries(patchFiles).map(([k]) => k)
+const patchIds = Object.entries(require('../assets/patches.json')).map(([k]) => k)
 
 module.exports = {
   postRequest,
   isConnected,
   validCurrencies,
   fixCardsFormat,
-  patchFiles,
   patchIds
 }

@@ -1,0 +1,32 @@
+{
+  "current": {
+    "id": "current",
+    "name": "Current patch: 20220117-patch",
+    "date": "2022-01-17",
+    "description": ""
+  },
+  "20220117-patch": {
+    "id": "20220117-patch",
+    "name": "Season 20 Temporary Patch",
+    "date": "2022-01-17",
+    "description": "Cards balance for upcoming Season 20. Some balances can change until Season 20 starts."
+  },
+  "20211130-patch": {
+    "id": "20211130-patch",
+    "name": "November 30, 2021 Balance Patch",
+    "date": "2021-11-30",
+    "description": "Bone Sail mechanic changed."
+  },
+  "s19-patch": {
+    "id": "s19-patch",
+    "name": "Season 19 Patch",
+    "date": "2021-11-10",
+    "description": "Cards balance for Season 19."
+  },
+  "s17-patch": {
+    "id": "s17-patch",
+    "name": "Season 17 Patch",
+    "date": "2021-05-17",
+    "description": "Cards balance for Season 17."
+  }
+}

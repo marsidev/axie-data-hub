@@ -3,11 +3,14 @@ require('dotenv').config()
 // import libs
 const express = require('express')
 const cors = require('cors')
+const morgan = require('morgan')
 
 // middlewares
+const { connectToMongo } = require('./middlewares/mongoose')
 const errorHandler = require('./middlewares/errorHandler')
 const notFoundHandler = require('./middlewares/notFound')
 const { sentryInit, sentryErrorHandler, sentryRequestHandler, sentryTracingHandler } = require('./middlewares/sentry')
+const logger = require('./middlewares/logger')
 
 // import routes
 const axieRouter = require('./routes/axie')
@@ -16,8 +19,12 @@ const auctionRouter = require('./routes/auction')
 const leaderboardRouter = require('./routes/leaderboard')
 const exchangeRouter = require('./routes/exchange')
 const cardsRouter = require('./routes/cards')
+const tokenRouter = require('./routes/token')
 
+// others
 const endpoints = require('./utils/endpoints')
+
+// .env
 const { API_VERSION, NODE_ENV, PORT } = process.env
 
 const apiInfo = {
@@ -31,12 +38,26 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+// morgan debugger
+app.use(morgan('dev'))
+// app.use(morgan('dev', {
+//   skip: function (req, res) { return res.statusCode < 400 }
+// }))
+
+// run logger if app is running in production mode
+if (NODE_ENV === 'production') {
+  app.use(logger)
+}
+
 // Sentry init
 if (NODE_ENV !== 'test') {
   app.use(sentryInit)
   app.use(sentryRequestHandler)
   app.use(sentryTracingHandler)
 }
+
+// connecting to mongodb
+connectToMongo()
 
 // routing
 app.get('/', (req, res) => res.json(apiInfo))
@@ -50,6 +71,7 @@ app.use('/api/v1/auction', auctionRouter)
 app.use('/api/v1/leaderboard', leaderboardRouter)
 app.use('/api/v1/exchange', exchangeRouter)
 app.use('/api/v1/cards', cardsRouter)
+app.use('/api/v1/token', tokenRouter)
 
 app.use(notFoundHandler)
 if (NODE_ENV !== 'test') app.use(sentryErrorHandler)

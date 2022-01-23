@@ -10,9 +10,7 @@ module.exports = (req, res, next) => {
 
     const endTime = Date.now()
     const processingTime = endTime - startTime
-    // const isDev = headers.host.includes('localhost')
 
-    // if (!isDev) {
     const debugObject = {
       timestamp: startTime,
       date: new Date(startTime).toISOString(),
@@ -35,9 +33,8 @@ module.exports = (req, res, next) => {
       }
     }
     const log = new Log(debugObject)
-    const savedLog = await log.save()
-    console.log(savedLog)
-    // }
+    await log.save()
+    // console.log(savedLog)
   })
 
   next()

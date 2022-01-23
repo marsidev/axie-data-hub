@@ -55,7 +55,7 @@ const endpoints = [
   {
     method: 'GET',
     endpoint: '/cards/patches',
-    description: 'Retrieve data from different cards balance patches.'
+    description: 'Get info of different cards balance patches.'
   },
   {
     method: 'GET',

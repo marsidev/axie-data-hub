@@ -28,6 +28,11 @@ const GetProfileNameByRoninAddressQuery =
 const GetRecentlyAxiesSoldQuery =
   'query GetRecentlyAxiesSold($from: Int, $size: Int) {\n  settledAuctions {\n    axies(from: $from, size: $size) {\n      total\n      results {\n        ...AxieSettledBrief\n        transferHistory {\n          ...TransferHistoryInSettledAuction\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment AxieSettledBrief on Axie {\n  id\n  name\n  image\n  class\n  breedCount\n  __typename\n}\n\nfragment TransferHistoryInSettledAuction on TransferRecords {\n  total\n  results {\n    ...TransferRecordInSettledAuction\n    __typename\n  }\n  __typename\n}\n\nfragment TransferRecordInSettledAuction on TransferRecord {\n  from\n  to\n  txHash\n  timestamp\n  withPrice\n  withPriceUsd\n  fromProfile {\n    name\n    __typename\n  }\n  toProfile {\n    name\n    __typename\n  }\n  __typename\n}\n'
 
+const createAccessTokenQuery =
+  'mutation CreateAccessTokenWithSignature($input: SignatureInput!) { createAccessTokenWithSignature(input: $input) { newAccount result accessToken __typename } }'
+
+const createRandomMessageQuery = 'mutation CreateRandomMessage { createRandomMessage }'
+
 const payloadByCurrency = {
   slp: {
     query: NewSlpExchangeRateQuery,
@@ -58,5 +63,7 @@ module.exports = {
   GetAxieNameQuery,
   GetProfileNameByRoninAddressQuery,
   GetRecentlyAxiesSoldQuery,
-  payloadByCurrency
+  payloadByCurrency,
+  createRandomMessageQuery,
+  createAccessTokenQuery
 }

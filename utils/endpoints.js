@@ -76,6 +76,11 @@ const endpoints = [
   },
   {
     method: 'GET',
+    endpoint: '/player/{roninAddress}/slp',
+    description: 'Get player SLP stats'
+  },
+  {
+    method: 'GET',
     endpoint: '/player/{roninAddress}/data',
     description: 'Get player data'
   },
@@ -112,13 +117,18 @@ const endpoints = [
   },
   {
     method: 'GET',
-    endpoint: '/player/{roninAddress}/transactions',
+    endpoint: '/player/{roninAddress}/wallet/transactions',
     description: 'Get latest player transactions'
   },
   {
     method: 'GET',
-    endpoint: '/player/{roninAddress}/tokens',
+    endpoint: '/player/{roninAddress}/wallet/tokens',
     description: 'Get player tokens'
+  },
+  {
+    method: 'POST',
+    endpoint: '/player/auth',
+    description: 'Get player authorization token. You must provide your Ronin Wallet private key in the request body.'
   }
 ]
 

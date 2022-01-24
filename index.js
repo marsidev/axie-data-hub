@@ -44,7 +44,6 @@ app.use(morgan('dev'))
 //   skip: function (req, res) { return res.statusCode < 400 }
 // }))
 
-// run logger if app is running in production mode
 if (NODE_ENV === 'production') {
   app.use(logger)
 }

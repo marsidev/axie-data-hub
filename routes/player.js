@@ -95,7 +95,7 @@ router.get('/:address/mmr', validateRonin, cache(300), async (req, res, next) =>
     const response = await axios.get(url, {
       params: { client_id: address.replace('ronin:', '0x'), limit: 0, offset: 0 }
     })
-    const playerData = response.data.items.at(-1)
+    const playerData = response.data.items.slice(-1)[0]
     res.json(playerData)
   } catch (error) {
     next(error)
@@ -110,7 +110,7 @@ router.get('/:address/mmr/previous', validateRonin, cache(300), async (req, res,
     const response = await axios.get(url, {
       params: { client_id: address.replace('ronin:', '0x'), limit: 0, offset: 0 }
     })
-    const playerData = response.data.items.at(-1)
+    const playerData = response.data.items.slice(-1)[0]
     res.json(playerData)
   } catch (error) {
     next(error)
@@ -256,7 +256,7 @@ router.get('/:address/slp', validateRonin, async (req, res, next) => {
         // console.log({ _storedAccount, _freshData })
 
         // get latest slp data from storedSlpHistory and get todaySlp
-        const yesterdaySlp = storedSlpHistory.at(-1).amount
+        const yesterdaySlp = storedSlpHistory.slice(-1)[0].amount
         const todaySlpSoFar = freshData.inGameSlp - yesterdaySlp
 
         // update everything except slpHistory

@@ -9,7 +9,9 @@ const validateAxieId = (req, res, next) => {
 
 const validateRonin = (req, res, next) => {
   const { address } = req.params
-  const isValid = /^(0x)?[0-9a-f]{40}$/i.test(address.replace('ronin:', '0x'))
+  const isValid = /^(0x)?[0-9a-f]{40}$/i.test(
+    address.replace('ronin:', '0x').replace('ronin%3A', '0x')
+  )
   if (!isValid) return res.status(400).send({ error: 'Invalid Ronin address' })
   return next()
 }

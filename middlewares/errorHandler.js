@@ -3,13 +3,13 @@ const nocache = require('./nocache')
 
 const ERROR_HANDLERS = {
   ECONNRESET: (res, error) => {
-    nocache(res)
+    // nocache(res)
     if (!isConnected) res.status(400).json({ error: 'Internet connection error' })
     else res.status(400).json({ error: 'Connection error' })
   },
 
   ENOTFOUND: (res, error) => {
-    nocache(res)
+    // nocache(res)
     if (!isConnected) res.status(400).json({ error: 'Internet connection error' })
     else res.status(400).json({ error: 'Connection error' })
   },
@@ -19,10 +19,8 @@ const ERROR_HANDLERS = {
     // console.error(error.code)
     // console.error(error)
     if (error.code === 11000) {
-      return res.status(409).send({ error: 'Account already exists' })
-    } else {
-      res.status(500).json({ error: 'Mongo server error' })
-    }
+      res.status(409).send({ error: 'Account already exists' })
+    } else res.status(500).json({ error: 'Mongo server error' })
   },
 
   defaultError: (res, error) => {

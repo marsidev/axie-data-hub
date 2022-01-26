@@ -19,11 +19,13 @@ const fixCardsFormat = (data) => {
     const className = part.split('-')[0]
     const bodyPart = part.split('-')[1]
     const abilityIndex = part.split('-')[2]
+    const backgroundUrl = `https://cdn.axieinfinity.com/game/cards/effect-icons/${part}.png`
     const temp = {
       className,
       bodyPart,
       abilityIndex,
-      ...data[part]
+      ...data[part],
+      backgroundUrl
     }
     newData = [...newData, temp]
   }

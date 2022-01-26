@@ -59,6 +59,21 @@ const endpoints = [
   },
   {
     method: 'GET',
+    endpoint: '/effects',
+    description: 'Get all card ability effects.'
+  },
+  {
+    method: 'GET',
+    endpoint: '/effects/buffs',
+    description: 'Get all card ability buff effects.'
+  },
+  {
+    method: 'GET',
+    endpoint: '/effects/debuffs',
+    description: 'Get all card ability debuff effects.'
+  },
+  {
+    method: 'GET',
     endpoint: '/exchange/{symbol}',
     description: `Get exchange data. Available symbols: ${validCurrencies.join(
       ', '
@@ -128,7 +143,28 @@ const endpoints = [
   {
     method: 'POST',
     endpoint: '/player/auth',
-    description: 'Get player authorization token. You must provide your Ronin Wallet private key in the request body.'
+    description:
+      'Get player authorization token. You must provide your Ronin Wallet private key in the request body.'
+  },
+  {
+    method: 'GET',
+    endpoint: '/stats/base',
+    description: 'Get axie classes base stats'
+  },
+  {
+    method: 'GET',
+    endpoint: '/stats/base/{className}',
+    description: 'Get axie base stats of specific class'
+  },
+  {
+    method: 'GET',
+    endpoint: '/stats/body-part',
+    description: 'Get stats added by body parts of each class'
+  },
+  {
+    method: 'GET',
+    endpoint: '/stats/body-part/{className}',
+    description: 'Get stats added by body parts of specific class'
   }
 ]
 

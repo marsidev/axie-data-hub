@@ -1,0 +1,8 @@
+{
+  "aquatic":  { "hp": 1, "skill": 0, "morale": 0, "speed": 3 },
+  "beast":    { "hp": 0, "skill": 0, "morale": 3, "speed": 1 },
+  "bird":     { "hp": 0, "skill": 0, "morale": 1, "speed": 3 },
+  "bug":      { "hp": 1, "skill": 0, "morale": 3, "speed": 0 },
+  "plant":    { "hp": 3, "skill": 0, "morale": 1, "speed": 0 },
+  "reptile":  { "hp": 3, "skill": 0, "morale": 0, "speed": 1 }
+}

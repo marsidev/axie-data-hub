@@ -1,0 +1,344 @@
+[
+  {
+    "id": "attack-up",
+    "name": "Attack Up",
+    "description": "Increases the next Attack by 20%.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/attack-up.png",
+    "isBuff": true,
+    "isDebuff": false
+  },
+  {
+    "id": "morale-up",
+    "name": "Morale Up",
+    "description": "Increases Morale by 20% for the next round.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/morale-up.png",
+    "isBuff": true,
+    "isDebuff": false
+  },
+  {
+    "id": "speed-up",
+    "name": "Speed Up",
+    "description": "Increases Speed by 20% for the next round.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/speed-up.png",
+    "isBuff": true,
+    "isDebuff": false
+  },
+  {
+    "id": "aroma",
+    "name": "Aroma",
+    "description": "Target priority changes to affected Axie for the next round.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/aroma.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "attack-down",
+    "name": "Attack Down",
+    "description": "Decreases the next Attack by 20%.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/attack-down.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "chill",
+    "name": "Chill",
+    "description": "Affected Axie can't enter last stand.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/chill.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "fear",
+    "name": "Fear",
+    "description": "Affected Axie can't attack.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/fear.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "fragile",
+    "name": "Fragile",
+    "description": "Shield takes double the damage for the next incoming attack.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/fragile.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "jinx",
+    "name": "Jinx",
+    "description": "Affected Axie can't land critcal hits for the next round.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/jinx.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "lethal",
+    "name": "Lethal",
+    "description": "Next hit against affected Axie is critical.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/lethal.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "morale-down",
+    "name": "Morale Down",
+    "description": "Decreases Morale by 20% for the next round.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/morale-down.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "poison",
+    "name": "Poison",
+    "description": "Until removal, affected Axie loses 2 HP for every action.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/poison.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "sleep",
+    "name": "Sleep",
+    "description": "Next incoming attack ignores shields.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/poison.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "speed-down",
+    "name": "Speed Down",
+    "description": "Decreases Speed by 20% for the next round.",
+    "stackable": true,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/speed-down.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "scarab",
+    "name": "Scarab",
+    "description": "Affected Axie cannot be healed for 2 rounds. This debuff can't be removed.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/heal-block.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "stench",
+    "name": "Stench",
+    "description": "Affected Axie loses target priority for the next round.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/stench.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "stun",
+    "name": "Stun",
+    "description": "Next attack misses. Next incoming attack ignores shields.",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/stun.png",
+    "isBuff": false,
+    "isDebuff": true
+  },
+  {
+    "id": "ally-heal",
+    "name": "Ally Heal",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/ally-heal.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "critical",
+    "name": "Critical",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/critical.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "critical-block",
+    "name": "Critical Block",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/critical-block.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "damage-reflect",
+    "name": "Damage Reflect",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/damage-reflect.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "disable-ability",
+    "name": "Disable Ability",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/disable-ability.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "discard",
+    "name": "Discard",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/discard.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "draw-card",
+    "name": "Draw Card",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/draw-card.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "double-hit",
+    "name": "Double Hit",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/double-hit.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "end-last-stand",
+    "name": "End Last Stand",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/end-last-stand.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "energy-destroy",
+    "name": "Energy Destroy",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/energy-destroy.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "fixed-damage",
+    "name": "Fixed Damage",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/fixed-damage.png",
+    "isBuff": false,
+    "isDebuff": false    
+  },
+  {
+    "id": "gain-energy",
+    "name": "Gain Energy",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/gain-energy.png",
+    "isBuff": false,
+    "isDebuff": false    
+  },
+  {
+    "id": "heal-block",
+    "name": "Heal Block",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/heal-block.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "multi-hit",
+    "name": "Multi Hit",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/multi-hit.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "raise-damage",
+    "name": "Raise Damage",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/raise-damage.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "raise-shield",
+    "name": "Raise Shield",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/raise-shield.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "remove-debuff",
+    "name": "Remove Debuff",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/remove-debuff.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "self-heal",
+    "name": "Self Heal",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/self-heal.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "strike-first",
+    "name": "Strike First",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/strike-first.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "untargetable",
+    "name": "Untargetable",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/untargetable.png",
+    "isBuff": false,
+    "isDebuff": false
+  },
+  {
+    "id": "prioritize",
+    "name": "Prioritize",
+    "description": "",
+    "stackable": false,
+    "iconUrl": "https://cdn.axieinfinity.com/game/cards/effect-icons/prioritize.png",
+    "isBuff": false,
+    "isDebuff": false
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "aquatic":  { "hp": 39, "skill": 35, "morale": 27, "speed": 39 },
+  "beast":    { "hp": 31, "skill": 31, "morale": 43, "speed": 35 },
+  "bird":     { "hp": 27, "skill": 35, "morale": 35, "speed": 43 },
+  "bug":      { "hp": 35, "skill": 35, "morale": 39, "speed": 31 },
+  "dawn":     { "hp": 35, "skill": 39, "morale": 27, "speed": 39 },
+  "dusk":     { "hp": 43, "skill": 27, "morale": 31, "speed": 39 },
+  "mech":     { "hp": 31, "skill": 43, "morale": 27, "speed": 39 },
+  "plant":    { "hp": 43, "skill": 31, "morale": 35, "speed": 31 },
+  "reptile":  { "hp": 39, "skill": 31, "morale": 35, "speed": 35 }
+}

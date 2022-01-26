@@ -19,6 +19,8 @@ const auctionRouter = require('./routes/auction')
 const leaderboardRouter = require('./routes/leaderboard')
 const exchangeRouter = require('./routes/exchange')
 const cardsRouter = require('./routes/cards')
+const statsRouter = require('./routes/stats')
+const effectsRouter = require('./routes/effects')
 
 // others
 const endpoints = require('./utils/endpoints')
@@ -69,6 +71,8 @@ app.use('/api/v1/auction', auctionRouter)
 app.use('/api/v1/leaderboard', leaderboardRouter)
 app.use('/api/v1/exchange', exchangeRouter)
 app.use('/api/v1/cards', cardsRouter)
+app.use('/api/v1/stats', statsRouter)
+app.use('/api/v1/effects', effectsRouter)
 
 app.use(notFoundHandler)
 if (NODE_ENV !== 'test') app.use(sentryErrorHandler)

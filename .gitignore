@@ -3,6 +3,6 @@ redis
 tests
 node_modules
 requests
-requests/getEndpoints.rest
 todo.md
 how-to-update.md
+.rest

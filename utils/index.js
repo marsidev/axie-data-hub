@@ -55,6 +55,21 @@ const getNumberOfDays = (start, end) => {
   return diffInDays
 }
 
+const extractProps = (obj, props) => {
+  const newObj = {}
+  props.forEach(prop => newObj[prop] = obj[prop])
+  return newObj
+}
+
+const compareObjects = (a, b, props) => {
+  const aProps = extractProps(a, props)
+  const bProps = extractProps(b, props)
+  console.log('Comparing objects:')
+  console.log({ aProps })
+  console.log({ bProps })
+  return areEqual(aProps, bProps)
+}
+
 module.exports = {
   postRequest,
   isConnected,
@@ -62,5 +77,6 @@ module.exports = {
   fixCardsFormat,
   patchIds,
   areEqual,
-  getNumberOfDays
+  getNumberOfDays,
+  compareObjects
 }

@@ -1,49 +1,39 @@
 const express = require('express')
 const router = express.Router({ mergeParams: true })
-
-const Account = require('../../models/Account')
-
-const { areEqual } = require('../../utils')
+const { compareObjects } = require('../../utils')
 const { fetchAccountData, addAccount } = require('../../utils/player')
+const Account = require('../../models/Account')
 
 router.get('/', async (req, res, next) => {
   try {
-    const { address } = req.params
+    let { address } = req.params
+    address = address.replace('ronin:', '0x')
     const compactAddres = `0x...${address.substring(address.length - 4)}`
 
-    const _storedAccount = await Account.findOne({
-      address: address.replace('ronin:', '0x')
-    })
+    const dbData = await Account.findOne({ address })
 
-    if (!_storedAccount) {
-      console.log(`Account ${compactAddres} not found. Creating...`)
+    if (!dbData) {
+      console.log(`Account ${compactAddres} not found. Saving...`)
       const savedAccount = await addAccount(address)
       return res.status(200).json(savedAccount)
     } else {
-      const { createdAt, updatedAt, __v, _id, slpHistory: storedSlpHistory, todaySlpSoFar: storedTodaySlpSoFar, yesterdaySlp: storedYesterdaySlp, ...storedAccount } = _storedAccount._doc
+      // dbData = dbData._doc
+      const fetchedData = await fetchAccountData(address)
 
-      const _freshData = await fetchAccountData(address)
-      const { slpHistory: freshSlpHistory, todaySlpSoFar: freshTodaySlpSoFar, yesterdaySlp: freshYesterdaySlp, ...freshData } = _freshData
-
-      if (!areEqual(storedAccount, freshData)) {
-        console.log(`Account ${compactAddres} found. Update needed`)
-
-        // get latest slp data from storedSlpHistory and get todaySlp
-        const yesterdaySlp = storedSlpHistory.slice(-1)[0].amount
-        const todaySlpSoFar = freshData.inGameSlp - yesterdaySlp
-
-        // update everything except slpHistory
-        const updatedData = { ..._freshData, yesterdaySlp, todaySlpSoFar, slpHistory: storedAccount.slpHistory }
-
-        const updatedAccount = await Account.findOneAndUpdate(
-          { address: address.replace('ronin:', '0x') },
-          updatedData,
-          { new: true }
-        )
-        return res.status(200).json(updatedAccount)
-      } else {
+      if (compareObjects(dbData, fetchedData, ['totalSlp', 'claimableSlp', 'inGameSlp', 'lastClaimTime'])) {
         console.log(`Account ${compactAddres} found. No update needed`)
-        return res.status(200).json(_storedAccount)
+        return res.status(200).json(dbData)
+      } else {
+        const todaySoFar = fetchedData.inGameSlp - dbData.slpHistory.slice(-1)[0].amount
+        const updatedData = {
+          ...fetchedData,
+          todaySlpSoFar: todaySoFar,
+          slpHistory: dbData.slpHistory,
+          yesterdaySlp: dbData.yesterdaySlp
+        }
+
+        const updatedAccount = await Account.findOneAndUpdate({ address }, updatedData, { new: true })
+        return res.status(200).json(updatedAccount)
       }
     }
   } catch (error) {

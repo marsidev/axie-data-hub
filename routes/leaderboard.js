@@ -3,7 +3,7 @@ const router = express.Router()
 const axios = require('axios')
 const cache = require('../middlewares/cache')
 
-router.get('/', cache(300), async (req, res, next) => {
+router.get('/', cache(180), async (req, res, next) => {
   const url = 'https://game-api.skymavis.com/game-api/leaderboard'
 
   try {
@@ -15,7 +15,7 @@ router.get('/', cache(300), async (req, res, next) => {
   }
 })
 
-router.get('/previous', cache(300), async (req, res, next) => {
+router.get('/previous', cache(180), async (req, res, next) => {
   const url = 'https://game-api.skymavis.com/game-api/last-season-leaderboard'
 
   try {

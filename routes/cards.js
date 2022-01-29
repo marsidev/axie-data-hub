@@ -6,13 +6,13 @@ const { fixCardsFormat, patchIds } = require('../utils')
 
 const availablePatches = patchIds.join(', ')
 
-router.get('/', cache(300), async (req, res, next) => {
+router.get('/', cache(600), async (req, res, next) => {
   res.status(400).json({
     error: `You should choose the season patch balance you want to see using this path: /cards/{patchId}. Available patches: ${availablePatches}. Check /cards/patches to see more about.`
   })
 })
 
-router.get('/patches', cache(300), async (req, res, next) => {
+router.get('/patches', cache(600), async (req, res, next) => {
   try {
     res.json(require('../assets/patches'))
   } catch (e) {
@@ -20,7 +20,7 @@ router.get('/patches', cache(300), async (req, res, next) => {
   }
 })
 
-router.get('/:patchId', cache(300), async (req, res, next) => {
+router.get('/:patchId', cache(600), async (req, res, next) => {
   const { patchId } = req.params
   const { format } = req.query
 

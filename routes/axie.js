@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
   return res.status(400).send({ error: 'No axie ID provided' })
 })
 
-router.get('/:axieId', validateAxieId, cache(300), async (req, res, next) => {
+router.get('/:axieId', validateAxieId, cache(600), async (req, res, next) => {
   // alternative url: https://api.axie.technology/getaxies/:axieId - includes children data
   const { axieId } = req.params
 
@@ -30,7 +30,7 @@ router.get('/:axieId', validateAxieId, cache(300), async (req, res, next) => {
   }
 })
 
-router.get('/:axieId/genes', validateAxieId, cache(300), async (req, res, next) => {
+router.get('/:axieId/genes', validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
   const url = `https://api.axie.technology/getgenes/${axieId}`
   try {
@@ -41,7 +41,7 @@ router.get('/:axieId/genes', validateAxieId, cache(300), async (req, res, next) 
   }
 })
 
-router.get('/:axieId/name', validateAxieId, cache(300), async (req, res, next) => {
+router.get('/:axieId/name', validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
   const payload = {
     query: GetAxieNameQuery,
@@ -57,7 +57,7 @@ router.get('/:axieId/name', validateAxieId, cache(300), async (req, res, next) =
   }
 })
 
-router.get('/:axieId/children', validateAxieId, cache(300), async (req, res, next) => {
+router.get('/:axieId/children', validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
   const url = `https://api.axie.technology/getaxies/${axieId}`
   try {

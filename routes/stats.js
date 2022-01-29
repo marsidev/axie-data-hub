@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const cache = require('../middlewares/cache')
 
-router.get('/base', cache(60), async (req, res, next) => {
+router.get('/base', cache(600), async (req, res, next) => {
   try {
     res.json(require('../assets/stats/base-stats'))
   } catch (e) {
@@ -10,7 +10,7 @@ router.get('/base', cache(60), async (req, res, next) => {
   }
 })
 
-router.get('/base/:className', cache(60), async (req, res, next) => {
+router.get('/base/:className', cache(600), async (req, res, next) => {
   try {
     const data = require('../assets/stats/base-stats')
     const className = req.params.className
@@ -22,7 +22,7 @@ router.get('/base/:className', cache(60), async (req, res, next) => {
   }
 })
 
-router.get('/body-part', cache(60), async (req, res, next) => {
+router.get('/body-part', cache(600), async (req, res, next) => {
   try {
     res.json(require('../assets/stats/body-part-stats'))
   } catch (e) {
@@ -30,7 +30,7 @@ router.get('/body-part', cache(60), async (req, res, next) => {
   }
 })
 
-router.get('/body-part/:className', cache(60), async (req, res, next) => {
+router.get('/body-part/:className', cache(600), async (req, res, next) => {
   try {
     const data = require('../assets/stats/body-part-stats')
     const className = req.params.className

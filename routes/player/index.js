@@ -5,8 +5,6 @@ const axios = require('axios')
 const cache = require('../../middlewares/cache')
 const { validateRonin, validateBattleType } = require('../../middlewares/validation')
 const { postRequest } = require('../../utils')
-// const { addAccount } = require('../../utils/player')
-// const Account = require('../../models/Account')
 
 const slpRouter = require('./slp')
 const authRouter = require('./auth')
@@ -15,7 +13,7 @@ const walletRouter = require('./wallet')
 const { GetAxieBriefListQuery, GetProfileNameByRoninAddressQuery } = require('../../utils/queries')
 const { GRAPHQL_SERVER_URL } = process.env
 
-router.get('/:address/data', validateRonin, cache(300), async (req, res, next) => {
+router.get('/:address/data', validateRonin, cache(180), async (req, res, next) => {
   const { address } = req.params
   const url = `https://game-api.skymavis.com/game-api/clients/${address.replace('ronin:', '0x')}/items/1`
 
@@ -27,7 +25,7 @@ router.get('/:address/data', validateRonin, cache(300), async (req, res, next) =
   }
 })
 
-router.get('/:address/mmr', validateRonin, cache(300), async (req, res, next) => {
+router.get('/:address/mmr', validateRonin, cache(180), async (req, res, next) => {
   const { address } = req.params
   const url = 'https://game-api.skymavis.com/game-api/leaderboard'
 
@@ -42,7 +40,7 @@ router.get('/:address/mmr', validateRonin, cache(300), async (req, res, next) =>
   }
 })
 
-router.get('/:address/mmr/previous', validateRonin, cache(300), async (req, res, next) => {
+router.get('/:address/mmr/previous', validateRonin, cache(600), async (req, res, next) => {
   const { address } = req.params
   const url = 'https://game-api.skymavis.com/game-api/last-season-leaderboard'
 
@@ -57,7 +55,7 @@ router.get('/:address/mmr/previous', validateRonin, cache(300), async (req, res,
   }
 })
 
-router.get('/:address/axies', validateRonin, cache(300), async (req, res, next) => {
+router.get('/:address/axies', validateRonin, cache(600), async (req, res, next) => {
   const { address } = req.params
 
   const payload = {
@@ -75,7 +73,7 @@ router.get('/:address/axies', validateRonin, cache(300), async (req, res, next) 
   }
 })
 
-router.get('/:address/name', validateRonin, cache(300), async (req, res, next) => {
+router.get('/:address/name', validateRonin, cache(600), async (req, res, next) => {
   const { address } = req.params
 
   const payload = {
@@ -93,7 +91,7 @@ router.get('/:address/name', validateRonin, cache(300), async (req, res, next) =
   }
 })
 
-router.get('/:address/battles', validateRonin, cache(300), async (req, res, next) => {
+router.get('/:address/battles', validateRonin, cache(600), async (req, res, next) => {
   const { address } = req.params
 
   const url = `https://api.axie.management/v1/user/battles/${address.replace('ronin:', '0x')}`
@@ -110,7 +108,7 @@ router.get('/:address/battles', validateRonin, cache(300), async (req, res, next
   }
 })
 
-router.get('/:address/battles/:battleType', validateRonin, validateBattleType, cache(300), async (req, res, next) => {
+router.get('/:address/battles/:battleType', validateRonin, validateBattleType, cache(600), async (req, res, next) => {
   const { battleType, address } = req.params
   const url = `https://game-api.axie.technology/logs/${battleType}/${address.replace('ronin:', '0x')}`
 
@@ -122,7 +120,7 @@ router.get('/:address/battles/:battleType', validateRonin, validateBattleType, c
   }
 })
 
-router.use('/:address/wallet', validateRonin, cache(300), walletRouter)
+router.use('/:address/wallet', validateRonin, cache(600), walletRouter)
 
 router.use('/:address/slp', validateRonin, slpRouter)
 

@@ -3,7 +3,7 @@ const router = express.Router()
 const cache = require('../middlewares/cache')
 const effects = require('../assets/effects')
 
-router.get('/', cache(60), async (req, res, next) => {
+router.get('/', cache(600), async (req, res, next) => {
   try {
     // const data = effects.map(e => {
     //   delete e.isBuff
@@ -21,7 +21,7 @@ router.get('/', cache(60), async (req, res, next) => {
   }
 })
 
-router.get('/buffs', cache(60), async (req, res, next) => {
+router.get('/buffs', cache(600), async (req, res, next) => {
   try {
     const buffs = effects.filter(effect => effect.isBuff)
     const data = buffs.map(e => {
@@ -34,7 +34,7 @@ router.get('/buffs', cache(60), async (req, res, next) => {
   }
 })
 
-router.get('/debuffs', cache(60), async (req, res, next) => {
+router.get('/debuffs', cache(600), async (req, res, next) => {
   try {
     const debuffs = effects.filter(effect => effect.isDebuff)
     const data = debuffs.map(e => {

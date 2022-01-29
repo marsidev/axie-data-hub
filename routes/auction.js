@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   return res.status(400).send({ error: 'No type provided' })
 })
 
-router.get('/onsale', cache(300), async (req, res, next) => {
+router.get('/onsale', cache(180), async (req, res, next) => {
   const payload = {
     query: GetAxieLatestQuery,
     operationName: 'GetAxieLatest',
@@ -32,7 +32,7 @@ router.get('/onsale', cache(300), async (req, res, next) => {
   }
 })
 
-router.get('/sold', cache(300), async (req, res, next) => {
+router.get('/sold', cache(180), async (req, res, next) => {
   const payload = {
     query: GetRecentlyAxiesSoldQuery,
     operationName: 'GetRecentlyAxiesSold',

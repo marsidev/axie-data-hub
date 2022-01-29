@@ -64,9 +64,9 @@ const extractProps = (obj, props) => {
 const compareObjects = (a, b, props) => {
   const aProps = extractProps(a, props)
   const bProps = extractProps(b, props)
-  console.log('Comparing objects:')
-  console.log({ aProps })
-  console.log({ bProps })
+  // console.log('Comparing objects:')
+  // console.log({ aProps })
+  // console.log({ bProps })
   return areEqual(aProps, bProps)
 }
 

@@ -41,9 +41,6 @@ app.use(express.json())
 
 // morgan debugger
 app.use(morgan('dev'))
-// app.use(morgan('dev', {
-//   skip: function (req, res) { return res.statusCode < 400 }
-// }))
 
 if (NODE_ENV === 'production') {
   app.use(logger)

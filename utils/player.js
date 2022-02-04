@@ -31,12 +31,12 @@ const fetchAccountData = async address => {
   const inGameSlp = totalSlp - claimableSlp
   const todaySlpSoFar = 0
   const yesterdaySlp = 0
-  const lastClaimTime = playerData.blockchain_related.signature.timestamp * 1000
-  const lastClaimDate = new Date(lastClaimTime)
-  const nextClaimTime = lastClaimTime + timeBetweenClaim
-  const nextClaimDate = new Date(nextClaimTime)
-  const daysUntilNextClaim = getNumberOfDays(now.getTime(), nextClaimTime)
-  const daysSinceLastClaim = getNumberOfDays(lastClaimTime, now.getTime())
+  const lastClaimTime = playerData.blockchain_related?.signature?.timestamp * 1000 || null
+  const lastClaimDate = lastClaimTime ? new Date(lastClaimTime) : null
+  const nextClaimTime = lastClaimTime ? (lastClaimTime + timeBetweenClaim) : null
+  const nextClaimDate = lastClaimTime ? new Date(nextClaimTime) : null
+  const daysUntilNextClaim = lastClaimTime ? getNumberOfDays(now.getTime(), nextClaimTime) : null
+  const daysSinceLastClaim = lastClaimTime ? getNumberOfDays(lastClaimTime, now.getTime()) : null
   const averageSlp = Math.floor(inGameSlp / daysSinceLastClaim)
   const slpHistory = [{
     updatedTime: now.getTime(),

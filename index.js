@@ -50,7 +50,7 @@ if (NODE_ENV === 'production') {
 }
 
 // Sentry init
-if (NODE_ENV !== 'test') {
+if (NODE_ENV === 'production') {
   app.use(sentryInit)
   app.use(sentryRequestHandler)
   app.use(sentryTracingHandler)
@@ -75,7 +75,7 @@ app.use('/api/v1/stats', statsRouter)
 app.use('/api/v1/effects', effectsRouter)
 
 app.use(notFoundHandler)
-if (NODE_ENV !== 'test') app.use(sentryErrorHandler)
+if (NODE_ENV === 'production') app.use(sentryErrorHandler)
 app.use(errorHandler)
 
 const server = app.listen(PORT, () => {

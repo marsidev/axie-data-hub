@@ -3,24 +3,37 @@ const nocache = require('./nocache')
 
 const ERROR_HANDLERS = {
   ECONNRESET: (res, error) => {
-    // nocache(res)
-    if (!isConnected) res.status(400).json({ error: 'Internet connection error' })
-    else res.status(400).json({ error: 'Connection error' })
+    if (!isConnected) {
+      res.status(400).json({ error: 'Internet connection error' })
+    } else res.status(400).json({ error: 'Connection error' })
   },
 
   ENOTFOUND: (res, error) => {
-    // nocache(res)
-    if (!isConnected) res.status(400).json({ error: 'Internet connection error' })
-    else res.status(400).json({ error: 'Connection error' })
+    if (!isConnected) {
+      res.status(400).json({ error: 'Internet connection error' })
+    } else res.status(400).json({ error: 'Connection error' })
+  },
+
+  ETIMEDOUT: (res, error) => {
+    if (!isConnected) {
+      res.status(400).json({ error: 'Internet connection error' })
+    } else res.status(400).json({ error: 'Connection error' })
   },
 
   MongoServerError: (res, error) => {
-    // console.error(error.name)
-    // console.error(error.code)
-    // console.error(error)
     if (error.code === 11000) {
       res.status(409).send({ error: 'Account already exists' })
     } else res.status(500).json({ error: 'Mongo server error' })
+  },
+
+  MongooseServerSelectionError: (res, error) => {
+    res.status(500).json({ error: 'Mongo server error' })
+  },
+
+  MongooseError: (res, error) => {
+    if (error.message.includes('timed out')) {
+      res.status(500).json({ error: 'Connection error' })
+    } else res.status(500).json({ error: 'Mongoose server error' })
   },
 
   defaultError: (res, error) => {

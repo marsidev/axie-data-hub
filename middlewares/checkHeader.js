@@ -7,14 +7,14 @@ module.exports = async (req, res, next) => {
     console.log({ rapidApiProxySecret })
 
     if (!rapidApiProxySecret) {
-      res.status(400).json({
+      return res.status(400).json({
         message: 'Missing RapidAPI proxy secret header'
       })
     } else {
       if (rapidApiProxySecret === SECRET) {
         next()
       } else {
-        res.status(400).json({
+        return res.status(400).json({
           message: 'Invalid RapidAPI proxy secret header'
         })
       }

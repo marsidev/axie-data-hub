@@ -9,7 +9,6 @@ module.exports = (req, res, next) => {
     const responseHeaders = res.getHeaders()
 
     const isError = statusCode >= 400
-    if (!isError) return
 
     const endTime = Date.now()
     const processingTime = endTime - startTime
@@ -35,8 +34,12 @@ module.exports = (req, res, next) => {
         headers: responseHeaders
       }
     }
-    const log = new Log(debugObject)
-    await log.save()
+
+    console.log(debugObject)
+
+    if (isError) {
+      await Log.create(debugObject)
+    }
   })
 
   next()

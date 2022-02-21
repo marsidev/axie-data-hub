@@ -11,6 +11,7 @@ const errorHandler = require('./middlewares/errorHandler')
 const notFoundHandler = require('./middlewares/notFound')
 const { sentryInit, sentryErrorHandler, sentryRequestHandler, sentryTracingHandler } = require('./middlewares/sentry')
 const logger = require('./middlewares/logger')
+const checkHeader = require('./middlewares/checkHeader')
 
 // import routes
 const axieRouter = require('./routes/axie')
@@ -34,17 +35,32 @@ const apiInfo = {
   endpoints
 }
 
-// config
+// SERVER
 const app = express()
-app.use(cors())
 app.use(express.json())
+
+// CORS
+app.use(cors())
+// const allowlist = [['axie-data-hub.p.rapidapi.com']]
+// const corsOptionsDelegate = function (req, callback) {
+//   let corsOptions
+//   if (allowlist.indexOf(req.header('Origin')) !== -1) {
+//     corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
+//   } else {
+//     corsOptions = { origin: false } // disable CORS for this request
+//   }
+//   callback(null, corsOptions) // callback expects two parameters: error and options
+// }
+// app.use(cors(corsOptionsDelegate))
+
+// RapidAPI validator
+app.use(checkHeader)
 
 // morgan debugger
 app.use(morgan('dev'))
 
-if (NODE_ENV === 'production') {
-  app.use(logger)
-}
+// logging
+app.use(logger)
 
 // Sentry init
 if (NODE_ENV === 'production') {

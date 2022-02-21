@@ -22,18 +22,15 @@ const exchangeRouter = require('./routes/exchange')
 const cardsRouter = require('./routes/cards')
 const statsRouter = require('./routes/stats')
 const effectsRouter = require('./routes/effects')
-
-// others
+// const infoRouter = require('./routes/info')
+const endpointsRouter = require('./routes/endpoints')
+const versionRouter = require('./routes/version')
 const endpoints = require('./utils/endpoints')
 
 // .env
-const { API_VERSION, NODE_ENV, PORT } = process.env
-
-const apiInfo = {
-  version: API_VERSION,
-  baseUrl: '/api/v1',
-  endpoints
-}
+const { NODE_ENV, PORT } = process.env
+const { API_VERSION } = process.env
+const apiInfo = { version: API_VERSION, baseUrl: '/api/v1', endpoints }
 
 // SERVER
 const app = express()
@@ -41,17 +38,6 @@ app.use(express.json())
 
 // CORS
 app.use(cors())
-// const allowlist = [['axie-data-hub.p.rapidapi.com']]
-// const corsOptionsDelegate = function (req, callback) {
-//   let corsOptions
-//   if (allowlist.indexOf(req.header('Origin')) !== -1) {
-//     corsOptions = { origin: true } // reflect (enable) the requested origin in the CORS response
-//   } else {
-//     corsOptions = { origin: false } // disable CORS for this request
-//   }
-//   callback(null, corsOptions) // callback expects two parameters: error and options
-// }
-// app.use(cors(corsOptionsDelegate))
 
 // RapidAPI validator
 // app.use(checkHeader)
@@ -73,11 +59,11 @@ if (NODE_ENV === 'production') {
 connectToMongo()
 
 // routing
-app.get('/', checkHeader, (req, res) => res.json(apiInfo))
-app.get('/api/v1', checkHeader, (req, res) => res.json(apiInfo))
-app.get('/api/v1/info', checkHeader, (req, res) => res.json(apiInfo))
-app.use('/api/v1/version', checkHeader, (req, res) => res.json({ version: API_VERSION }))
-app.use('/api/v1/endpoints', checkHeader, (req, res) => res.json(endpoints))
+app.get('/', (req, res) => res.json(apiInfo))
+app.get('/api/v1', (req, res) => res.json(apiInfo))
+app.get('/api/v1/info', (req, res) => res.json(apiInfo))
+app.use('/api/v1/version', versionRouter)
+app.use('/api/v1/endpoints', checkHeader, endpointsRouter)
 app.use('/api/v1/axie', axieRouter)
 app.use('/api/v1/player', playerRouter)
 app.use('/api/v1/auction', auctionRouter)

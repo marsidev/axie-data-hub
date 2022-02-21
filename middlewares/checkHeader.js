@@ -5,15 +5,16 @@ module.exports = async (req, res, next) => {
 
   if (NODE_ENV === 'production') {
     console.log({ rapidApiProxySecret })
+
     if (!rapidApiProxySecret) {
-      return res.status(400).json({
+      res.status(400).json({
         message: 'Missing RapidAPI proxy secret header'
       })
     } else {
       if (rapidApiProxySecret === SECRET) {
         next()
       } else {
-        return res.status(400).json({
+        res.status(400).json({
           message: 'Invalid RapidAPI proxy secret header'
         })
       }

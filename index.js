@@ -22,15 +22,12 @@ const exchangeRouter = require('./routes/exchange')
 const cardsRouter = require('./routes/cards')
 const statsRouter = require('./routes/stats')
 const effectsRouter = require('./routes/effects')
-// const infoRouter = require('./routes/info')
+const infoRouter = require('./routes/info')
 const endpointsRouter = require('./routes/endpoints')
 const versionRouter = require('./routes/version')
-const endpoints = require('./utils/endpoints')
 
 // .env
 const { NODE_ENV, PORT } = process.env
-const { API_VERSION } = process.env
-const apiInfo = { version: API_VERSION, baseUrl: '/api/v1', endpoints }
 
 // SERVER
 const app = express()
@@ -38,9 +35,6 @@ app.use(express.json())
 
 // CORS
 app.use(cors())
-
-// RapidAPI validator
-// app.use(checkHeader)
 
 // morgan debugger
 app.use(morgan('dev'))
@@ -55,15 +49,19 @@ if (NODE_ENV === 'production') {
   app.use(sentryTracingHandler)
 }
 
+// RapidAPI validator
+app.use(checkHeader)
+
 // connecting to mongodb
 connectToMongo()
 
 // routing
-app.get('/', (req, res) => res.json(apiInfo))
-app.get('/api/v1', (req, res) => res.json(apiInfo))
-app.get('/api/v1/info', (req, res) => res.json(apiInfo))
+app.use('/', infoRouter)
+app.use('/api', infoRouter)
+app.use('/api/v1', infoRouter)
+app.use('/api/v1/info', infoRouter)
 app.use('/api/v1/version', versionRouter)
-app.use('/api/v1/endpoints', checkHeader, endpointsRouter)
+app.use('/api/v1/endpoints', endpointsRouter)
 app.use('/api/v1/axie', axieRouter)
 app.use('/api/v1/player', playerRouter)
 app.use('/api/v1/auction', auctionRouter)

@@ -54,7 +54,7 @@ app.use(cors())
 // app.use(cors(corsOptionsDelegate))
 
 // RapidAPI validator
-app.use(checkHeader)
+// app.use(checkHeader)
 
 // morgan debugger
 app.use(morgan('dev'))
@@ -73,11 +73,11 @@ if (NODE_ENV === 'production') {
 connectToMongo()
 
 // routing
-app.get('/', (req, res) => res.json(apiInfo))
-app.get('/api/v1', (req, res) => res.json(apiInfo))
-app.get('/api/v1/info', (req, res) => res.json(apiInfo))
-app.use('/api/v1/version', (req, res) => res.json({ version: API_VERSION }))
-app.use('/api/v1/endpoints', (req, res) => res.json(endpoints))
+app.get('/', checkHeader, (req, res) => res.json(apiInfo))
+app.get('/api/v1', checkHeader, (req, res) => res.json(apiInfo))
+app.get('/api/v1/info', checkHeader, (req, res) => res.json(apiInfo))
+app.use('/api/v1/version', checkHeader, (req, res) => res.json({ version: API_VERSION }))
+app.use('/api/v1/endpoints', checkHeader, (req, res) => res.json(endpoints))
 app.use('/api/v1/axie', axieRouter)
 app.use('/api/v1/player', playerRouter)
 app.use('/api/v1/auction', auctionRouter)

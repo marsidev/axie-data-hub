@@ -44,6 +44,7 @@
     "testEnvironment": "node"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "7.x"
   }
 }

@@ -35,7 +35,7 @@ module.exports = (req, res, next) => {
       }
     }
 
-    console.log(debugObject)
+    // console.log(debugObject)
 
     if (isError) {
       await Log.create(debugObject)

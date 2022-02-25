@@ -10,6 +10,7 @@
     "git": "git add . && git commit -m",
     "postgit": "git push origin main",
     "heroku": "git push heroku main",
+    "glitch": "git push glitch main",
     "test": "cross-env NODE_ENV=test PORT=1234 jest",
     "test:watch": "npm run test -- --watch",
     "setvar": "heroku config:set",

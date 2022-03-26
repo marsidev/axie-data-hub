@@ -16,16 +16,19 @@ const validCurrencies = ['slp', 'axs', 'eth', 'ron', 'usdc']
 const fixCardsFormat = (data) => {
   let newData = []
   for (const part in data) {
+    const iconId = data[part].iconId
     const className = part.split('-')[0]
     const bodyPart = part.split('-')[1]
     const abilityIndex = part.split('-')[2]
-    const backgroundUrl = `https://cdn.axieinfinity.com/game/cards/effect-icons/${part}.png`
+    const backgroundUrl = `https://cdn.axieinfinity.com/game/cards/base/${part}.png`
+    const effectIconUrl = `https://cdn.axieinfinity.com/game/cards/effect-icons/${iconId}.png`
     const temp = {
       className,
       bodyPart,
       abilityIndex,
       ...data[part],
-      backgroundUrl
+      backgroundUrl,
+      effectIconUrl
     }
     newData = [...newData, temp]
   }

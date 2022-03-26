@@ -86,19 +86,29 @@ router.get('/previous', cache(180), async (req, res, next) => {
   }
 })
 
-router.get('/history/:seasonId', cache(600), async (req, res, next) => {
-  const { seasonId } = req.params
-
-  const seasonIds = filesList(historyPath).map(f => f.split('.')[0])
-  const formattedSeasonIds = new Intl.ListFormat('en', { type: 'conjunction' }).format(seasonIds)
-
-  if (seasonIds.indexOf(seasonId) === -1) {
-    return res.status(400).json({
-      error: `seasonId \'${seasonId}\' is not available. Available seasons: ${formattedSeasonIds}.`
-    })
-  }
-
+router.get('/history', cache(600), async (req, res, next) => {
   try {
+    const seasonIds = filesList(historyPath).map(f => f.split('.')[0])
+    const formattedSeasonIds = new Intl.ListFormat('en', { type: 'conjunction' }).format(seasonIds)
+    res.json({ availableSeasons: formattedSeasonIds })
+  } catch (error) {
+    next(error)
+  }
+})
+
+router.get('/history/:seasonId', cache(600), async (req, res, next) => {
+  try {
+    const { seasonId } = req.params
+
+    const seasonIds = filesList(historyPath).map(f => f.split('.')[0])
+    const formattedSeasonIds = new Intl.ListFormat('en', { type: 'conjunction' }).format(seasonIds)
+
+    if (seasonIds.indexOf(seasonId) === -1) {
+      return res.status(400).json({
+        error: `seasonId \'${seasonId}\' is not available. Available seasons: ${formattedSeasonIds}.`
+      })
+    }
+
     const data = require(`${historyPath}/${seasonId}`)
     res.json(formatRank(data))
   } catch (error) {

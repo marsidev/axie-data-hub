@@ -82,12 +82,22 @@ const endpoints = [
   {
     method: 'GET',
     endpoint: '/leaderboard',
-    description: 'Get MMR leaderboard of current season.'
+    description: 'Get MMR leaderboard of current season. You can use query params \'from\' and \'to\' to get data from certain ranking range.'
   },
   {
     method: 'GET',
     endpoint: '/leaderboard/previous',
-    description: 'Get MMR leaderboard of previous season.'
+    description: 'Get MMR leaderboard of previous season. You can use query params \'from\' and \'to\' to get data from certain ranking range.'
+  },
+  {
+    method: 'GET',
+    endpoint: '/leaderboard/history',
+    description: 'Retrieve a list of available season top 1000 leaderboards.'
+  },
+  {
+    method: 'GET',
+    endpoint: '/leaderboard/history/{seasonId}',
+    description: 'Get top 1000 leaderboard of certain season. Fetch \'/leaderboard/history\' to retrieve available seasons.'
   },
   {
     method: 'GET',

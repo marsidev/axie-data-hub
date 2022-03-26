@@ -6,17 +6,7 @@ const cache = require('../middlewares/cache')
 const { delayedFetch } = require('../utils/index')
 const filesList = require('../utils/filesList')
 const historyPath = '../assets/leaderboard-history/'
-
-const formatRank = (rank, from = 1) => {
-  return rank.map((r, i) => {
-    return {
-      rank: i + from,
-      name: r.name,
-      client_id: r.client_id,
-      elo: r.elo
-    }
-  })
-}
+const formatRank = require('../utils/formatRank')
 
 const getLeaderboard = async (url, apiIndex, req, res) => {
   const maxRanked = 10000

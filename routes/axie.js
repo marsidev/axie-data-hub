@@ -6,14 +6,14 @@ const { validateAxieId } = require('../middlewares/validation')
 
 const { GetAxieDetailQuery, GetAxieNameQuery } = require('../utils/queries')
 const { postRequest } = require('../utils')
-const { GRAPHQL_SERVER_URL } = process.env
+const { GRAPHQL_SERVER_URL, AXIE_TECH_API_URL } = process.env
 
 router.get('/', (req, res) => {
   return res.status(400).send({ error: 'No axie ID provided' })
 })
 
 router.get('/:axieId', validateAxieId, cache(600), async (req, res, next) => {
-  // alternative url: https://api.axie.technology/getaxies/:axieId - includes children data
+  // alternative url: ${AXIE_TECH_API_URL}/getaxies/:axieId - includes children data
   const { axieId } = req.params
 
   const payload = {
@@ -32,7 +32,7 @@ router.get('/:axieId', validateAxieId, cache(600), async (req, res, next) => {
 
 router.get('/:axieId/genes', validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
-  const url = `https://api.axie.technology/getgenes/${axieId}`
+  const url = `${AXIE_TECH_API_URL}/getgenes/${axieId}`
   try {
     const response = await axios.get(url)
     res.json(response.data)
@@ -59,7 +59,7 @@ router.get('/:axieId/name', validateAxieId, cache(600), async (req, res, next) =
 
 router.get('/:axieId/children', validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
-  const url = `https://api.axie.technology/getaxies/${axieId}`
+  const url = `${AXIE_TECH_API_URL}/getaxies/${axieId}`
   try {
     const response = await axios.get(url)
     const children = response.data.children

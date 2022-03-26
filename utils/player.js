@@ -9,10 +9,10 @@ const {
 const { postRequest, getNumberOfDays } = require('./index')
 const Account = require('../models/Account')
 
-const { GRAPHQL_SERVER_URL, RPC_RONIN_URL, RONIN_CHAIN_ID } = process.env
+const { GRAPHQL_SERVER_URL, RPC_RONIN_URL, RONIN_CHAIN_ID, GAME_API_URL } = process.env
 
 const fetchAccountData = async address => {
-  const url = `https://game-api.skymavis.com/game-api/clients/${address.replace('ronin:', '0x')}/items/1`
+  const url = `${GAME_API_URL}/clients/${address.replace('ronin:', '0x')}/items/1`
   const response = await axios.get(url)
   const playerData = response.data
 

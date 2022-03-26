@@ -70,6 +70,14 @@ const compareObjects = (a, b, props) => {
   return areEqual(aProps, bProps)
 }
 
+const delayedFetch = (url, params, delay) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      axios.get(url, { params }).then(resolve).catch(reject)
+    }, delay)
+  })
+}
+
 module.exports = {
   postRequest,
   isConnected,
@@ -78,5 +86,6 @@ module.exports = {
   patchIds,
   areEqual,
   getNumberOfDays,
-  compareObjects
+  compareObjects,
+  delayedFetch
 }

@@ -9,7 +9,7 @@ const {
 const { postRequest, getNumberOfDays } = require('./index')
 const Account = require('../models/Account')
 
-const { GRAPHQL_SERVER_URL, RPC_RONIN_URL, RONIN_CHAIN_ID, GAME_API_URL } = process.env
+const { GRAPHQL_SERVER_URL, RPC_RONIN_URL, RONIN_CHAIN_ID, GAME_API_URL, GRAPHQL_SERVER_URL2 } = process.env
 
 const fetchAccountData = async address => {
   const url = `${GAME_API_URL}/clients/${address.replace('ronin:', '0x')}/items/1`
@@ -87,8 +87,11 @@ const createRandomMessage = async () => {
     operationName: 'CreateRandomMessage',
     variables: {}
   }
-  const response = await axios.post(GRAPHQL_SERVER_URL, payload)
-  const message = response.data.data.createRandomMessage
+
+  const response = await axios.post(GRAPHQL_SERVER_URL2, payload)
+  const data = response.data
+
+  const message = data?.data?.createRandomMessage
   return message
 }
 
@@ -99,7 +102,7 @@ const createAccessTokenWithSignature = async props => {
     operationName: 'CreateAccessTokenWithSignature',
     variables: { input: { mainnet, message, owner, signature } }
   }
-  const response = await axios.post(GRAPHQL_SERVER_URL, payload)
+  const response = await axios.post(GRAPHQL_SERVER_URL2, payload)
   const token = response.data.data.createAccessTokenWithSignature.accessToken
   return token
 }

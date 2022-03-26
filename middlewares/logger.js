@@ -37,7 +37,7 @@ module.exports = (req, res, next) => {
 
     // console.log(debugObject)
 
-    if (isError) {
+    if (isError && process.env.NODE_ENV === 'production') {
       await Log.create(debugObject)
     }
   })

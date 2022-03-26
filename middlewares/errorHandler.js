@@ -1,5 +1,4 @@
 const { isConnected } = require('../utils')
-const nocache = require('./nocache')
 
 const ERROR_HANDLERS = {
   ECONNRESET: (res, error) => {
@@ -36,15 +35,29 @@ const ERROR_HANDLERS = {
     } else res.status(500).json({ error: 'Mongoose server error' })
   },
 
+  'internal-server-error': (res, error) => {
+    res.status(500).json({ error: 'Internal Server Error. Try again later.' })
+  },
+
+  INTERNAL_SERVER_ERROR: (res, error) => {
+    res.status(500).json({ error: 'Internal Server Error. Try again later.' })
+  },
+
   defaultError: (res, error) => {
+    const data = error.response?.data
     console.error({
       error: error.message,
       name: error.name,
       stack: error.stack,
-      code: error.code
+      code: error.code,
+      data
     })
-    nocache(res)
-    res.status(500).end()
+
+    if (data?.toString().includes('404 Not Found')) {
+      res.status(500).json({ error: 'Internal Server Error. Try again later.' }).end()
+    } else {
+      res.status(500).end()
+    }
   }
 }
 
@@ -54,6 +67,8 @@ module.exports = (error, request, response, next) => {
   const handler =
     ERROR_HANDLERS[error?.name] ||
     ERROR_HANDLERS[error?.code] ||
+    ERROR_HANDLERS[error?.response?.data?.code] ||
+    ERROR_HANDLERS[error?.response?.data?.error_type] ||
     ERROR_HANDLERS.defaultError
 
   handler(response, error)

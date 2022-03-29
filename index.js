@@ -1,4 +1,5 @@
 require('dotenv').config()
+require('module-alias/register')
 
 // import libs
 const express = require('express')

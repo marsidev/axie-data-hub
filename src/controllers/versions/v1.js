@@ -1,0 +1,28 @@
+const express = require('express')
+
+const axieRouter = require('@controllers/axie')
+const playerRouter = require('@controllers/player')
+const auctionRouter = require('@controllers/auction')
+const leaderboardRouter = require('@controllers/leaderboard')
+const exchangeRouter = require('@controllers/exchange')
+const cardsRouter = require('@controllers/cards')
+const statsRouter = require('@controllers/stats')
+const effectsRouter = require('@controllers/effects')
+const infoRouter = require('@controllers/info')
+const endpointsRouter = require('@controllers/endpoints')
+const versionRouter = require('@controllers/version')
+
+const router = express.Router({ mergeParams: true })
+router.use('/info', infoRouter)
+router.use('/version', versionRouter)
+router.use('/endpoints', endpointsRouter)
+router.use('/axie', axieRouter)
+router.use('/player', playerRouter)
+router.use('/auction', auctionRouter)
+router.use('/leaderboard', leaderboardRouter)
+router.use('/exchange', exchangeRouter)
+router.use('/cards', cardsRouter)
+router.use('/stats', statsRouter)
+router.use('/effects', effectsRouter)
+
+module.exports = router

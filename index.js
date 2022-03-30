@@ -7,7 +7,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 // middlewares
-const { connectToMongo } = require('@middlewares/')
+const { connectToMongo } = require('@middlewares/mongoose')
 const errorHandler = require('@middlewares/errorHandler')
 const notFoundHandler = require('@middlewares/notFound')
 const { sentryInit, sentryErrorHandler, sentryRequestHandler, sentryTracingHandler } = require('@middlewares/sentry')
@@ -15,17 +15,8 @@ const logger = require('@middlewares/logger')
 const checkHeader = require('@middlewares/checkHeader')
 
 // import routes
-const axieRouter = require('@routes/axie')
-const playerRouter = require('@routes/player')
-const auctionRouter = require('@routes/auction')
-const leaderboardRouter = require('@routes/leaderboard')
-const exchangeRouter = require('@routes/exchange')
-const cardsRouter = require('@routes/cards')
-const statsRouter = require('@routes/stats')
-const effectsRouter = require('@routes/effects')
-const infoRouter = require('@routes/info')
-const endpointsRouter = require('@routes/endpoints')
-const versionRouter = require('@routes/version')
+const infoRouter = require('@controllers/info')
+const v1Router = require('@controllers/versions/v1')
 
 // .env
 const { NODE_ENV, PORT } = process.env
@@ -59,18 +50,7 @@ connectToMongo()
 // routing
 app.use('/', infoRouter)
 app.use('/api', infoRouter)
-app.use('/api/v1', infoRouter)
-app.use('/api/v1/info', infoRouter)
-app.use('/api/v1/version', versionRouter)
-app.use('/api/v1/endpoints', endpointsRouter)
-app.use('/api/v1/axie', axieRouter)
-app.use('/api/v1/player', playerRouter)
-app.use('/api/v1/auction', auctionRouter)
-app.use('/api/v1/leaderboard', leaderboardRouter)
-app.use('/api/v1/exchange', exchangeRouter)
-app.use('/api/v1/cards', cardsRouter)
-app.use('/api/v1/stats', statsRouter)
-app.use('/api/v1/effects', effectsRouter)
+app.use('/api/v1', v1Router)
 
 app.use(notFoundHandler)
 if (NODE_ENV === 'production') app.use(sentryErrorHandler)

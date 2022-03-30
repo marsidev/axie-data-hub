@@ -2,27 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "src/*": [
-        "src/*"
-      ],
-      "@routes/*": [
-        "src/routes/*"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@middlewares/*": [
-        "src/middlewares/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@db/*": [
-        "src/db/*"
-      ],
-      "@models/*": [
-        "src/db/models/*"
-      ]
+      "@assets/*": [ "src/assets/*" ],
+      "@controllers/*": [ "src/controllers/*" ],
+      "@db/*": [ "src/db/*" ],
+      "@middlewares/*": [ "src/middlewares/*" ],
+      "@models/*": [ "src/db/models/*" ],
+      "@utils/*": [ "src/utils/*" ],
+      "src/*": [ "src/*" ]
     }
   },
   "exclude": [

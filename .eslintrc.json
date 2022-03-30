@@ -21,7 +21,7 @@
       "no-use-before-define": "off",
       "no-return-assign": "off",
       "spaced-comment": "warn",
-      // "no-unused-vars": "warn",
+      "no-unused-vars": "warn",
       "no-extend-native": "off",
       "quotes": ["error", "single"],
       "node/handle-callback-err": "off"

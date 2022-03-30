@@ -1,11 +1,11 @@
 const express = require('express')
 const router = express.Router()
 const axios = require('axios')
-const cache = require('../middlewares/cache')
-const { validateAxieId } = require('../middlewares/validation')
+const cache = require('@middlewares/cache')
+const { validateAxieId } = require('@middlewares/validation')
 
-const { GetAxieDetailQuery, GetAxieNameQuery } = require('../utils/queries')
-const { postRequest } = require('../utils')
+const { GetAxieDetailQuery, GetAxieNameQuery } = require('@utils/queries')
+const { postRequest } = require('@utils')
 const { GRAPHQL_SERVER_URL, AXIE_TECH_API_URL } = process.env
 
 router.get('/', (req, res) => {

@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const cache = require('../middlewares/cache')
+const cache = require('@middlewares/cache')
 
-const { GetAxieLatestQuery, GetRecentlyAxiesSoldQuery } = require('../utils/queries')
-const { postRequest } = require('../utils')
+const { GetAxieLatestQuery, GetRecentlyAxiesSoldQuery } = require('@utils/queries')
+const { postRequest } = require('@utils')
 const { GRAPHQL_SERVER_URL } = process.env
 
 router.get('/', (req, res) => {

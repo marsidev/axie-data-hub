@@ -37,7 +37,7 @@ const fixCardsFormat = (data) => {
   return newData
 }
 
-const patchIds = Object.entries(require('../assets/patches.json')).map(([k]) => k)
+const patchIds = Object.entries(require('@assets/patches.json')).map(([k]) => k)
 
 const areEqual = (obj1, obj2) => {
   if (typeof obj1 !== typeof obj2) return false

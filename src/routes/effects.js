@@ -1,16 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const cache = require('../middlewares/cache')
-const effects = require('../assets/effects')
+const cache = require('@middlewares/cache')
+const effects = require('@assets/effects')
 
 router.get('/', cache(600), async (req, res, next) => {
   try {
-    // const data = effects.map(e => {
-    //   delete e.isBuff
-    //   delete e.isDebuff
-    //   return e
-    // })
-
     const data = effects.map(e => {
       const { isBuff, isDebuff, ...rest } = e
       return rest

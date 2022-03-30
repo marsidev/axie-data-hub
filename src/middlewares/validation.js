@@ -1,4 +1,4 @@
-const { validCurrencies } = require('../utils')
+const { validCurrencies } = require('@utils')
 
 const validateAxieId = (req, res, next) => {
   const { axieId } = req.params

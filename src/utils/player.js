@@ -7,7 +7,7 @@ const {
   createAccessTokenQuery
 } = require('./queries')
 const { postRequest, getNumberOfDays } = require('./index')
-const Account = require('../models/Account')
+const Account = require('@models/Account')
 
 const { GRAPHQL_SERVER_URL, RPC_RONIN_URL, RONIN_CHAIN_ID, GAME_API_URL, GRAPHQL_SERVER_URL2 } = process.env
 

@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const cache = require('../middlewares/cache')
-const { validateExchangeSymbol } = require('../middlewares/validation')
+const cache = require('@middlewares/cache')
+const { validateExchangeSymbol } = require('@middlewares/validation')
 
-const { postRequest } = require('../utils')
-const { payloadByCurrency } = require('../utils/queries')
+const { postRequest } = require('@utils')
+const { payloadByCurrency } = require('@utils/queries')
 const { GRAPHQL_SERVER_URL } = process.env
 
 router.get('/', (req, res) => {

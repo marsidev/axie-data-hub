@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const axios = require('axios')
-const cache = require('../middlewares/cache')
-const { validateExchangeSymbol } = require('../middlewares/validation')
-const { validCurrencies } = require('../utils')
+const cache = require('@middlewares/cache')
+const { validateExchangeSymbol } = require('@middlewares/validation')
+const { validCurrencies } = require('@utils')
 
 router.get('/', (req, res) => {
   res

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router({ mergeParams: true })
 
-const { getProvider, getWallet, getAccessToken } = require('../../utils/player.js')
+const { getProvider, getWallet, getAccessToken } = require('@utils/player.js')
 
 router.post('/', async (req, res, next) => {
   try {

@@ -2,19 +2,19 @@ const express = require('express')
 const router = express.Router()
 const axios = require('axios')
 
-const cache = require('../../middlewares/cache')
-const { validateRonin, validateBattleType } = require('../../middlewares/validation')
-const { postRequest } = require('../../utils')
-const formatRank = require('../../utils/formatRank')
+const cache = require('@middlewares/cache')
+const { validateRonin, validateBattleType } = require('@middlewares/validation')
+const { postRequest } = require('@utils')
+const formatRank = require('@utils/formatRank')
 
 const slpRouter = require('./slp')
 const authRouter = require('./auth')
 const walletRouter = require('./wallet')
 
-const { GetAxieBriefListQuery, GetProfileNameByRoninAddressQuery } = require('../../utils/queries')
+const { GetAxieBriefListQuery, GetProfileNameByRoninAddressQuery } = require('@utils/queries')
 const { GRAPHQL_SERVER_URL, GAME_API_URL, GAME_API_URL_2, AXIE_MNG_API_URL } = process.env
 
-router.get('/:address/data', validateRonin, cache(180), async (req, res, next) => {
+const playerData = async (req, res, next) => {
   const { address } = req.params
   const url = `${GAME_API_URL}/clients/${address.replace('ronin:', '0x')}/items/1`
 
@@ -24,6 +24,14 @@ router.get('/:address/data', validateRonin, cache(180), async (req, res, next) =
   } catch (error) {
     next(error)
   }
+}
+
+router.get('/:address', validateRonin, cache(180), async (req, res, next) => {
+  await playerData(req, res, next)
+})
+
+router.get('/:address/data', validateRonin, cache(180), async (req, res, next) => {
+  await playerData(req, res, next)
 })
 
 router.get('/:address/mmr', validateRonin, cache(180), async (req, res, next) => {

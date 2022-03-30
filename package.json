@@ -49,10 +49,10 @@
   },
   "_moduleAliases": {
     "@root" : ".",
-    "@routes" : "routes/",
-    "@utils" : "utils/",
-    "@middlewares" : "middlewares/",
-    "@assets" : "assets/",
-    "@models" : "models/"
+    "@routes" : "src/routes/",
+    "@utils" : "src/utils/",
+    "@middlewares" : "src/middlewares/",
+    "@assets" : "src/assets/",
+    "@models" : "src/db/models/"
   }
 }

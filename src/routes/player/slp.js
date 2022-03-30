@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router({ mergeParams: true })
-const { compareObjects } = require('../../utils')
-const { fetchAccountData, addAccount } = require('../../utils/player')
-const Account = require('../../models/Account')
+const { compareObjects } = require('@utils')
+const { fetchAccountData, addAccount } = require('@utils/player')
+const Account = require('@models/Account')
 
 const sendResult = (req, res, verbose, verbosedData) => {
   if (verbose) {

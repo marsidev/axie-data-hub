@@ -1,5 +1,5 @@
 module.exports = (req, res, next) => {
-  const Log = require('../models/Log')
+  const Log = require('@models/Log')
   const startTime = Date.now()
 
   res.on('finish', async () => {

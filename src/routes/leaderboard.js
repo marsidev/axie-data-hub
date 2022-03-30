@@ -2,11 +2,11 @@
 
 const express = require('express')
 const router = express.Router()
-const cache = require('../middlewares/cache')
-const { delayedFetch } = require('../utils/index')
-const filesList = require('../utils/filesList')
-const historyPath = '../assets/leaderboard-history/'
-const formatRank = require('../utils/formatRank')
+const cache = require('@middlewares/cache')
+const { delayedFetch } = require('@utils/index')
+const filesList = require('@utils/filesList')
+const historyPath = '@assets/leaderboard-history/'
+const formatRank = require('@utils/formatRank')
 
 const getLeaderboard = async (url, apiIndex, req, res) => {
   const maxRanked = 10000

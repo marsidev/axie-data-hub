@@ -1,4 +1,4 @@
-const { isConnected } = require('../utils')
+const { isConnected } = require('@utils')
 
 const ERROR_HANDLERS = {
   ECONNRESET: (res, error) => {

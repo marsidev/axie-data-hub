@@ -122,7 +122,9 @@ router.get('/:address/battles', validateRonin, cache(600), async (req, res, next
         Origin: 'https://axie.management'
       }
     })
-    res.json(response.data)
+    res.json({
+      battles: response.data.battles
+    })
   } catch (error) {
     next(error)
   }
@@ -135,7 +137,9 @@ router.get('/:address/battles/:battleType', validateRonin, validateBattleType, c
 
   try {
     const response = await axios.get(url)
-    res.json(response.data)
+    res.json({
+      battles: response.data.battles
+    })
   } catch (error) {
     next(error)
   }

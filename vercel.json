@@ -11,8 +11,7 @@
           "node_modules/**"
         ]
       }
-    },
-    { "src": "src/middlewares/mongoose.js", "use": "@vercel/node" }
+    }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.js" }

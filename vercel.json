@@ -9,25 +9,16 @@
   ],
   "builds": [
     {
-      "use": "@vercel/node@latest",
-      "src": "api/src/controllers/(.*)",
-      "config": {
-        "zeroConfig": true
-      }
+      "use": "@vercel/node",
+      "src": "api/src/controllers/(.*)"
     },
     {
-      "use": "@vercel/node@latest",
-      "src": "api/src/middlewares/(.*)",
-      "config": {
-        "zeroConfig": true
-      }
+      "use": "@vercel/node",
+      "src": "api/src/middlewares/(.*)"
     },
     {
-      "use": "@vercel/node@latest",
-      "src": "index.js",
-      "config": {
-        "zeroConfig": true
-      }
+      "use": "@vercel/node",
+      "src": "index.js"
     }
   ]
 }

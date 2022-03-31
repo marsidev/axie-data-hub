@@ -34,10 +34,16 @@ const createAccessTokenQuery =
 const createRandomMessageQuery = 'mutation CreateRandomMessage { createRandomMessage }'
 
 const GetAxieChildrenQuery =
-  'query GetAxieChildren($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieChildren\n    __typename\n  }\n}\n\nfragment AxieChildren on Axie {\n  children {\n    id\n    name\n    class\n    image\n    stage\n    breedCount\n    genes\n    owner\n    __typename\n  } \n}'
+  'query GetAxieChildren($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieChildren\n  }\n}\n\nfragment AxieChildren on Axie {\n  children {\n    id\n    name\n    class\n    image\n    stage\n    breedCount\n    genes\n    owner\n  } \n}'
 
 const GetAxieGenes =
-'query GetAxieGenes($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieDetail\n    __typename\n  }\n}\n\nfragment AxieDetail on Axie {\n  genes\n  __typename\n}'
+  'query GetAxieGenes($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieDetail\n  }\n}\n\nfragment AxieDetail on Axie {\n  genes\n}'
+
+const GetAxieStats =
+  'query GetAxieStats($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieDetail\n\n  }\n}\n\nfragment AxieDetail on Axie {\n  stats {\n    ...AxieStats\n  }\n}\nfragment AxieStats on AxieStats {\n  hp\n  speed\n  skill\n  morale\n}'
+
+const GetAxieParts =
+  'query GetAxieParts($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieDetail\n\n  }\n}\n\nfragment AxieDetail on Axie {\n  parts {\n    ...AxiePart\n  }\n}\nfragment AxiePart on AxiePart {\n  id\n  name\n  class\n  type\n  specialGenes\n  stage\n  abilities {\n    ...AxieCardAbility\n}\n}\n\nfragment AxieCardAbility on AxieCardAbility {\n  id\n  name\n  attack\n  defense\n  energy\n  description\n  backgroundUrl\n  effectIconUrl\n}'
 
 const payloadByCurrency = {
   slp: {
@@ -73,5 +79,7 @@ module.exports = {
   createRandomMessageQuery,
   createAccessTokenQuery,
   GetAxieChildrenQuery,
-  GetAxieGenes
+  GetAxieGenes,
+  GetAxieStats,
+  GetAxieParts
 }

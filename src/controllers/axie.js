@@ -5,7 +5,7 @@ const cache = require('@middlewares/cache')
 const { validateAxieId } = require('@middlewares/validation')
 const { AxieGene } = require('agp-npm/dist/axie-gene')
 
-const { GetAxieDetailQuery, GetAxieNameQuery, GetAxieChildrenQuery, GetAxieGenes } = require('@utils/queries')
+const { GetAxieDetailQuery, GetAxieNameQuery, GetAxieChildrenQuery, GetAxieGenes, GetAxieStats, GetAxieParts } = require('@utils/queries')
 const { postRequest } = require('@utils')
 const { GRAPHQL_SERVER_URL } = process.env
 
@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:axieId', validateAxieId, cache(600), async (req, res, next) => {
-  // alternative url: ${AXIE_TECH_API_URL}/getaxies/:axieId - includes children data
   const { axieId } = req.params
 
   const payload = {
@@ -50,14 +49,6 @@ router.get('/:axieId/genes', validateAxieId, cache(600), async (req, res, next) 
   } catch (error) {
     next(error)
   }
-  // const { axieId } = req.params
-  // const url = `${AXIE_TECH_API_URL}/getgenes/${axieId}`
-  // try {
-  //   const response = await axios.get(url)
-  //   res.json(response.data)
-  // } catch (error) {
-  //   next(error)
-  // }
 })
 
 router.get('/:axieId/name', validateAxieId, cache(600), async (req, res, next) => {
@@ -90,15 +81,38 @@ router.get('/:axieId/children', validateAxieId, cache(600), async (req, res, nex
   } catch (error) {
     next(error)
   }
-  // const { axieId } = req.params
-  // const url = `${AXIE_TECH_API_URL}/getaxies/${axieId}`
-  // try {
-  //   const response = await axios.get(url)
-  //   const children = response.data.children
-  //   res.json(children)
-  // } catch (error) {
-  //   next(error)
-  // }
+})
+
+router.get('/:axieId/stats', validateAxieId, cache(600), async (req, res, next) => {
+  const { axieId } = req.params
+  const payload = {
+    query: GetAxieStats,
+    operationName: 'GetAxieStats',
+    variables: { axieId: axieId }
+  }
+  try {
+    const response = await postRequest({ url: GRAPHQL_SERVER_URL, payload })
+    const stats = response.data.axie.stats
+    res.json({ stats })
+  } catch (error) {
+    next(error)
+  }
+})
+
+router.get('/:axieId/parts', validateAxieId, cache(600), async (req, res, next) => {
+  const { axieId } = req.params
+  const payload = {
+    query: GetAxieParts,
+    operationName: 'GetAxieParts',
+    variables: { axieId: axieId }
+  }
+  try {
+    const response = await postRequest({ url: GRAPHQL_SERVER_URL, payload })
+    const parts = response.data.axie.parts
+    res.json({ parts })
+  } catch (error) {
+    next(error)
+  }
 })
 
 module.exports = router

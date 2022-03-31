@@ -194,6 +194,66 @@
         }
       }
     },
+    "/axie/{axieId}/parts": {
+      "get": {
+        "summary": "Get an axie's parts data.",
+        "description": "Get an axie's parts data.",
+        "parameters": [
+          {
+            "name": "axieId",
+            "in": "path",
+            "description": "Axie ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1268779"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axieParts"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/axie/{axieId}/stats": {
+      "get": {
+        "summary": "Get an axie's stats data.",
+        "description": "Get an axie's stats data.",
+        "parameters": [
+          {
+            "name": "axieId",
+            "in": "path",
+            "description": "Axie ID",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "1268779"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/axieStats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/exchange/{symbol}": {
       "get": {
         "summary": "Get exchange data of a specific asset symbol.",
@@ -1026,7 +1086,9 @@
       "patches": {},
       "cardsData": {},
       "originCardsData": {},
-      "originToolsData": {}
+      "originToolsData": {},
+      "axieParts": {},
+      "axieStats": {}
     }
   }
 }

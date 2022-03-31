@@ -1,24 +1,6 @@
 {
   "version": 2,
   "name": "axie-infinity-api",
-  "rewrites": [
-    {
-      "source": "/(.*)", 
-      "destination": "" 
-    }
-  ],
-  "builds": [
-    {
-      "use": "@vercel/node",
-      "src": "api/src/controllers/(.*)"
-    },
-    {
-      "use": "@vercel/node",
-      "src": "api/src/middlewares/(.*)"
-    },
-    {
-      "use": "@vercel/node",
-      "src": "index.js"
-    }
-  ]
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
 }

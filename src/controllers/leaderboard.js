@@ -5,7 +5,8 @@ const router = express.Router()
 const cache = require('@middlewares/cache')
 const { delayedFetch } = require('@utils/index')
 const filesList = require('@utils/filesList')
-const historyPath = '@assets/leaderboard-history/'
+const historyPath = '../assets/leaderboard-history/'
+const historyPathWithAlias = '@assets/leaderboard-history/'
 const formatRank = require('@utils/formatRank')
 
 const getLeaderboard = async (url, apiIndex, req, res) => {
@@ -109,7 +110,7 @@ router.get('/history/:seasonId', cache(600), async (req, res, next) => {
       })
     }
 
-    const data = require(`${historyPath}/${seasonId}`)
+    const data = require(`${historyPathWithAlias}/${seasonId}`)
     res.json(formatRank(data))
   } catch (error) {
     next(error)

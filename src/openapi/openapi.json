@@ -12,40 +12,36 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000/api/v1"
+      "url": "http://localhost:3000/api/v1.1"
     },
     {
-      "url": "https://axie-infinity-api.herokuapp.com/api/v1"
+      "url": "https://axie-infinity-api.herokuapp.com/api/v1.1"
     },
     {
-      "url": "https://axie-infinity-api.vercel.app/api/v1"
+      "url": "https://axie-infinity-api.vercel.app/api/v1.1"
     },
     {
-      "url": "https://axie-data-hub.glitch.me/api/v1"
+      "url": "https://axie-data-hub.glitch.me/api/v1.1"
     },
     {
-      "url": "https://axie-infinity-api-production.up.railway.app/api/v1"
+      "url": "https://axie-infinity-api-production.up.railway.app/api/v1.1"
     },
     {
       "url": "https://axie-data-hub.p.rapidapi.com"
     }
   ],
   "paths": {
-    "/version": {
+    "/auction/onsale": {
       "get": {
-        "summary": "Get current API data source version.",
-        "description": "Get current API data source version. This version may be different as the version of Axie Data Hub API deployed on RapidAPI.",
+        "summary": "Get data of latest axies on sale.",
+        "description": "Get data of latest axies on sale.",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "version": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/onSaleAxies"
                 }
               }
             }
@@ -53,48 +49,17 @@
         }
       }
     },
-    "/info": {
+    "/auction/sold": {
       "get": {
-        "summary": "Get info of the API.",
-        "description": "Get info of the API. It returns the version, baseUrl and the endpoints.",
+        "summary": "Get data of latest sold axies.",
+        "description": "Get data of latest sold axies.",
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "version": {
-                      "type": "string"
-                    },
-                    "baseUrl": {
-                      "type": "string"
-                    },
-                    "endpoints": {
-                      "$ref": "#/components/schemas/endpoints"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/endpoints": {
-      "get": {
-        "summary": "Get all available endpoints.",
-        "description": "Get all available endpoints.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/endpoint"
-                  }
+                  "$ref": "#/components/schemas/soldAxies"
                 }
               }
             }
@@ -222,6 +187,447 @@
                   "items": {
                     "$ref": "#/components/schemas/axieChildren"
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/exchange/{symbol}": {
+      "get": {
+        "summary": "Get exchange data of a specific asset symbol.",
+        "description": "Get exchange data of a specific asset symbol.",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "description": "Asset symbol.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "axs"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/exchange"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/stats/base": {
+      "get": {
+        "summary": "Get axie classes base stats.",
+        "description": "Get axie classes base stats.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/baseStats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/stats/base/{className}": {
+      "get": {
+        "summary": "Get base stats of a specific axie class.",
+        "description": "Get base stats of a specific axie class.",
+        "parameters": [
+          {
+            "name": "className",
+            "in": "path",
+            "description": "Axie class name.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "reptile"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/baseStat"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/stats/body-part": {
+      "get": {
+        "summary": "Get stats added by body parts of each class.",
+        "description": "Get stats added by body parts of each class.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bodyPartStats"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/stats/body-part/{className}": {
+      "get": {
+        "summary": "Get stats added by body parts of specific class.",
+        "description": "Get stats added by body parts of specific class.",
+        "parameters": [
+          {
+            "name": "className",
+            "in": "path",
+            "description": "Axie class name.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "reptile"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/bodyPartStat"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/effects": {
+      "get": {
+        "summary": "Get all ability card effects.",
+        "description": "Get all ability card effects.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/effects"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/effects/{effectType}": {
+      "get": {
+        "summary": "Get all ability card effects of a specific type (buffs, debuffs).",
+        "description": "Get all ability card effects of a specific type (buffs, debuffs).",
+        "parameters": [
+          {
+            "name": "effectType",
+            "in": "path",
+            "description": "Effect type (buffs, debuffs).",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "buffs"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/effects"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/cards/patches": {
+      "get": {
+        "summary": "Get info of different cards balance patches of classic game version.",
+        "description": "Get info of different cards balance patches of classic game version.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/patches"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/classic/cards/{patchId}": {
+      "get": {
+        "summary": "Get classic ability cards data from specific patch.",
+        "description": "Get classic ability cards data from specific patch. You can filter by any valid card object property, such as 'class' or 'type'. E.g. '/cards/classic/current?class=reptile&type=mouth'. Theese filters are not available if you use 'format=original'",
+        "parameters": [
+          {
+            "name": "patchId",
+            "in": "path",
+            "description": "Patch ID.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "current"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity. Default is a better formatted version of the original response. Default format is 'default'.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "default"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/cardsData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/origin/cards": {
+      "get": {
+        "summary": "Get origin ability cards data.",
+        "description": "Get origin ability cards data. You can filter by any valid card object property, such as 'class', 'type' or 'abilityType'. E.g. '/cards/origin?class=reptile&type=mouth&abilityType=AttackRanged'. Theese filters are not available if you use 'format=original'",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity. Default is a better formatted version of the original response. Default format is 'default'.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "default"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/originCardsData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/origin/tools": {
+      "get": {
+        "summary": "Get origin card tools data.",
+        "description": "Get origin card tools data.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity. Default is a better formatted version of the original response. Default format is 'default'.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "default"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/originToolsData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/leaderboard": {
+      "get": {
+        "summary": "Get MMR leaderboard data.",
+        "description": "Get MMR leaderboard data.",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "description": "Start rank index of the leaderboard.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1,
+              "minimum": 1,
+              "maximum": 10000
+            },
+            "example": 1
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "End rank index of the leaderboard.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 100,
+              "minimum": 1,
+              "maximum": 10000
+            },
+            "example": 100
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/leaderboard"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/leaderboard/previous": {
+      "get": {
+        "summary": "Get MMR leaderboard data of the previous season.",
+        "description": "Get MMR leaderboard data of the previous season.",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "description": "Start rank index of the leaderboard.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1,
+              "minimum": 1,
+              "maximum": 10000
+            },
+            "example": 1
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "description": "End rank index of the leaderboard.",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 100,
+              "minimum": 1,
+              "maximum": 10000
+            },
+            "example": 100
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/leaderboard"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/leaderboard/history": {
+      "get": {
+        "summary": "Get a list of available season top 1000 cached leaderboards.",
+        "description": "Get a list of available season top 1000 cached leaderboards. This just returns the available season IDs.",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "availableSeasons": {
+                      "type": "string",
+                      "description": "List of available season IDs."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/leaderboard/history/{seasonId}": {
+      "get": {
+        "summary": "Get top 1000 MMR leaderboard data of a specific season.",
+        "description": "Get top 1000 MMR leaderboard data of a specific season.",
+        "parameters": [
+          {
+            "name": "seasonId",
+            "in": "path",
+            "description": "Season ID.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "season-20"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/leaderboard"
                 }
               }
             }
@@ -555,142 +961,10 @@
         }
       }
     },
-    "/auction/onsale": {
+    "/version": {
       "get": {
-        "summary": "Get data of latest axies on sale.",
-        "description": "Get data of latest axies on sale.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/onSaleAxies"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/auction/sold": {
-      "get": {
-        "summary": "Get data of latest sold axies.",
-        "description": "Get data of latest sold axies.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/soldAxies"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/leaderboard": {
-      "get": {
-        "summary": "Get MMR leaderboard data.",
-        "description": "Get MMR leaderboard data.",
-        "parameters": [
-          {
-            "name": "from",
-            "in": "query",
-            "description": "Start rank index of the leaderboard.",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1,
-              "minimum": 1,
-              "maximum": 10000
-            },
-            "example": 1
-          },
-          {
-            "name": "to",
-            "in": "query",
-            "description": "End rank index of the leaderboard.",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 100,
-              "minimum": 1,
-              "maximum": 10000
-            },
-            "example": 100
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/leaderboard"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/leaderboard/previous": {
-      "get": {
-        "summary": "Get MMR leaderboard data of the previous season.",
-        "description": "Get MMR leaderboard data of the previous season.",
-        "parameters": [
-          {
-            "name": "from",
-            "in": "query",
-            "description": "Start rank index of the leaderboard.",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 1,
-              "minimum": 1,
-              "maximum": 10000
-            },
-            "example": 1
-          },
-          {
-            "name": "to",
-            "in": "query",
-            "description": "End rank index of the leaderboard.",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int32",
-              "default": 100,
-              "minimum": 1,
-              "maximum": 10000
-            },
-            "example": 100
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/leaderboard"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/leaderboard/history": {
-      "get": {
-        "summary": "Get a list of available season top 1000 cached leaderboards.",
-        "description": "Get a list of available season top 1000 cached leaderboards. This just returns the available season IDs.",
+        "summary": "Get current API data source version.",
+        "description": "Get current API data source version. This version may be different as the version of Axie Data Hub API deployed on RapidAPI.",
         "responses": {
           "200": {
             "description": "OK",
@@ -698,303 +972,10 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "availableSeasons": {
-                      "type": "string",
-                      "description": "List of available season IDs."
+                    "version": {
+                      "type": "string"
                     }
                   }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/leaderboard/history/{seasonId}": {
-      "get": {
-        "summary": "Get top 1000 MMR leaderboard data of a specific season.",
-        "description": "Get top 1000 MMR leaderboard data of a specific season.",
-        "parameters": [
-          {
-            "name": "seasonId",
-            "in": "path",
-            "description": "Season ID.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "example": "season-20"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/leaderboard"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/exchange/{symbol}": {
-      "get": {
-        "summary": "Get exchange data of a specific asset symbol.",
-        "description": "Get exchange data of a specific asset symbol.",
-        "parameters": [
-          {
-            "name": "symbol",
-            "in": "path",
-            "description": "Asset symbol.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "example": "axs"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/exchange"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/stats/base": {
-      "get": {
-        "summary": "Get axie classes base stats.",
-        "description": "Get axie classes base stats.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/baseStats"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/stats/base/{className}": {
-      "get": {
-        "summary": "Get base stats of a specific axie class.",
-        "description": "Get base stats of a specific axie class.",
-        "parameters": [
-          {
-            "name": "className",
-            "in": "path",
-            "description": "Axie class name.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "example": "reptile"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/baseStat"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/stats/body-part": {
-      "get": {
-        "summary": "Get stats added by body parts of each class.",
-        "description": "Get stats added by body parts of each class.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/bodyPartStats"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/stats/body-part/{className}": {
-      "get": {
-        "summary": "Get stats added by body parts of specific class.",
-        "description": "Get stats added by body parts of specific class.",
-        "parameters": [
-          {
-            "name": "className",
-            "in": "path",
-            "description": "Axie class name.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "example": "reptile"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/bodyPartStat"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/effects": {
-      "get": {
-        "summary": "Get all ability card effects.",
-        "description": "Get all ability card effects.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/effects"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/effects/{effectType}": {
-      "get": {
-        "summary": "Get all ability card effects of a specific type (buff, debuff).",
-        "description": "Get all ability card effects of a specific type (buff, debuff).",
-        "parameters": [
-          {
-            "name": "effectType",
-            "in": "path",
-            "description": "Effect type (buff, debuff).",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "example": "buff"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/effects"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/cards/patches": {
-      "get": {
-        "summary": "Get info of different cards balance patches.",
-        "description": "Get info of different cards balance patches.",
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/patches"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/cards/{patchId}": {
-      "get": {
-        "summary": "Get ability cards data from specific patch.",
-        "description": "Get ability cards data from specific patch.",
-        "parameters": [
-          {
-            "name": "patchId",
-            "in": "path",
-            "description": "Patch ID.",
-            "required": true,
-            "schema": {
-              "type": "string"
-            },
-            "example": "current"
-          },
-          {
-            "name": "format",
-            "in": "query",
-            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity (plain json object). Default is a formatted version of the original response (array of objects). Default format is 'default'.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            },
-            "example": "default"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/cardsData"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/cards/origin": {
-      "get": {
-        "summary": "Get origin (V3) ability cards data.",
-        "description": "Get origin (V3) ability cards data.",
-        "parameters": [
-          {
-            "name": "format",
-            "in": "query",
-            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity (plain json object). Default is a formatted version (array of objects) of the original response. Default format is 'default'.",
-            "required": false,
-            "schema": {
-              "type": "string"
-            },
-            "example": "default"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/originCardsData"
                 }
               }
             }
@@ -1044,7 +1025,8 @@
       "effects": {},
       "patches": {},
       "cardsData": {},
-      "originCardsData": {}
+      "originCardsData": {},
+      "originToolsData": {}
     }
   }
 }

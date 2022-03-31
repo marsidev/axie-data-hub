@@ -11,7 +11,7 @@
     "postgit": "git push origin main",
     "heroku": "git push heroku main",
     "glitch": "git push glitch main",
-    "test": "cross-env NODE_ENV=test PORT=1234 jest",
+    "test": "cross-env NODE_ENV=test PORT=1234 jest src/tests/v1.test.js",
     "test:watch": "npm run test -- --watch",
     "setvar": "heroku config:set",
     "getvar": "heroku config:get"

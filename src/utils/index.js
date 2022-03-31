@@ -13,30 +13,6 @@ const isConnected = async () => {
 
 const validCurrencies = ['slp', 'axs', 'eth', 'ron', 'usdc']
 
-const fixCardsFormat = (data) => {
-  let newData = []
-  for (const part in data) {
-    const iconId = data[part].iconId
-    const className = part.split('-')[0]
-    const bodyPart = part.split('-')[1]
-    const abilityIndex = part.split('-')[2]
-    const backgroundUrl = `https://cdn.axieinfinity.com/game/cards/base/${part}.png`
-    const effectIconUrl = `https://cdn.axieinfinity.com/game/cards/effect-icons/${iconId}.png`
-    const temp = {
-      className,
-      bodyPart,
-      abilityIndex,
-      ...data[part],
-      backgroundUrl,
-      effectIconUrl
-    }
-    newData = [...newData, temp]
-  }
-
-  // console.log({ newData })
-  return newData
-}
-
 const patchIds = Object.entries(require('@assets/patches.json')).map(([k]) => k)
 
 const areEqual = (obj1, obj2) => {
@@ -85,7 +61,6 @@ module.exports = {
   postRequest,
   isConnected,
   validCurrencies,
-  fixCardsFormat,
   patchIds,
   areEqual,
   getNumberOfDays,

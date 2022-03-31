@@ -3,11 +3,6 @@ const { validCurrencies } = require('./index')
 const endpoints = [
   {
     method: 'GET',
-    path: '/info',
-    description: 'Returns information about the API.'
-  },
-  {
-    method: 'GET',
     path: '/version',
     description: 'Returns the current version of the API.'
   },

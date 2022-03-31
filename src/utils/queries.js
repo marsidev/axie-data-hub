@@ -33,6 +33,12 @@ const createAccessTokenQuery =
 
 const createRandomMessageQuery = 'mutation CreateRandomMessage { createRandomMessage }'
 
+const GetAxieChildrenQuery =
+  'query GetAxieChildren($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieChildren\n    __typename\n  }\n}\n\nfragment AxieChildren on Axie {\n  children {\n    id\n    name\n    class\n    image\n    stage\n    breedCount\n    genes\n    owner\n    __typename\n  } \n}'
+
+const GetAxieGenes =
+'query GetAxieGenes($axieId: ID!) {\n  axie(axieId: $axieId) {\n ...AxieDetail\n    __typename\n  }\n}\n\nfragment AxieDetail on Axie {\n  genes\n  __typename\n}'
+
 const payloadByCurrency = {
   slp: {
     query: NewSlpExchangeRateQuery,
@@ -65,5 +71,7 @@ module.exports = {
   GetRecentlyAxiesSoldQuery,
   payloadByCurrency,
   createRandomMessageQuery,
-  createAccessTokenQuery
+  createAccessTokenQuery,
+  GetAxieChildrenQuery,
+  GetAxieGenes
 }

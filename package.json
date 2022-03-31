@@ -11,7 +11,9 @@
     "postgit": "git push origin main",
     "heroku": "git push heroku main",
     "glitch": "git push glitch main",
-    "test": "cross-env NODE_ENV=test PORT=1234 jest src/tests/v1.test.js",
+    "test": "cross-env NODE_ENV=test PORT=1234 jest",
+    "test:v1": "cross-env NODE_ENV=test PORT=1234 jest src/tests/v1.test.js --watch",
+    "test:v1_1": "cross-env NODE_ENV=test PORT=1234 jest src/tests/v1.1.test.js --watch",
     "test:watch": "npm run test -- --watch",
     "setvar": "heroku config:set",
     "getvar": "heroku config:get"
@@ -20,6 +22,7 @@
   "dependencies": {
     "@sentry/node": "6.16.1",
     "@sentry/tracing": "6.16.1",
+    "agp-npm": "^1.0.10",
     "axios": "0.24.0",
     "cors": "2.8.5",
     "cross-env": "7.0.3",
@@ -42,19 +45,28 @@
     "supertest": "6.2.1"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "^@root(.*)$": "<rootDir>/src$1",
+      "^@assets(.*)$": "<rootDir>/src/assets$1",
+      "^@controllers(.*)$": "<rootDir>/src/controllers$1",
+      "^@db(.*)$": "<rootDir>/src/db$1",
+      "^@middlewares(.*)$": "<rootDir>/src/middlewares$1",
+      "^@models(.*)$": "<rootDir>/src/db/models$1",
+      "^@utils(.*)$": "<rootDir>/src/utils$1"
+    }
   },
   "engines": {
     "node": "14.x"
   },
   "_moduleAliases": {
-    "@root" : ".",
-    "@assets" : "src/assets/",
-    "@controllers" : "src/controllers/",
-    "@db" : "src/db/",
-    "@middlewares" : "src/middlewares/",
-    "@models" : "src/db/models/",
-    "@utils" : "src/utils/",
-    "src" : "src/"
+    "@root": ".",
+    "@assets": "src/assets/",
+    "@controllers": "src/controllers/",
+    "@db": "src/db/",
+    "@middlewares": "src/middlewares/",
+    "@models": "src/db/models/",
+    "@utils": "src/utils/",
+    "src": "src/"
   }
 }

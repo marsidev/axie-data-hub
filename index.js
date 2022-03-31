@@ -8,7 +8,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 // middlewares
-const { connectToMongo } = require('@middlewares/mongoose.js')
+const { connectToMongo } = require('@middlewares/mongoose')
 const errorHandler = require('@middlewares/errorHandler')
 const notFoundHandler = require('@middlewares/notFound')
 const { sentryInit, sentryErrorHandler, sentryRequestHandler, sentryTracingHandler } = require('@middlewares/sentry')

@@ -58,8 +58,8 @@ app.use(notFoundHandler)
 if (NODE_ENV === 'production') app.use(sentryErrorHandler)
 app.use(errorHandler)
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
 })
 
-// module.exports = { app, server }
+module.exports = { app, server }

@@ -2,10 +2,23 @@
   "version": 2,
   "name": "axie-infinity-api",
   "builds": [
+    {
+      "src": "/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    },
     { "src": "index.js", "use": "@vercel/node" },
     { "src": "src/middlewares/mongoose.js", "use": "@vercel/node" }
   ],
   "routes": [
+    {
+      "src": "/([^/]+)",
+      "methods": ["GET", "OPTIONS", "POST"],
+      "dest": "/index.js"
+    },
     { "src": "/(.*)", "dest": "index.js" }
   ]
 }

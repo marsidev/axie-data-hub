@@ -6,6 +6,7 @@
     { "src": "/src/middlewares/mongoose.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
+    { "src": "/(.*)", "dest": "/index.js" },
+    { "src": "/api/(.*)", "dest": "/index.js" }
   ]
 }

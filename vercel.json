@@ -6,7 +6,10 @@
       "src": "index.js",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**"]
+        "includeFiles": [
+          "src/**",
+          "node_modules/**"
+        ]
       }
     },
     { "src": "src/middlewares/mongoose.js", "use": "@vercel/node" }

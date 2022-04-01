@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
-// const axios = require('axios')
 const cache = require('@middlewares/cache')
+const withVersion = require('@middlewares/withVersion')
 const { validateAxieId } = require('@middlewares/validation')
 const { AxieGene } = require('agp-npm/dist/axie-gene')
 
@@ -83,7 +83,7 @@ router.get('/:axieId/children', validateAxieId, cache(600), async (req, res, nex
   }
 })
 
-router.get('/:axieId/stats', validateAxieId, cache(600), async (req, res, next) => {
+router.get('/:axieId/stats', withVersion(1.1, 'min'), validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
   const payload = {
     query: GetAxieStats,
@@ -99,7 +99,7 @@ router.get('/:axieId/stats', validateAxieId, cache(600), async (req, res, next) 
   }
 })
 
-router.get('/:axieId/parts', validateAxieId, cache(600), async (req, res, next) => {
+router.get('/:axieId/parts', withVersion(1.1, 'min'), validateAxieId, cache(600), async (req, res, next) => {
   const { axieId } = req.params
   const payload = {
     query: GetAxieParts,

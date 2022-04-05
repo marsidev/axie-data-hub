@@ -71,8 +71,9 @@ const getLeaderboard = async (url, apiIndex, req, res) => {
 
 router.get('/', cache(180), async (req, res, next) => {
   try {
-    const url = `${process.env.GAME_API_URL_2}/toprank`
-    await getLeaderboard(url, 1, req, res)
+    // const url = `${process.env.GAME_API_URL_2}/toprank` // this uses apiIndex = 1
+    const url = `${process.env.GAME_API_URL}/leaderboard` // this uses apiIndex = 0
+    await getLeaderboard(url, 0, req, res)
   } catch (error) {
     next(error)
   }

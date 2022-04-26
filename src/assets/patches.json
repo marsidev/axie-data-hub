@@ -1,9 +1,15 @@
 {
   "current": {
     "id": "current",
-    "name": "Current patch: s20-patch",
-    "date": "2022-02-09",
+    "name": "Current patch: s21-patch",
+    "date": "2022-04-25",
     "description": ""
+  },
+  "s21-patch": {
+    "id": "s21-patch",
+    "name": "Season 21 Patch",
+    "date": "2022-04-25",
+    "description": "Cards balance for Season 21."
   },
   "s20-patch": {
     "id": "s20-patch",

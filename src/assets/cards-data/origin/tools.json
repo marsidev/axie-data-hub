@@ -1,8 +1,8 @@
 [
   {
     "name": "Banish",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Banish",
       "description": "Remove the card from your deck until the end of battle.",
@@ -11,18 +11,18 @@
   },
   {
     "name": "Cleanse",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Cleanse",
-      "description": "Remove debuffs from target, up to 5 stacks.",
+      "description": "Remove a debuff from target, up to 5 stacks.",
       "name": "Cleanse"
     }
   },
   {
     "name": "Dispel",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Dispel",
       "description": "Remove 1 buff from target, up to 5 stacks.",
@@ -31,28 +31,28 @@
   },
   {
     "name": "Deck",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Deck",
-      "description": "Includes cards in Draw Pile and Discard Pile.",
+      "description": "The combined set of cards in your Draw pile, Discard pile and on your hand.",
       "name": "Deck"
     }
   },
   {
     "name": "Ethereal",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Ethereal",
-      "description": "When your turn ends, if the card is still in your hand, banish it. Banished cards are removed from your deck until the end of battle.",
+      "description": "When your turn ends, if the card is still in your hand, <Banish> it.",
       "name": "Ethereal"
     }
   },
   {
     "name": "Initial",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Initial",
       "description": "The first card played in a turn.",
@@ -61,8 +61,8 @@
   },
   {
     "name": "Innate",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Innate",
       "description": "Start each battle with this card in your hand.",
@@ -71,18 +71,18 @@
   },
   {
     "name": "Little Robin",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Little Robin",
-      "description": "Bird | 18 HP | Teammates deal 16 more DMG. Lose 8 HP when your turn ends.",
+      "description": "Bird | 18 HP | Teammates deal 16 more DMG. Loses 8 HP when your turn ends.",
       "name": "Little Robin"
     }
   },
   {
     "name": "Mushroom",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Mushroom",
       "description": "Plant | 18 HP | When your turn ends, this <Mushroom> restores 24 HP to your most injured ally and loses 8 HP.",
@@ -91,28 +91,28 @@
   },
   {
     "name": "Retain",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Retain",
-      "description": "Do not discard this card at the end of your turn.",
+      "description": "This card will not be discarded from your hand at the end of your turn.",
       "name": "Retain"
     }
   },
   {
     "name": "Trunk",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Trunk",
-      "description": "Plant | 75 HP. {Taunt}.",
+      "description": "Plant | 60 HP. {Taunt}.",
       "name": "Trunk"
     }
   },
   {
     "name": "Unplayable",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Unplayable",
       "description": "This card cannot be played.",
@@ -121,8 +121,8 @@
   },
   {
     "name": "Clover",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Clover",
       "description": "Plant | 35 HP | When your turn starts, randomly grant 1~2 Leafs to your Axies. Clover disappears after 4 leafs are granted.",
@@ -131,8 +131,8 @@
   },
   {
     "name": "Mavis",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Mavis",
       "description": "Bird | 18 HP | When your turn starts (after card drawing), <Mavis> reduces 1 Energy of a random Attack card. Lose 8 HP when your turn ends.",
@@ -141,8 +141,8 @@
   },
   {
     "name": "Fruit Sloth",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Fruit Sloth",
       "description": "Plant | 18 HP | When your turn starts, deal 12 DMG to 1 random Enemy and restore 12 HP to your most injured Axie. Lose 8 HP when your turn ends.",
@@ -151,18 +151,18 @@
   },
   {
     "name": "True-Fan Hermit Crab",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "True-Fan Hermit Crab",
-      "description": "Aquatic | 75 HP. {Taunt}.",
+      "description": "Aquatic | 60 HP. {Taunt}.",
       "name": "True-Fan Hermit Crab"
     }
   },
   {
     "name": "Sparrow",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Sparrow",
       "description": "Bird | 18 HP | When your turn starts, deal 5 DMG to all enemies and grant 1 Feather to your Axies. Lose 8 HP when your turn ends.",
@@ -171,8 +171,8 @@
   },
   {
     "name": "Scry",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Scry",
       "description": "Look at the top cards of your draw pile. You may discard any of them.",
@@ -181,8 +181,8 @@
   },
   {
     "name": "Revenge",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Revenge",
       "description": "Transformed from a Dead Axie's Card based on its Original Type.",
@@ -190,9 +190,29 @@
     }
   },
   {
+    "name": "Round",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Round",
+      "description": "1 Round includes 1 of your Turn and 1 of the opponent's Turn.",
+      "name": "Round"
+    }
+  },
+  {
+    "name": "Pure DMG",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Pure DMG",
+      "description": "Deal DMG that ignores Shield.",
+      "name": "Pure DMG"
+    }
+  },
+  {
     "name": "Lumber Shield",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "1",
       "name": "Lumber Shield",
@@ -203,14 +223,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill", "shield"],
+      "tags": "[\"skill\",\"shield\"]",
       "code": "LumberShield"
     }
   },
   {
     "name": "Strawberry",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "2",
       "name": "Strawberry",
@@ -221,14 +241,14 @@
       "healing": "60",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill", "heal"],
+      "tags": "[\"skill\",\"heal\"]",
       "code": "Strawberry"
     }
   },
   {
     "name": "Pure Water",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "3",
       "name": "Pure Water",
@@ -239,14 +259,14 @@
       "healing": "6",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill", "heal"],
+      "tags": "[\"skill\",\"heal\"]",
       "code": "PureWater"
     }
   },
   {
     "name": "Blackmail",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "4",
       "name": "Blackmail",
@@ -263,8 +283,8 @@
   },
   {
     "name": "Jinx",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "5",
       "name": "Jinx",
@@ -281,8 +301,8 @@
   },
   {
     "name": "Goo",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "6",
       "name": "Goo",
@@ -299,8 +319,8 @@
   },
   {
     "name": "Burn",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "7",
       "name": "Burn",
@@ -317,8 +337,8 @@
   },
   {
     "name": "Shuriken",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "8",
       "name": "Shuriken",
@@ -335,8 +355,8 @@
   },
   {
     "name": "Confused",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "9",
       "name": "Confused",
@@ -353,8 +373,8 @@
   },
   {
     "name": "Daze",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "10",
       "name": "Daze",
@@ -371,8 +391,8 @@
   },
   {
     "name": "Scorch",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "11",
       "name": "Scorch",
@@ -389,8 +409,8 @@
   },
   {
     "name": "Void",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "12",
       "name": "Void",
@@ -407,8 +427,8 @@
   },
   {
     "name": "Energy Coin",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "13",
       "name": "Energy Coin",
@@ -419,14 +439,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill", "energy"],
+      "tags": "[\"skill\",\"energy\"]",
       "code": "EnergyCoin"
     }
   },
   {
     "name": "Forest Breath",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "14",
       "name": "Forest Breath",
@@ -437,14 +457,14 @@
       "healing": "50",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill", "heal", "cleanse"],
+      "tags": "[\"skill\",\"heal\",\"cleanse\"]",
       "code": "ForestBreath"
     }
   },
   {
     "name": "Forest Wrath",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "15",
       "name": "Forest Wrath",
@@ -455,14 +475,14 @@
       "healing": "0",
       "ability_type": "AttackRanged",
       "level": "1",
-      "tags": ["attack", "area", "non-multihit"],
+      "tags": "[\"attack\",\"area\",\"non-multihit\"]",
       "code": "ForestWrath"
     }
   },
   {
     "name": "Mandarine",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "16",
       "name": "Mandarine",
@@ -473,14 +493,14 @@
       "healing": "30",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill", "heal"],
+      "tags": "[\"skill\",\"heal\"]",
       "code": "Mandarine"
     }
   },
   {
     "name": "Pacu",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "17",
       "name": "Pacu",
@@ -491,14 +511,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["skill"],
+      "tags": "[\"skill\"]",
       "code": "Pacu"
     }
   },
   {
     "name": "The Fallen's Shortsword",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "18",
       "name": "The Fallen's Shortsword",
@@ -509,14 +529,14 @@
       "healing": "0",
       "ability_type": "AttackRanged",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadAttack0"
     }
   },
   {
     "name": "The Fallen's Longsword",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "19",
       "name": "The Fallen's Longsword",
@@ -527,14 +547,14 @@
       "healing": "0",
       "ability_type": "AttackRanged",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadAttack1"
     }
   },
   {
     "name": "The Fallen's Axe",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "20",
       "name": "The Fallen's Axe",
@@ -545,14 +565,14 @@
       "healing": "0",
       "ability_type": "AttackRanged",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadAttack2"
     }
   },
   {
     "name": "DeadAttack3",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "21",
       "name": "DeadAttack3",
@@ -563,14 +583,14 @@
       "healing": "0",
       "ability_type": "AttackRanged",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadAttack3"
     }
   },
   {
     "name": "The Fallen's Gloves",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "22",
       "name": "The Fallen's Gloves",
@@ -581,14 +601,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSkill0"
     }
   },
   {
     "name": "The Fallen's Shield",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "23",
       "name": "The Fallen's Shield",
@@ -599,14 +619,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSkill1"
     }
   },
   {
     "name": "The Fallen's Helmet",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "24",
       "name": "The Fallen's Helmet",
@@ -617,14 +637,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSkill2"
     }
   },
   {
     "name": "DeadSkill3",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "25",
       "name": "DeadSkill3",
@@ -635,14 +655,14 @@
       "healing": "0",
       "ability_type": "Skill",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSkill3"
     }
   },
   {
     "name": "The Fallen's Tetsubishi",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "26",
       "name": "The Fallen's Tetsubishi",
@@ -653,14 +673,14 @@
       "healing": "0",
       "ability_type": "Secret",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSecret0"
     }
   },
   {
     "name": "The Fallen's Hidden Knife",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "27",
       "name": "The Fallen's Hidden Knife",
@@ -671,14 +691,14 @@
       "healing": "0",
       "ability_type": "Secret",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSecret1"
     }
   },
   {
     "name": "The Fallen's Hidden Bomb",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "28",
       "name": "The Fallen's Hidden Bomb",
@@ -689,14 +709,14 @@
       "healing": "0",
       "ability_type": "Secret",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSecret2"
     }
   },
   {
     "name": "DeadSecret3",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "29",
       "name": "DeadSecret3",
@@ -707,14 +727,14 @@
       "healing": "0",
       "ability_type": "Secret",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadSecret3"
     }
   },
   {
     "name": "The Fallen's Soul",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "30",
       "name": "The Fallen's Soul",
@@ -725,14 +745,14 @@
       "healing": "0",
       "ability_type": "Power",
       "level": "1",
-      "tags": ["revenge"],
+      "tags": "[\"revenge\"]",
       "code": "DeadPower2"
     }
   },
   {
     "name": "Aquatic Baby",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AquaticBaby",
       "name": "Aquatic Baby",
@@ -742,8 +762,8 @@
   },
   {
     "name": "Class Bonus - Attack",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackClassBonus",
       "name": "Class Bonus - Attack",
@@ -752,64 +772,64 @@
     }
   },
   {
-    "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Counter Attack",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackCounter",
-      "name": "Secret Debuff",
+      "name": "Counter Attack",
       "image": "status/secret_reflect.png",
-      "description": "This Axie will cause an unknown debuff."
+      "description": "Reflect DMG to the attacker."
     }
   },
   {
-    "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Secret - Pure Water",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedAddPureWater",
-      "name": "Secret Card",
+      "name": "Secret - Pure Water",
       "image": "status/secret_card.png",
-      "description": "This Axie will gain an unknown card."
+      "description": "After any ally is attacked, add 1 [Pure Water] to your hand."
     }
   },
   {
-    "name": "Secret Curse",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Secret - Goo",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedOpponentDiscardShuffleGoo",
-      "name": "Secret Curse",
+      "name": "Secret - Goo",
       "image": "status/secret_curse.png",
-      "description": "This Axie will cause an unknown curse."
+      "description": "Shuffle 1 [Goo] into your opponent's discard pile when attacked."
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Secret - DMG Boost",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedSelfDamageBoost",
-      "name": "Secret Buff",
+      "name": "Secret - DMG Boost",
       "image": "status/secret_buff.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Gain {Damage Boost} when attacked."
     }
   },
   {
-    "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Secret - Weak",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedWeak",
-      "name": "Secret Debuff",
+      "name": "Secret - Weak",
       "image": "status/secret_debuff.png",
-      "description": "This Axie will cause an unknown debuff."
+      "description": "Apply {Weak} to the attacker when attacked."
     }
   },
   {
     "name": "Auto Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AutoShield",
       "name": "Auto Shield",
@@ -819,8 +839,8 @@
   },
   {
     "name": "Bang",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bang",
       "name": "Bang",
@@ -830,8 +850,8 @@
   },
   {
     "name": "Banished Heal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BanishedHeal",
       "name": "Banished Heal",
@@ -841,8 +861,8 @@
   },
   {
     "name": "Banished Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BanishedShield",
       "name": "Banished Shield",
@@ -852,8 +872,8 @@
   },
   {
     "name": "Barricade",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Barricade",
       "name": "Barricade",
@@ -863,8 +883,8 @@
   },
   {
     "name": "Belieber",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Belieber",
       "name": "Belieber",
@@ -874,8 +894,8 @@
   },
   {
     "name": "Blackmail",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Blackmail",
       "name": "Blackmail",
@@ -885,8 +905,8 @@
   },
   {
     "name": "Bleed",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bleed",
       "name": "Bleed",
@@ -896,8 +916,8 @@
   },
   {
     "name": "Bloodlust",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bloodlust",
       "name": "Bloodlust",
@@ -907,8 +927,8 @@
   },
   {
     "name": "Blood Moon",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BloodMoon",
       "name": "Blood Moon",
@@ -918,41 +938,41 @@
   },
   {
     "name": "Brimstone",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Brimstone",
       "name": "Brimstone",
       "image": "status/power_brimstone.png",
-      "description": "On your next turn, put 3 extra 0-Energy Cards from your deck into your hand."
+      "description": "Next turn, draw 3 random 0-Energy Cards from your deck into your hand."
     }
   },
   {
     "name": "Bubble",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bubble",
       "name": "Bubble",
       "image": "status/buff_bubble.png",
-      "description": "Block 5 DMG per stack. Max: 3 stacks. Turn into {Bubble Bomb} upon reaching 3 stacks."
+      "description": "Block 4 DMG per stack against non-multihit attacks. Block 2 DMG per stack against multihit attacks. Max: 3 stacks. Turn into {Bubble Bomb} upon reaching 3 stacks."
     }
   },
   {
     "name": "Bubble Bomb",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BubbleBomb",
       "name": "Bubble Bomb",
       "image": "status/buff_bubble_bomb.png",
-      "description": "The next attack explodes Bubble Bomb and deals 20 DMG to all Enemies."
+      "description": "The next attack makes Bubble Bomb explode and deal 20 DMG to all Enemies."
     }
   },
   {
     "name": "Bumpy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bumpy",
       "name": "Bumpy",
@@ -962,8 +982,8 @@
   },
   {
     "name": "Burn",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Burn",
       "name": "Burn",
@@ -973,8 +993,8 @@
   },
   {
     "name": "Card Drawer",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CardDrawer",
       "name": "Card Drawer",
@@ -984,8 +1004,8 @@
   },
   {
     "name": "Card Energy In Fury",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CardEnergyInFury",
       "name": "Card Energy In Fury",
@@ -995,8 +1015,8 @@
   },
   {
     "name": "Card Removal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CardRemoval",
       "name": "Card Removal",
@@ -1006,8 +1026,8 @@
   },
   {
     "name": "Carrot",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Carrot",
       "name": "Carrot",
@@ -1017,8 +1037,8 @@
   },
   {
     "name": "Clamshell",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Clamshell",
       "name": "Clamshell",
@@ -1028,19 +1048,19 @@
   },
   {
     "name": "Class Bonus",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ClassBonus",
       "name": "Class Bonus",
       "image": "status/rune_neutral_hybrid_2.png",
-      "description": "Increase (ATK/Heal/Shield) of Card if used by an Axie of the same class."
+      "description": "Increase (ATK/Heal/Shield) of this Card if used by an Axie of the same class."
     }
   },
   {
     "name": "Cleanser",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cleanser",
       "name": "Cleanser",
@@ -1050,8 +1070,8 @@
   },
   {
     "name": "Clover",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Clover",
       "name": "Clover",
@@ -1061,8 +1081,8 @@
   },
   {
     "name": "Cottontail",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cottontail",
       "name": "Cottontail",
@@ -1072,8 +1092,8 @@
   },
   {
     "name": "Power Awaken",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cuckoo",
       "name": "Power Awaken",
@@ -1083,30 +1103,30 @@
   },
   {
     "name": "Cursed Doll - Heal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CursedDollHeal",
       "name": "Cursed Doll - Heal",
       "image": "status/power_cursed_doll.png",
-      "description": "Each turn, restore 3 HP per Cursed Card in opponent's deck. (capped at 10 Cards)"
+      "description": "Each turn, restore 3 HP per Cursed Card in your opponent's deck. (capped at 10 Cards)"
     }
   },
   {
     "name": "Cursed Doll - Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CursedDollShield",
       "name": "Cursed Doll - Shield",
       "image": "status/power_cursed_doll.png",
-      "description": "Each turn, gain 5 Shield per each Cursed Card in opponent's deck. (capped at 10 Cards)"
+      "description": "Each turn, gain 5 Shield per each Cursed Card in your opponent's deck. (capped at 10 Cards)"
     }
   },
   {
     "name": "Damage Ascent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageAscent",
       "name": "Damage Ascent",
@@ -1115,20 +1135,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Block Attack",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageBlock",
-      "name": "Secret Buff",
+      "name": "Block Attack",
       "image": "status/secret_block_attack.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Negate 1 attack."
     }
   },
   {
     "name": "Damage Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageBoost",
       "name": "Damage Boost",
@@ -1138,8 +1158,8 @@
   },
   {
     "name": "Damage Descent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageDescent",
       "name": "Damage Descent",
@@ -1149,8 +1169,8 @@
   },
   {
     "name": "Damage Down",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageDown",
       "name": "Damage Down",
@@ -1160,19 +1180,19 @@
   },
   {
     "name": "Mini Legion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageFromSummon",
       "name": "Mini Legion",
       "image": "status/rune_neutral_hybrid_1.png",
-      "description": "Deal 3 DMG per Summon to all Enemies at the beginning of your turn."
+      "description": "Deal 3 DMG per Summon to all Enemies at the start of your turn."
     }
   },
   {
     "name": "Damage Increment",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageIncrement",
       "name": "Damage Increment",
@@ -1182,8 +1202,8 @@
   },
   {
     "name": "Damage Reduction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageReduction",
       "name": "Damage Reduction",
@@ -1193,8 +1213,8 @@
   },
   {
     "name": "Anti-Summon",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageSummon",
       "name": "Anti-Summon",
@@ -1204,8 +1224,8 @@
   },
   {
     "name": "Damage Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageUp",
       "name": "Damage Up",
@@ -1215,8 +1235,8 @@
   },
   {
     "name": "Death Mark",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DeathMark",
       "name": "Death Mark",
@@ -1226,8 +1246,8 @@
   },
   {
     "name": "Disarmed",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Disarmed",
       "name": "Disarmed",
@@ -1237,19 +1257,19 @@
   },
   {
     "name": "Doubt",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Doubt",
       "name": "Doubt",
       "image": "status/debuff_doubt.png",
-      "description": "The target gains 20% less HP from Healing."
+      "description": "The target gains 50% less HP from Healing."
     }
   },
   {
     "name": "Draw Binding",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DrawBinding",
       "name": "Draw Binding",
@@ -1259,19 +1279,19 @@
   },
   {
     "name": "Draw Promotion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DrawPromotion",
       "name": "Draw Promotion",
       "image": "",
-      "description": "Draw 1 more card per stack on your next turn."
+      "description": "Draw 1 more card per stack during your next turn."
     }
   },
   {
     "name": "Ear Breathing",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EarBreathing",
       "name": "Ear Breathing",
@@ -1281,8 +1301,8 @@
   },
   {
     "name": "Earwing",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Earwing",
       "name": "Earwing",
@@ -1292,8 +1312,8 @@
   },
   {
     "name": "Energy Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EnergyBoost",
       "name": "Energy Boost",
@@ -1303,19 +1323,19 @@
   },
   {
     "name": "Energy Gain",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EnergyGain",
       "name": "Energy Gain",
       "image": "",
-      "description": "Gain 1 bonus Energy on your next turn."
+      "description": "Gain 1 bonus Energy during your next turn."
     }
   },
   {
     "name": "Fear",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Fear",
       "name": "Fear",
@@ -1325,19 +1345,19 @@
   },
   {
     "name": "Feather",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Feather",
       "name": "Feather",
       "image": "status/buff_feather.png",
-      "description": "When Axie does a non-multihit attack, consume all Feather stacks to deal 2 bonus DMG per stack and heal 2 HP per stack. Max : 10 stack."
+      "description": "When Axie does a non-multihit attack, consume all Feather stacks to deal 3 bonus DMG per stack and heal 1 HP per stack. Max : 10 stack."
     }
   },
   {
     "name": "Feather Fan",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FeatherFan",
       "name": "Feather Fan",
@@ -1346,20 +1366,20 @@
     }
   },
   {
-    "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Fish Snack",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FishSnack",
-      "name": "Secret Debuff",
+      "name": "Fish Snack",
       "image": "status/secret_debuff.png",
-      "description": "This Axie will cause an unknown debuff."
+      "description": "After this Axie is attacked, apply {Weak} to the attacker."
     }
   },
   {
     "name": "Foxy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Foxy",
       "name": "Foxy",
@@ -1369,8 +1389,8 @@
   },
   {
     "name": "Fragile",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Fragile",
       "name": "Fragile",
@@ -1380,8 +1400,8 @@
   },
   {
     "name": "Fruit Sloth",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FruitSloth",
       "name": "Fruit Sloth",
@@ -1391,19 +1411,19 @@
   },
   {
     "name": "Fury",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Fury",
       "name": "Fury",
       "image": "status/buff_fury.png",
-      "description": "Gain 1 Energy when transformed. Deal double damage until end of turn."
+      "description": "Gain 1 Energy when transformed. Deal 75% more DMG until end of turn."
     }
   },
   {
     "name": "Fury Strikes",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FuryStrikes",
       "name": "Fury Strikes",
@@ -1413,8 +1433,8 @@
   },
   {
     "name": "Gero",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Gero",
       "name": "Gero",
@@ -1424,8 +1444,8 @@
   },
   {
     "name": "Granma Fan",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "GranmaFan",
       "name": "Granma Fan",
@@ -1435,8 +1455,8 @@
   },
   {
     "name": "Power - Poison Candy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "GreenThorns",
       "name": "Power - Poison Candy",
@@ -1446,8 +1466,8 @@
   },
   {
     "name": "Heal Block",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealBlock",
       "name": "Heal Block",
@@ -1457,8 +1477,8 @@
   },
   {
     "name": "Class Bonus - Healing",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealClassBonus",
       "name": "Class Bonus - Healing",
@@ -1468,8 +1488,8 @@
   },
   {
     "name": "Healing Ascent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingAscent",
       "name": "Healing Ascent",
@@ -1479,8 +1499,8 @@
   },
   {
     "name": "Healing Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingBoost",
       "name": "Healing Boost",
@@ -1490,8 +1510,8 @@
   },
   {
     "name": "Healing Descent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingDescent",
       "name": "Healing Descent",
@@ -1501,8 +1521,8 @@
   },
   {
     "name": "Healing Down",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingDown",
       "name": "Healing Down",
@@ -1512,8 +1532,8 @@
   },
   {
     "name": "Healing Increment",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingIncrement",
       "name": "Healing Increment",
@@ -1523,8 +1543,8 @@
   },
   {
     "name": "Healing Reduction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingReduction",
       "name": "Healing Reduction",
@@ -1534,8 +1554,8 @@
   },
   {
     "name": "Healing Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingUp",
       "name": "Healing Up",
@@ -1544,20 +1564,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Hermit",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Hermit",
-      "name": "Secret Buff",
+      "name": "Hermit",
       "image": "status/secret_block_attack.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Negate the next attack."
     }
   },
   {
     "name": "Hex",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Hex",
       "name": "Hex",
@@ -1567,8 +1587,8 @@
   },
   {
     "name": "Leftover Potion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HpRecover",
       "name": "Leftover Potion",
@@ -1578,8 +1598,8 @@
   },
   {
     "name": "Immortal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Immortal",
       "name": "Immortal",
@@ -1589,8 +1609,8 @@
   },
   {
     "name": "Impending Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ImpendingShield",
       "name": "Impending Shield",
@@ -1599,20 +1619,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Indian Star",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "IndianStar",
-      "name": "Secret Buff",
+      "name": "Indian Star",
       "image": "status/secret_reflect.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Reflect 25% of Shield lost when attacked."
     }
   },
   {
     "name": "Jinx",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Jinx",
       "name": "Jinx",
@@ -1621,20 +1641,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Kingfisher",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Kingfisher",
-      "name": "Secret Buff",
+      "name": "Kingfisher",
       "image": "status/secret_reflect.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "After the next attack from an enemy, reflect DMG to the attacker."
     }
   },
   {
     "name": "Power - Ladybug",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "LadybugGoggles",
       "name": "Power - Ladybug",
@@ -1644,19 +1664,19 @@
   },
   {
     "name": "Leaf",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Leaf",
       "name": "Leaf",
       "image": "status/buff_leaf.png",
-      "description": "Regen 5 HP at the end of your turn. Max stack: 5"
+      "description": "Regen 4 HP at the end of your turn. Max stack: 5"
     }
   },
   {
     "name": "Leafy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Leafy",
       "name": "Leafy",
@@ -1666,8 +1686,8 @@
   },
   {
     "name": "Lethal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Lethal",
       "name": "Lethal",
@@ -1677,8 +1697,8 @@
   },
   {
     "name": "Lifesteal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Lifesteal",
       "name": "Lifesteal",
@@ -1688,8 +1708,8 @@
   },
   {
     "name": "Mavis",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Mavis",
       "name": "Mavis",
@@ -1699,8 +1719,8 @@
   },
   {
     "name": "Meditate",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Meditate",
       "name": "Meditate",
@@ -1710,8 +1730,8 @@
   },
   {
     "name": "Multihit Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "MultihitBoost",
       "name": "Multihit Boost",
@@ -1721,8 +1741,8 @@
   },
   {
     "name": "Mushroom",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Mushroom",
       "name": "Mushroom",
@@ -1732,8 +1752,8 @@
   },
   {
     "name": "Mystery Seed",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "MysterySeed",
       "name": "Mystery Seed",
@@ -1743,8 +1763,8 @@
   },
   {
     "name": "Non Multihit Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "NonMultihitBoost",
       "name": "Non Multihit Boost",
@@ -1754,8 +1774,8 @@
   },
   {
     "name": "One Two Three",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "OneTwoThree",
       "name": "One Two Three",
@@ -1765,8 +1785,8 @@
   },
   {
     "name": "Order Of Merit",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "OrderOfMerit",
       "name": "Order Of Merit",
@@ -1776,8 +1796,8 @@
   },
   {
     "name": "Perch",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Perch",
       "name": "Perch",
@@ -1787,8 +1807,8 @@
   },
   {
     "name": "Power - Phantom",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Phantom",
       "name": "Power - Phantom",
@@ -1798,8 +1818,8 @@
   },
   {
     "name": "Poison",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Poison",
       "name": "Poison",
@@ -1809,8 +1829,8 @@
   },
   {
     "name": "Poison Spit",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "PoisonSpit",
       "name": "Poison Spit",
@@ -1820,8 +1840,8 @@
   },
   {
     "name": "Potato Leaf",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "PotatoLeaf",
       "name": "Potato Leaf",
@@ -1830,31 +1850,31 @@
     }
   },
   {
-    "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Pumpkin",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Pumpkin",
-      "name": "Secret Card",
+      "name": "Pumpkin",
       "image": "status/secret_card.png",
-      "description": "This Axie will gain an unknown card."
+      "description": "Draw 1 card when attacked."
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Pupae",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Pupae",
-      "name": "Secret Buff",
+      "name": "Pupae",
       "image": "status/secret_buff.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Gain 2 {Damage Boost} when attacked."
     }
   },
   {
     "name": "Rage",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Rage",
       "name": "Rage",
@@ -1863,20 +1883,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Reflect - Shieldbase",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ReflectShieldbase",
-      "name": "Secret Buff",
+      "name": "Reflect - Shieldbase",
       "image": "status/secret_reflect.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Reflect DMG equal to 25% of Shield lost when attacked."
     }
   },
   {
     "name": "Regeneration",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Regeneration",
       "name": "Regeneration",
@@ -1886,8 +1906,8 @@
   },
   {
     "name": "Retain Add Pacu",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainAddPacu",
       "name": "Retain Add Pacu",
@@ -1897,8 +1917,8 @@
   },
   {
     "name": "Robin",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Robin",
       "name": "Robin",
@@ -1908,19 +1928,19 @@
   },
   {
     "name": "Rune - Calcium Armor",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneAquaticDefensive1",
       "name": "Rune - Calcium Armor",
       "image": "status/rune_aquatic_defensive_1.png",
-      "description": "Axie HP +30\nAt the beginning of your turn, gain Shield equal to 3% of max HP."
+      "description": "Axie HP +30\nAt the start of your turn, gain Shield equal to 3% of max HP."
     }
   },
   {
     "name": "Rune - Bloodlust",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneAquaticHybrid1",
       "name": "Rune - Bloodlust",
@@ -1930,8 +1950,8 @@
   },
   {
     "name": "Rune - Hearty Warrior",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneAquaticOffensive1",
       "name": "Rune - Hearty Warrior",
@@ -1941,8 +1961,8 @@
   },
   {
     "name": "Rune - Pangolin Scale",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastDefensive1",
       "name": "Rune - Pangolin Scale",
@@ -1952,8 +1972,8 @@
   },
   {
     "name": "Rune - Dominant Predator",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastHybrid1",
       "name": "Rune - Dominant Predator",
@@ -1963,8 +1983,8 @@
   },
   {
     "name": "Rune - Reckless Hunter",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastOffensive1",
       "name": "Rune - Reckless Hunter",
@@ -1974,30 +1994,30 @@
   },
   {
     "name": "Rune - Endless Anger",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastUtility1",
       "name": "Rune - Endless Anger",
       "image": "status/rune_beast_utility_1.png",
-      "description": "Gain 3 {Rage} when your turn starts. Each {Rage} grants 1 bonus DMG."
+      "description": "Gain 2 {Rage} when your turn starts. Each {Rage} grants 1 bonus DMG."
     }
   },
   {
     "name": "Rune - Venom Born",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdDefensive1",
       "name": "Rune - Venom Born",
       "image": "status/rune_bird_defensive_1.png",
-      "description": "{Poison} on this Axie grants Healing 1 HP per stack instead of HP loss."
+      "description": "{Poison} on this Axie grants \"Healing 1 HP per stack\" instead of HP loss."
     }
   },
   {
     "name": "Rune - Raven's Tactic",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdHybrid1",
       "name": "Rune - Raven's Tactic",
@@ -2007,30 +2027,30 @@
   },
   {
     "name": "Rune - Energy Guru",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdOffensive1",
       "name": "Rune - Energy Guru",
       "image": "status/rune_bird_offensive_1.png",
-      "description": "Attack Abilities also deal 5 DMG per Energy Cost to all Enemies."
+      "description": "{Solo}. Attack Abilities also deal 5 DMG per Energy Cost to all Enemies."
     }
   },
   {
     "name": "Rune - Feather Descend",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdUtility1",
       "name": "Rune - Feather Descend",
       "image": "status/rune_bird_utility_1.png",
-      "description": "When your turn starts, grant 2 {Feather} to your team."
+      "description": "{Solo}. When your turn starts, grant 2 {Feather} to your team. This Axie gains back half of the Feather stack consumed when doing a non-multihit attack."
     }
   },
   {
     "name": "Rune - Vault Builder",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugDefensive1",
       "name": "Rune - Vault Builder",
@@ -2040,8 +2060,8 @@
   },
   {
     "name": "Rune - Shield Leecher",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugHybrid1",
       "name": "Rune - Shield Leecher",
@@ -2051,19 +2071,19 @@
   },
   {
     "name": "Rune - Sturdy Fighter",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugOffensive1",
       "name": "Rune - Sturdy Fighter",
       "image": "status/rune_bug_offensive_1.png",
-      "description": "Non-Multihit Attack Abilities deal bonus DMG equal to current Shield."
+      "description": "{Solo}. Non-Multihit Attack Abilities deal bonus DMG equal to current Shield."
     }
   },
   {
     "name": "Rune - Collect And Protect",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugUtility1",
       "name": "Rune - Collect And Protect",
@@ -2073,8 +2093,8 @@
   },
   {
     "name": "Rune - Arcane Protection",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnDefensive1",
       "name": "Rune - Arcane Protection",
@@ -2084,8 +2104,8 @@
   },
   {
     "name": "Rune - Heaven's Echoes",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnHybrid1",
       "name": "Rune - Heaven's Echoes",
@@ -2095,8 +2115,8 @@
   },
   {
     "name": "Rune - Celestial Might",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnOffensive1",
       "name": "Rune - Celestial Might",
@@ -2106,19 +2126,19 @@
   },
   {
     "name": "Rune - Holy Prayer",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnUtility1",
       "name": "Rune - Holy Prayer",
       "image": "status/rune_dawn_utility_1.png",
-      "description": "{Solo}. When your turn starts, remove 1 Curse in your deck. Heal all teammates for 20 HP when successfully removing a Curse."
+      "description": "{Solo}. When your turn starts, remove 1 Curse in your deck. Heal all teammates for 10 HP and grant all teammate 1 DMG Boost when successfully removing a Curse this way."
     }
   },
   {
     "name": "Rune - Wicked Ward",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskDefensive1",
       "name": "Rune - Wicked Ward",
@@ -2128,8 +2148,8 @@
   },
   {
     "name": "Rune - Malediction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskHybrid1",
       "name": "Rune - Malediction",
@@ -2139,8 +2159,8 @@
   },
   {
     "name": "Rune - Cursed Ritual",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskOffensive1",
       "name": "Rune - Cursed Ritual",
@@ -2150,19 +2170,19 @@
   },
   {
     "name": "Rune - Gloomy Dice",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskUtility1",
       "name": "Rune - Gloomy Dice",
       "image": "status/rune_dusk_utility_1.png",
-      "description": "In Odd numbered Rounds, apply {Hex} to all enemies for 2 turns when your turn starts.\nIn Even numbered Rounds, apply {Fear} to all enemies for 2 turns when your turn starts."
+      "description": "{Solo}. In Odd <Round>s, randomly apply {Hex} or {Fear} to all enemies for 2 turns at the start of your turn."
     }
   },
   {
     "name": "Rune - Last Stand",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneMechDefensive1",
       "name": "Rune - Last Stand",
@@ -2172,8 +2192,8 @@
   },
   {
     "name": "Rune - Adaptive Program",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneMechHybrid1",
       "name": "Rune - Adaptive Program",
@@ -2182,42 +2202,53 @@
     }
   },
   {
-    "name": "Rune - Zap Armor ",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Rune - Zap Armor",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneMechOffensive1",
-      "name": "Rune - Zap Armor ",
+      "name": "Rune - Zap Armor",
       "image": "status/rune_mech_offensive_1.png",
       "description": "Deal 20% more DMG if this Axie has Shield."
     }
   },
   {
     "name": "Rune - Shield Backup",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneMechUtility1",
+      "name": "Rune - Shield Backup",
+      "image": "status/rune_mech_utility_1.png",
+      "description": "{Solo}. This Axie's Shield isn't removed when your enemy's turn ends."
+    }
+  },
+  {
+    "name": "Rune - Tough Strike",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneNeutralOffensive1",
-      "name": "Rune - Shield Backup",
+      "name": "Rune - Tough Strike",
       "image": "status/rune_neutral_offensive_1.png",
       "description": "Non Multihit Attack Abilities deal 10 bonus DMG."
     }
   },
   {
     "name": "Rune - Gaia's Embrace",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RunePlantDefensive1",
       "name": "Rune - Gaia's Embrace",
       "image": "status/rune_plant_defensive_1.png",
-      "description": "Shielding Abilities restore HP equal to 100% of Shield gained but grant 25% less Shield."
+      "description": "{Solo}. Shielding Abilities restore HP equal to 100% of Shield gained but grant 25% less Shield."
     }
   },
   {
     "name": "Rune - Miracle Leaf",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RunePlantOffensive1",
       "name": "Rune - Miracle Leaf",
@@ -2227,30 +2258,30 @@
   },
   {
     "name": "Rune - Healing Pulse",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RunePlantUtility1",
       "name": "Rune - Healing Pulse",
       "image": "status/rune_plant_utility_1.png",
-      "description": "All teammates regen 8 HP when your turn ends. Increase Healing card effects by 20%."
+      "description": "All teammates regen 4 HP when your turn ends. Increase Healing card effects by 10%."
     }
   },
   {
-    "name": "Rune - Delayed Protection ",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Rune - Delayed Protection",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileDefensive1",
-      "name": "Rune - Delayed Protection ",
+      "name": "Rune - Delayed Protection",
       "image": "status/rune_reptile_defensive_1.png",
       "description": "When your turn starts, gain 12 Shield for each attack this Axie took in the previous turn."
     }
   },
   {
     "name": "Rune - Poison Touch",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileHybrid1",
       "name": "Rune - Poison Touch",
@@ -2260,8 +2291,8 @@
   },
   {
     "name": "Rune - Venom Master",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileOffensive1",
       "name": "Rune - Venom Master",
@@ -2271,19 +2302,19 @@
   },
   {
     "name": "Rune - Regenerator",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileUtility1",
       "name": "Rune - Regenerator",
       "image": "status/rune_reptile_utility_1.png",
-      "description": "When your turn starts, {Cleanse} 2 random debuffs if HP is full or recover 10% of max HP if HP isn't full."
+      "description": "{Solo}. When your turn start, {Cleanse} 2 random debuffs if HP is above 75% or recover 10% of max HP if not."
     }
   },
   {
     "name": "Rusty",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Rusty",
       "name": "Rusty",
@@ -2293,8 +2324,8 @@
   },
   {
     "name": "Power - Sakura",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sakura",
       "name": "Power - Sakura",
@@ -2304,8 +2335,8 @@
   },
   {
     "name": "Salve",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Salve",
       "name": "Salve",
@@ -2315,8 +2346,8 @@
   },
   {
     "name": "Secret",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Secret",
       "name": "Secret",
@@ -2325,20 +2356,20 @@
     }
   },
   {
-    "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Secret - Fear",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SecretFear",
-      "name": "Secret Debuff",
+      "name": "Secret - Fear",
       "image": "status/secret_debuff.png",
-      "description": "This Axie will cause an unknown debuff."
+      "description": "Apply Fear to the attacker when attacked."
     }
   },
   {
     "name": "Shield Ascent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldAscent",
       "name": "Shield Ascent",
@@ -2348,8 +2379,8 @@
   },
   {
     "name": "Shield Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldBoost",
       "name": "Shield Boost",
@@ -2358,20 +2389,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Secret - DMG Boost",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldBrokenDamageBoost",
-      "name": "Secret Buff",
+      "name": "Secret - DMG Boost",
       "image": "status/secret_buff.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Target gains {Damage Boost} when attacked."
     }
   },
   {
     "name": "Class Bonus - Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldClassBonus",
       "name": "Class Bonus - Shield",
@@ -2381,8 +2412,8 @@
   },
   {
     "name": "Shield Descent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldDescent",
       "name": "Shield Descent",
@@ -2392,8 +2423,8 @@
   },
   {
     "name": "Shield Down",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldDown",
       "name": "Shield Down",
@@ -2403,8 +2434,8 @@
   },
   {
     "name": "Shield Reduction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldReduction",
       "name": "Shield Reduction",
@@ -2414,8 +2445,8 @@
   },
   {
     "name": "Shield Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldUp",
       "name": "Shield Up",
@@ -2425,8 +2456,8 @@
   },
   {
     "name": "Showering",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Showering",
       "name": "Showering",
@@ -2436,8 +2467,8 @@
   },
   {
     "name": "Silence",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Silence",
       "name": "Silence",
@@ -2447,8 +2478,8 @@
   },
   {
     "name": "Sleep",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sleep",
       "name": "Sleep",
@@ -2458,8 +2489,8 @@
   },
   {
     "name": "Small Frill",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SmallFrill",
       "name": "Small Frill",
@@ -2468,31 +2499,31 @@
     }
   },
   {
-    "name": "Secret Curse",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Snail Shell",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SnailShell",
-      "name": "Secret Curse",
+      "name": "Snail Shell",
       "image": "status/secret_curse.png",
-      "description": "This Axie will cause an unknown curse."
+      "description": "Shuffle 1 [Goo] into your opponent's discard pile when attacked."
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Snake Jar",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SnakeJar",
-      "name": "Secret Buff",
+      "name": "Snake Jar",
       "image": "status/secret_block_attack.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Prevent the next HP loss to this Axie, up to 80 HP."
     }
   },
   {
     "name": "Solo",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Solo",
       "name": "Solo",
@@ -2502,8 +2533,8 @@
   },
   {
     "name": "Sparrow",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sparrow",
       "name": "Sparrow",
@@ -2512,20 +2543,20 @@
     }
   },
   {
-    "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Sponge",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sponge",
-      "name": "Secret Buff",
+      "name": "Sponge",
       "image": "status/secret_buff.png",
-      "description": "This Axie will gain an unknown buff."
+      "description": "Apply 5 {Damage Boost} to this target if its shield is broken."
     }
   },
   {
     "name": "Stacking Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "StackingUp",
       "name": "Stacking Up",
@@ -2535,8 +2566,8 @@
   },
   {
     "name": "Stalwart",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stalwart",
       "name": "Stalwart",
@@ -2546,8 +2577,8 @@
   },
   {
     "name": "Steal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Steal",
       "name": "Steal",
@@ -2557,8 +2588,8 @@
   },
   {
     "name": "Stealth",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stealth",
       "name": "Stealth",
@@ -2568,8 +2599,8 @@
   },
   {
     "name": "Stumble",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stumble",
       "name": "Stumble",
@@ -2579,8 +2610,8 @@
   },
   {
     "name": "Stunned",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stunned",
       "name": "Stunned",
@@ -2590,8 +2621,8 @@
   },
   {
     "name": "Anti-Summon",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SummonCounter",
       "name": "Anti-Summon",
@@ -2601,8 +2632,8 @@
   },
   {
     "name": "Mini Legion - HP",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SummonHpBoost",
       "name": "Mini Legion - HP",
@@ -2612,8 +2643,8 @@
   },
   {
     "name": "Swirl",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Swirl",
       "name": "Swirl",
@@ -2623,8 +2654,8 @@
   },
   {
     "name": "Steelskin",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TakenDamageReduction",
       "name": "Steelskin",
@@ -2634,8 +2665,8 @@
   },
   {
     "name": "Taunt",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Taunt",
       "name": "Taunt",
@@ -2645,8 +2676,8 @@
   },
   {
     "name": "Power - Tetrix (Cleanser)",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TetrixCleanser",
       "name": "Power - Tetrix (Cleanser)",
@@ -2656,8 +2687,8 @@
   },
   {
     "name": "Power - Tetrix (DMG Boost)",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TetrixDamageBoost",
       "name": "Power - Tetrix (DMG Boost)",
@@ -2666,20 +2697,20 @@
     }
   },
   {
-    "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Thorn",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Thorn",
-      "name": "Secret Debuff",
+      "name": "Thorn",
       "image": "status/secret_debuff.png",
-      "description": "This Axie will cause an unknown debuff."
+      "description": "When this Axie is attacked, apply {Bleed} to the attacker for 2 turns."
     }
   },
   {
     "name": "Thorny Caterpillar",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ThornyCaterpillar",
       "name": "Thorny Caterpillar",
@@ -2688,20 +2719,20 @@
     }
   },
   {
-    "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Timber",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Timber",
-      "name": "Secret Card",
+      "name": "Timber",
       "image": "status/secret_card.png",
-      "description": "This Axie will gain an unknown card."
+      "description": "Target any ally. Next turn, after any ally is attacked, add 1 [Lumber Shield] to your hand."
     }
   },
   {
     "name": "Tiny Dino",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TinyDino",
       "name": "Tiny Dino",
@@ -2711,8 +2742,8 @@
   },
   {
     "name": "Tiny Fan",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TinyFan",
       "name": "Tiny Fan",
@@ -2722,8 +2753,8 @@
   },
   {
     "name": "Tiny Turtle",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TinyTurtle",
       "name": "Tiny Turtle",
@@ -2733,8 +2764,8 @@
   },
   {
     "name": "Vulnerable",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Vulnerable",
       "name": "Vulnerable",
@@ -2744,8 +2775,8 @@
   },
   {
     "name": "Wall Gecko",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WallGecko",
       "name": "Wall Gecko",
@@ -2754,20 +2785,20 @@
     }
   },
   {
-    "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "name": "Watering Can",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WateringCan",
-      "name": "Secret Card",
+      "name": "Watering Can",
       "image": "status/secret_card.png",
-      "description": "This Axie will gain an unknown card."
+      "description": "After an ally is attacked, add 1 [Pure Water] to your hand."
     }
   },
   {
     "name": "Weak",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Weak",
       "name": "Weak",
@@ -2777,8 +2808,8 @@
   },
   {
     "name": "Wing Horn",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WingHorn",
       "name": "Wing Horn",
@@ -2788,8 +2819,8 @@
   },
   {
     "name": "Zen",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Zen",
       "name": "Zen",
@@ -2799,8 +2830,8 @@
   },
   {
     "name": "Cleanse",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cleanse",
       "name": "Cleanse",
@@ -2810,8 +2841,8 @@
   },
   {
     "name": "Bonus Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainBonusShield",
       "name": "Bonus Shield",
@@ -2821,8 +2852,8 @@
   },
   {
     "name": "Bonus Heal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainBonusHeal",
       "name": "Bonus Heal",
@@ -2832,8 +2863,8 @@
   },
   {
     "name": "Bonus Rage",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainBonusRage",
       "name": "Bonus Rage",
@@ -2843,8 +2874,8 @@
   },
   {
     "name": "Energy Boost Even Round",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EnergyBoostEvenRound",
       "name": "Energy Boost Even Round",
@@ -2854,8 +2885,8 @@
   },
   {
     "name": "Shield Damage Absorb",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldDamageAbsorb",
       "name": "Shield Damage Absorb",
@@ -2865,8 +2896,8 @@
   },
   {
     "name": "Damage Reflection",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageReflection",
       "name": "Damage Reflection",
@@ -2876,8 +2907,8 @@
   },
   {
     "name": "Bonus Damages Per Dead Ally",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageBonusPerDeadAlly",
       "name": "Bonus Damages Per Dead Ally",
@@ -2887,8 +2918,8 @@
   },
   {
     "name": "Goo Revival",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Revival",
       "name": "Goo Revival",
@@ -2898,8 +2929,8 @@
   },
   {
     "name": "Taunt The Wounded",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BleedingTaunt",
       "name": "Taunt The Wounded",
@@ -2909,8 +2940,8 @@
   },
   {
     "name": "Nature's Protection",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "NatureProtection",
       "name": "Nature's Protection",
@@ -2920,8 +2951,8 @@
   },
   {
     "name": "Wolf Pack",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WolfPack",
       "name": "Wolf Pack",
@@ -2931,8 +2962,8 @@
   },
   {
     "name": "Slimey Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldBrokenAddGoo",
       "name": "Slimey Shield",
@@ -2942,8 +2973,8 @@
   },
   {
     "name": "Regrow",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Regrow",
       "name": "Regrow",
@@ -2953,8 +2984,8 @@
   },
   {
     "name": "Last Resort",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ExplodeAndShuffleGoo",
       "name": "Last Resort",
@@ -2964,8 +2995,8 @@
   },
   {
     "name": "Floral Explosion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ExplodeAndApplySleep",
       "name": "Floral Explosion",
@@ -2975,8 +3006,8 @@
   },
   {
     "name": "Sticky Explosion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ExplodeAndDealDmg",
       "name": "Sticky Explosion",

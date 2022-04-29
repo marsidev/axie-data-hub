@@ -1,17 +1,22 @@
-const formatCardsData = (data) => {
+const AXIE_CLASSIC_CARDS_BASE_URL = 'https://cdn.axieinfinity.com/game/cards/base'
+const AXIE_CLASSIC_EFFECTS_BASE_URL = 'https://cdn.axieinfinity.com/game/cards/effect-icons'
+
+const formatCardsData = data => {
   let newData = []
   for (const part in data) {
-    const iconId = data[part].iconId
+    const { iconId } = data[part]
     const className = part.split('-')[0]
     const type = part.split('-')[1]
     const partValue = part.split('-')[2]
-    const image = `https://cdn.axieinfinity.com/game/cards/base/${part}.png`
-    const effectImage = `https://cdn.axieinfinity.com/game/cards/effect-icons/${iconId}.png`
+    const image = `${AXIE_CLASSIC_CARDS_BASE_URL}/${part}.png`
+    const effectImage = `${AXIE_CLASSIC_EFFECTS_BASE_URL}/${iconId}.png`
+
     const temp = {
       class: className,
       type,
       partValue,
       ...data[part],
+      defaultStats: data[part].defaultAttack + data[part].defaultDefense,
       image,
       effectImage
     }

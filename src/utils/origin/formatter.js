@@ -1,4 +1,6 @@
-const formatCardsData = (data) => {
+const AXIE_ORIGIN_CARDS_BASE_URL = 'https://cdn.axieinfinity.com/game/origin-cards/base/version-20220422'
+
+const formatCardsData = data => {
   let newData = []
   for (const part in data) {
     const { originCard } = data[part]
@@ -10,43 +12,60 @@ const formatCardsData = (data) => {
       ...rest
     } = originCard
 
-    const image = `https://cdn.axieinfinity.com/game/origin-cards/base/${cardId}.png`
+    const cardImage = `${AXIE_ORIGIN_CARDS_BASE_URL}/${cardId}.png`
+
+    const image = `https://www.axie.tech/images/templates/card/art/${cardId}.jpg`
+
+    const defaultStats = rest.defaultAttack + rest.defaultDefense + rest.healing
 
     const temp = {
       cardId,
       ...rest,
-      image
+      defaultStats,
+      image,
+      cardImage
     }
     newData = [...newData, temp]
   }
 
-  return newData
+  newData = newData
+    .sort((a, b) => (a.class < b.class ? -1 : 1))
+    .sort((a, b) => (a.type < b.type ? -1 : 1))
+    .sort((a, b) => (a.specialGenes < b.specialGenes ? -1 : 1))
+    .sort((a, b) => (a.cardName < b.cardName ? -1 : 1))
+
+  return newData.sort((a, b) => (a.cardName < b.cardName ? -1 : 1))
 }
 
-const formatToolsData = (data) => {
-  const tools = data.filter(t => (t.status === '!1' && t.toolCard === '!1'))
-  const statuses = data.filter(t => (t.status === '!0' && t.toolCard === '!1'))
-  let abilities = data.filter(t => (t.status === '!1' && t.toolCard === '!0'))
+const formatToolsData = data => {
+  const tools = data.filter(t => t.status === false && t.toolCard === false)
+  const statuses = data.filter(t => t.status === true && t.toolCard === false)
+  let abilities = data.filter(t => t.status === false && t.toolCard === true)
 
-  abilities = abilities.map(a => {
-    const { data, ...rest } = a
+  abilities = abilities
+    .map(a => {
+      const { data, ...rest } = a
 
-    const {
-      ability_type: abilityType,
-      ...restOfData
-    } = data
+      const { ability_type: abilityType, ...restOfData } = data
 
-    const image = `https://cdn.axieinfinity.com/game/origin-cards/base/tool-${restOfData.code.toLowerCase()}-02.png`
+      const imageId = `tool-${restOfData.code.toLowerCase()}-02`
 
-    return {
-      ...rest,
-      data: {
-        ...restOfData,
-        abilityType,
-        image
+      const cardImage = `${AXIE_ORIGIN_CARDS_BASE_URL}/${imageId}.png`
+
+      const image = `https://www.axie.tech/images/templates/card/art/${imageId}.jpg`
+
+      return {
+        ...rest,
+        data: {
+          ...restOfData,
+          abilityType,
+          imageId,
+          image,
+          cardImage
+        }
       }
-    }
-  })
+    })
+    .sort((a, b) => (a.name < b.name ? -1 : 1))
 
   return {
     abilities,

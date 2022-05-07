@@ -1,8 +1,8 @@
 [
   {
     "name": "Banish",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Banish",
       "description": "Remove the card from your deck until the end of battle.",
@@ -11,8 +11,8 @@
   },
   {
     "name": "Cleanse",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Cleanse",
       "description": "Remove debuffs from target, up to 5 stacks.",
@@ -21,8 +21,8 @@
   },
   {
     "name": "Dispel",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Dispel",
       "description": "Remove 1 buff from target, up to 5 stacks.",
@@ -31,8 +31,8 @@
   },
   {
     "name": "Deck",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Deck",
       "description": "Includes cards in Draw Pile and Discard Pile.",
@@ -41,8 +41,8 @@
   },
   {
     "name": "Ethereal",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Ethereal",
       "description": "When your turn ends, if the card is still in your hand, banish it. Banished cards are removed from your deck until the end of battle.",
@@ -51,8 +51,8 @@
   },
   {
     "name": "Initial",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Initial",
       "description": "The first card played in a turn.",
@@ -61,8 +61,8 @@
   },
   {
     "name": "Innate",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Innate",
       "description": "Start each battle with this card in your hand.",
@@ -71,8 +71,8 @@
   },
   {
     "name": "Little Robin",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Little Robin",
       "description": "Bird | 18 HP | Teammates deal 16 more DMG. Lose 8 HP when your turn ends.",
@@ -81,8 +81,8 @@
   },
   {
     "name": "Mushroom",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Mushroom",
       "description": "Plant | 18 HP | When your turn ends, this <Mushroom> restores 24 HP to your most injured ally and loses 8 HP.",
@@ -91,8 +91,8 @@
   },
   {
     "name": "Retain",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Retain",
       "description": "Do not discard this card at the end of your turn.",
@@ -101,8 +101,8 @@
   },
   {
     "name": "Trunk",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Trunk",
       "description": "Plant | 75 HP. {Taunt}.",
@@ -111,8 +111,8 @@
   },
   {
     "name": "Unplayable",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Unplayable",
       "description": "This card cannot be played.",
@@ -121,8 +121,8 @@
   },
   {
     "name": "Clover",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Clover",
       "description": "Plant | 35 HP | When your turn starts, randomly grant 1~2 Leafs to your Axies. Clover disappears after 4 leafs are granted.",
@@ -131,8 +131,8 @@
   },
   {
     "name": "Mavis",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Mavis",
       "description": "Bird | 18 HP | When your turn starts (after card drawing), <Mavis> reduces 1 Energy of a random Attack card. Lose 8 HP when your turn ends.",
@@ -141,8 +141,8 @@
   },
   {
     "name": "Fruit Sloth",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Fruit Sloth",
       "description": "Plant | 18 HP | When your turn starts, deal 12 DMG to 1 random Enemy and restore 12 HP to your most injured Axie. Lose 8 HP when your turn ends.",
@@ -151,8 +151,8 @@
   },
   {
     "name": "True-Fan Hermit Crab",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "True-Fan Hermit Crab",
       "description": "Aquatic | 75 HP. {Taunt}.",
@@ -161,8 +161,8 @@
   },
   {
     "name": "Sparrow",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Sparrow",
       "description": "Bird | 18 HP | When your turn starts, deal 5 DMG to all enemies and grant 1 Feather to your Axies. Lose 8 HP when your turn ends.",
@@ -171,8 +171,8 @@
   },
   {
     "name": "Scry",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Scry",
       "description": "Look at the top cards of your draw pile. You may discard any of them.",
@@ -181,8 +181,8 @@
   },
   {
     "name": "Revenge",
-    "toolCard": "!1",
-    "status": "!1",
+    "toolCard": false,
+    "status": false,
     "data": {
       "keyword": "Revenge",
       "description": "Transformed from a Dead Axie's Card based on its Original Type.",
@@ -191,8 +191,8 @@
   },
   {
     "name": "Lumber Shield",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "1",
       "name": "Lumber Shield",
@@ -209,8 +209,8 @@
   },
   {
     "name": "Strawberry",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "2",
       "name": "Strawberry",
@@ -227,8 +227,8 @@
   },
   {
     "name": "Pure Water",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "3",
       "name": "Pure Water",
@@ -245,8 +245,8 @@
   },
   {
     "name": "Blackmail",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "4",
       "name": "Blackmail",
@@ -263,8 +263,8 @@
   },
   {
     "name": "Jinx",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "5",
       "name": "Jinx",
@@ -281,8 +281,8 @@
   },
   {
     "name": "Goo",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "6",
       "name": "Goo",
@@ -299,8 +299,8 @@
   },
   {
     "name": "Burn",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "7",
       "name": "Burn",
@@ -317,8 +317,8 @@
   },
   {
     "name": "Shuriken",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "8",
       "name": "Shuriken",
@@ -335,8 +335,8 @@
   },
   {
     "name": "Confused",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "9",
       "name": "Confused",
@@ -353,8 +353,8 @@
   },
   {
     "name": "Daze",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "10",
       "name": "Daze",
@@ -371,8 +371,8 @@
   },
   {
     "name": "Scorch",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "11",
       "name": "Scorch",
@@ -389,8 +389,8 @@
   },
   {
     "name": "Void",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "12",
       "name": "Void",
@@ -407,8 +407,8 @@
   },
   {
     "name": "Energy Coin",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "13",
       "name": "Energy Coin",
@@ -425,8 +425,8 @@
   },
   {
     "name": "Forest Breath",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "14",
       "name": "Forest Breath",
@@ -443,8 +443,8 @@
   },
   {
     "name": "Forest Wrath",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "15",
       "name": "Forest Wrath",
@@ -461,8 +461,8 @@
   },
   {
     "name": "Mandarine",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "16",
       "name": "Mandarine",
@@ -479,8 +479,8 @@
   },
   {
     "name": "Pacu",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "17",
       "name": "Pacu",
@@ -497,8 +497,8 @@
   },
   {
     "name": "The Fallen's Shortsword",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "18",
       "name": "The Fallen's Shortsword",
@@ -515,8 +515,8 @@
   },
   {
     "name": "The Fallen's Longsword",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "19",
       "name": "The Fallen's Longsword",
@@ -533,8 +533,8 @@
   },
   {
     "name": "The Fallen's Axe",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "20",
       "name": "The Fallen's Axe",
@@ -551,8 +551,8 @@
   },
   {
     "name": "DeadAttack3",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "21",
       "name": "DeadAttack3",
@@ -569,8 +569,8 @@
   },
   {
     "name": "The Fallen's Gloves",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "22",
       "name": "The Fallen's Gloves",
@@ -587,8 +587,8 @@
   },
   {
     "name": "The Fallen's Shield",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "23",
       "name": "The Fallen's Shield",
@@ -605,8 +605,8 @@
   },
   {
     "name": "The Fallen's Helmet",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "24",
       "name": "The Fallen's Helmet",
@@ -623,8 +623,8 @@
   },
   {
     "name": "DeadSkill3",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "25",
       "name": "DeadSkill3",
@@ -641,8 +641,8 @@
   },
   {
     "name": "The Fallen's Tetsubishi",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "26",
       "name": "The Fallen's Tetsubishi",
@@ -659,8 +659,8 @@
   },
   {
     "name": "The Fallen's Hidden Knife",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "27",
       "name": "The Fallen's Hidden Knife",
@@ -677,8 +677,8 @@
   },
   {
     "name": "The Fallen's Hidden Bomb",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "28",
       "name": "The Fallen's Hidden Bomb",
@@ -695,8 +695,8 @@
   },
   {
     "name": "DeadSecret3",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "29",
       "name": "DeadSecret3",
@@ -713,8 +713,8 @@
   },
   {
     "name": "The Fallen's Soul",
-    "toolCard": "!0",
-    "status": "!1",
+    "toolCard": true,
+    "status": false,
     "data": {
       "id": "30",
       "name": "The Fallen's Soul",
@@ -731,8 +731,8 @@
   },
   {
     "name": "Aquatic Baby",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AquaticBaby",
       "name": "Aquatic Baby",
@@ -742,8 +742,8 @@
   },
   {
     "name": "Class Bonus - Attack",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackClassBonus",
       "name": "Class Bonus - Attack",
@@ -753,8 +753,8 @@
   },
   {
     "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackCounter",
       "name": "Secret Debuff",
@@ -764,8 +764,8 @@
   },
   {
     "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedAddPureWater",
       "name": "Secret Card",
@@ -775,8 +775,8 @@
   },
   {
     "name": "Secret Curse",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedOpponentDiscardShuffleGoo",
       "name": "Secret Curse",
@@ -786,8 +786,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedSelfDamageBoost",
       "name": "Secret Buff",
@@ -797,8 +797,8 @@
   },
   {
     "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AttackedWeak",
       "name": "Secret Debuff",
@@ -808,8 +808,8 @@
   },
   {
     "name": "Auto Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "AutoShield",
       "name": "Auto Shield",
@@ -819,8 +819,8 @@
   },
   {
     "name": "Bang",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bang",
       "name": "Bang",
@@ -830,8 +830,8 @@
   },
   {
     "name": "Banished Heal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BanishedHeal",
       "name": "Banished Heal",
@@ -841,8 +841,8 @@
   },
   {
     "name": "Banished Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BanishedShield",
       "name": "Banished Shield",
@@ -852,8 +852,8 @@
   },
   {
     "name": "Barricade",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Barricade",
       "name": "Barricade",
@@ -863,8 +863,8 @@
   },
   {
     "name": "Belieber",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Belieber",
       "name": "Belieber",
@@ -874,8 +874,8 @@
   },
   {
     "name": "Blackmail",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Blackmail",
       "name": "Blackmail",
@@ -885,8 +885,8 @@
   },
   {
     "name": "Bleed",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bleed",
       "name": "Bleed",
@@ -896,8 +896,8 @@
   },
   {
     "name": "Bloodlust",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bloodlust",
       "name": "Bloodlust",
@@ -907,8 +907,8 @@
   },
   {
     "name": "Blood Moon",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BloodMoon",
       "name": "Blood Moon",
@@ -918,8 +918,8 @@
   },
   {
     "name": "Brimstone",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Brimstone",
       "name": "Brimstone",
@@ -929,8 +929,8 @@
   },
   {
     "name": "Bubble",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bubble",
       "name": "Bubble",
@@ -940,8 +940,8 @@
   },
   {
     "name": "Bubble Bomb",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BubbleBomb",
       "name": "Bubble Bomb",
@@ -951,8 +951,8 @@
   },
   {
     "name": "Bumpy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Bumpy",
       "name": "Bumpy",
@@ -962,8 +962,8 @@
   },
   {
     "name": "Burn",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Burn",
       "name": "Burn",
@@ -973,8 +973,8 @@
   },
   {
     "name": "Card Drawer",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CardDrawer",
       "name": "Card Drawer",
@@ -984,8 +984,8 @@
   },
   {
     "name": "Card Energy In Fury",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CardEnergyInFury",
       "name": "Card Energy In Fury",
@@ -995,8 +995,8 @@
   },
   {
     "name": "Card Removal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CardRemoval",
       "name": "Card Removal",
@@ -1006,8 +1006,8 @@
   },
   {
     "name": "Carrot",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Carrot",
       "name": "Carrot",
@@ -1017,8 +1017,8 @@
   },
   {
     "name": "Clamshell",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Clamshell",
       "name": "Clamshell",
@@ -1028,8 +1028,8 @@
   },
   {
     "name": "Class Bonus",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ClassBonus",
       "name": "Class Bonus",
@@ -1039,8 +1039,8 @@
   },
   {
     "name": "Cleanser",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cleanser",
       "name": "Cleanser",
@@ -1050,8 +1050,8 @@
   },
   {
     "name": "Clover",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Clover",
       "name": "Clover",
@@ -1061,8 +1061,8 @@
   },
   {
     "name": "Cottontail",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cottontail",
       "name": "Cottontail",
@@ -1072,8 +1072,8 @@
   },
   {
     "name": "Power Awaken",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cuckoo",
       "name": "Power Awaken",
@@ -1083,8 +1083,8 @@
   },
   {
     "name": "Cursed Doll - Heal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CursedDollHeal",
       "name": "Cursed Doll - Heal",
@@ -1094,8 +1094,8 @@
   },
   {
     "name": "Cursed Doll - Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "CursedDollShield",
       "name": "Cursed Doll - Shield",
@@ -1105,8 +1105,8 @@
   },
   {
     "name": "Damage Ascent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageAscent",
       "name": "Damage Ascent",
@@ -1116,8 +1116,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageBlock",
       "name": "Secret Buff",
@@ -1127,8 +1127,8 @@
   },
   {
     "name": "Damage Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageBoost",
       "name": "Damage Boost",
@@ -1138,8 +1138,8 @@
   },
   {
     "name": "Damage Descent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageDescent",
       "name": "Damage Descent",
@@ -1149,8 +1149,8 @@
   },
   {
     "name": "Damage Down",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageDown",
       "name": "Damage Down",
@@ -1160,8 +1160,8 @@
   },
   {
     "name": "Mini Legion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageFromSummon",
       "name": "Mini Legion",
@@ -1171,8 +1171,8 @@
   },
   {
     "name": "Damage Increment",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageIncrement",
       "name": "Damage Increment",
@@ -1182,8 +1182,8 @@
   },
   {
     "name": "Damage Reduction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageReduction",
       "name": "Damage Reduction",
@@ -1193,8 +1193,8 @@
   },
   {
     "name": "Anti-Summon",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageSummon",
       "name": "Anti-Summon",
@@ -1204,8 +1204,8 @@
   },
   {
     "name": "Damage Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageUp",
       "name": "Damage Up",
@@ -1215,8 +1215,8 @@
   },
   {
     "name": "Death Mark",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DeathMark",
       "name": "Death Mark",
@@ -1226,8 +1226,8 @@
   },
   {
     "name": "Disarmed",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Disarmed",
       "name": "Disarmed",
@@ -1237,8 +1237,8 @@
   },
   {
     "name": "Doubt",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Doubt",
       "name": "Doubt",
@@ -1248,8 +1248,8 @@
   },
   {
     "name": "Draw Binding",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DrawBinding",
       "name": "Draw Binding",
@@ -1259,8 +1259,8 @@
   },
   {
     "name": "Draw Promotion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DrawPromotion",
       "name": "Draw Promotion",
@@ -1270,8 +1270,8 @@
   },
   {
     "name": "Ear Breathing",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EarBreathing",
       "name": "Ear Breathing",
@@ -1281,8 +1281,8 @@
   },
   {
     "name": "Earwing",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Earwing",
       "name": "Earwing",
@@ -1292,8 +1292,8 @@
   },
   {
     "name": "Energy Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EnergyBoost",
       "name": "Energy Boost",
@@ -1303,8 +1303,8 @@
   },
   {
     "name": "Energy Gain",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EnergyGain",
       "name": "Energy Gain",
@@ -1314,8 +1314,8 @@
   },
   {
     "name": "Fear",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Fear",
       "name": "Fear",
@@ -1325,8 +1325,8 @@
   },
   {
     "name": "Feather",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Feather",
       "name": "Feather",
@@ -1336,8 +1336,8 @@
   },
   {
     "name": "Feather Fan",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FeatherFan",
       "name": "Feather Fan",
@@ -1347,8 +1347,8 @@
   },
   {
     "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FishSnack",
       "name": "Secret Debuff",
@@ -1358,8 +1358,8 @@
   },
   {
     "name": "Foxy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Foxy",
       "name": "Foxy",
@@ -1369,8 +1369,8 @@
   },
   {
     "name": "Fragile",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Fragile",
       "name": "Fragile",
@@ -1380,8 +1380,8 @@
   },
   {
     "name": "Fruit Sloth",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FruitSloth",
       "name": "Fruit Sloth",
@@ -1391,8 +1391,8 @@
   },
   {
     "name": "Fury",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Fury",
       "name": "Fury",
@@ -1402,8 +1402,8 @@
   },
   {
     "name": "Fury Strikes",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "FuryStrikes",
       "name": "Fury Strikes",
@@ -1413,8 +1413,8 @@
   },
   {
     "name": "Gero",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Gero",
       "name": "Gero",
@@ -1424,8 +1424,8 @@
   },
   {
     "name": "Granma Fan",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "GranmaFan",
       "name": "Granma Fan",
@@ -1435,8 +1435,8 @@
   },
   {
     "name": "Power - Poison Candy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "GreenThorns",
       "name": "Power - Poison Candy",
@@ -1446,8 +1446,8 @@
   },
   {
     "name": "Heal Block",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealBlock",
       "name": "Heal Block",
@@ -1457,8 +1457,8 @@
   },
   {
     "name": "Class Bonus - Healing",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealClassBonus",
       "name": "Class Bonus - Healing",
@@ -1468,8 +1468,8 @@
   },
   {
     "name": "Healing Ascent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingAscent",
       "name": "Healing Ascent",
@@ -1479,8 +1479,8 @@
   },
   {
     "name": "Healing Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingBoost",
       "name": "Healing Boost",
@@ -1490,8 +1490,8 @@
   },
   {
     "name": "Healing Descent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingDescent",
       "name": "Healing Descent",
@@ -1501,8 +1501,8 @@
   },
   {
     "name": "Healing Down",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingDown",
       "name": "Healing Down",
@@ -1512,8 +1512,8 @@
   },
   {
     "name": "Healing Increment",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingIncrement",
       "name": "Healing Increment",
@@ -1523,8 +1523,8 @@
   },
   {
     "name": "Healing Reduction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingReduction",
       "name": "Healing Reduction",
@@ -1534,8 +1534,8 @@
   },
   {
     "name": "Healing Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HealingUp",
       "name": "Healing Up",
@@ -1545,8 +1545,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Hermit",
       "name": "Secret Buff",
@@ -1556,8 +1556,8 @@
   },
   {
     "name": "Hex",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Hex",
       "name": "Hex",
@@ -1567,8 +1567,8 @@
   },
   {
     "name": "Leftover Potion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "HpRecover",
       "name": "Leftover Potion",
@@ -1578,8 +1578,8 @@
   },
   {
     "name": "Immortal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Immortal",
       "name": "Immortal",
@@ -1589,8 +1589,8 @@
   },
   {
     "name": "Impending Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ImpendingShield",
       "name": "Impending Shield",
@@ -1600,8 +1600,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "IndianStar",
       "name": "Secret Buff",
@@ -1611,8 +1611,8 @@
   },
   {
     "name": "Jinx",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Jinx",
       "name": "Jinx",
@@ -1622,8 +1622,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Kingfisher",
       "name": "Secret Buff",
@@ -1633,8 +1633,8 @@
   },
   {
     "name": "Power - Ladybug",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "LadybugGoggles",
       "name": "Power - Ladybug",
@@ -1644,8 +1644,8 @@
   },
   {
     "name": "Leaf",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Leaf",
       "name": "Leaf",
@@ -1655,8 +1655,8 @@
   },
   {
     "name": "Leafy",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Leafy",
       "name": "Leafy",
@@ -1666,8 +1666,8 @@
   },
   {
     "name": "Lethal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Lethal",
       "name": "Lethal",
@@ -1677,8 +1677,8 @@
   },
   {
     "name": "Lifesteal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Lifesteal",
       "name": "Lifesteal",
@@ -1688,8 +1688,8 @@
   },
   {
     "name": "Mavis",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Mavis",
       "name": "Mavis",
@@ -1699,8 +1699,8 @@
   },
   {
     "name": "Meditate",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Meditate",
       "name": "Meditate",
@@ -1710,8 +1710,8 @@
   },
   {
     "name": "Multihit Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "MultihitBoost",
       "name": "Multihit Boost",
@@ -1721,8 +1721,8 @@
   },
   {
     "name": "Mushroom",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Mushroom",
       "name": "Mushroom",
@@ -1732,8 +1732,8 @@
   },
   {
     "name": "Mystery Seed",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "MysterySeed",
       "name": "Mystery Seed",
@@ -1743,8 +1743,8 @@
   },
   {
     "name": "Non Multihit Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "NonMultihitBoost",
       "name": "Non Multihit Boost",
@@ -1754,8 +1754,8 @@
   },
   {
     "name": "One Two Three",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "OneTwoThree",
       "name": "One Two Three",
@@ -1765,8 +1765,8 @@
   },
   {
     "name": "Order Of Merit",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "OrderOfMerit",
       "name": "Order Of Merit",
@@ -1776,8 +1776,8 @@
   },
   {
     "name": "Perch",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Perch",
       "name": "Perch",
@@ -1787,8 +1787,8 @@
   },
   {
     "name": "Power - Phantom",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Phantom",
       "name": "Power - Phantom",
@@ -1798,8 +1798,8 @@
   },
   {
     "name": "Poison",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Poison",
       "name": "Poison",
@@ -1809,8 +1809,8 @@
   },
   {
     "name": "Poison Spit",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "PoisonSpit",
       "name": "Poison Spit",
@@ -1820,8 +1820,8 @@
   },
   {
     "name": "Potato Leaf",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "PotatoLeaf",
       "name": "Potato Leaf",
@@ -1831,8 +1831,8 @@
   },
   {
     "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Pumpkin",
       "name": "Secret Card",
@@ -1842,8 +1842,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Pupae",
       "name": "Secret Buff",
@@ -1853,8 +1853,8 @@
   },
   {
     "name": "Rage",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Rage",
       "name": "Rage",
@@ -1864,8 +1864,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ReflectShieldbase",
       "name": "Secret Buff",
@@ -1875,8 +1875,8 @@
   },
   {
     "name": "Regeneration",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Regeneration",
       "name": "Regeneration",
@@ -1886,8 +1886,8 @@
   },
   {
     "name": "Retain Add Pacu",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainAddPacu",
       "name": "Retain Add Pacu",
@@ -1897,8 +1897,8 @@
   },
   {
     "name": "Robin",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Robin",
       "name": "Robin",
@@ -1908,8 +1908,8 @@
   },
   {
     "name": "Rune - Calcium Armor",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneAquaticDefensive1",
       "name": "Rune - Calcium Armor",
@@ -1919,8 +1919,8 @@
   },
   {
     "name": "Rune - Bloodlust",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneAquaticHybrid1",
       "name": "Rune - Bloodlust",
@@ -1930,8 +1930,8 @@
   },
   {
     "name": "Rune - Hearty Warrior",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneAquaticOffensive1",
       "name": "Rune - Hearty Warrior",
@@ -1941,8 +1941,8 @@
   },
   {
     "name": "Rune - Pangolin Scale",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastDefensive1",
       "name": "Rune - Pangolin Scale",
@@ -1952,8 +1952,8 @@
   },
   {
     "name": "Rune - Dominant Predator",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastHybrid1",
       "name": "Rune - Dominant Predator",
@@ -1963,8 +1963,8 @@
   },
   {
     "name": "Rune - Reckless Hunter",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastOffensive1",
       "name": "Rune - Reckless Hunter",
@@ -1974,8 +1974,8 @@
   },
   {
     "name": "Rune - Endless Anger",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBeastUtility1",
       "name": "Rune - Endless Anger",
@@ -1985,8 +1985,8 @@
   },
   {
     "name": "Rune - Venom Born",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdDefensive1",
       "name": "Rune - Venom Born",
@@ -1996,8 +1996,8 @@
   },
   {
     "name": "Rune - Raven's Tactic",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdHybrid1",
       "name": "Rune - Raven's Tactic",
@@ -2007,8 +2007,8 @@
   },
   {
     "name": "Rune - Energy Guru",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdOffensive1",
       "name": "Rune - Energy Guru",
@@ -2018,8 +2018,8 @@
   },
   {
     "name": "Rune - Feather Descend",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBirdUtility1",
       "name": "Rune - Feather Descend",
@@ -2029,8 +2029,8 @@
   },
   {
     "name": "Rune - Vault Builder",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugDefensive1",
       "name": "Rune - Vault Builder",
@@ -2040,8 +2040,8 @@
   },
   {
     "name": "Rune - Shield Leecher",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugHybrid1",
       "name": "Rune - Shield Leecher",
@@ -2051,8 +2051,8 @@
   },
   {
     "name": "Rune - Sturdy Fighter",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugOffensive1",
       "name": "Rune - Sturdy Fighter",
@@ -2062,8 +2062,8 @@
   },
   {
     "name": "Rune - Collect And Protect",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneBugUtility1",
       "name": "Rune - Collect And Protect",
@@ -2073,8 +2073,8 @@
   },
   {
     "name": "Rune - Arcane Protection",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnDefensive1",
       "name": "Rune - Arcane Protection",
@@ -2084,8 +2084,8 @@
   },
   {
     "name": "Rune - Heaven's Echoes",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnHybrid1",
       "name": "Rune - Heaven's Echoes",
@@ -2095,8 +2095,8 @@
   },
   {
     "name": "Rune - Celestial Might",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnOffensive1",
       "name": "Rune - Celestial Might",
@@ -2106,8 +2106,8 @@
   },
   {
     "name": "Rune - Holy Prayer",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDawnUtility1",
       "name": "Rune - Holy Prayer",
@@ -2117,8 +2117,8 @@
   },
   {
     "name": "Rune - Wicked Ward",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskDefensive1",
       "name": "Rune - Wicked Ward",
@@ -2128,8 +2128,8 @@
   },
   {
     "name": "Rune - Malediction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskHybrid1",
       "name": "Rune - Malediction",
@@ -2139,8 +2139,8 @@
   },
   {
     "name": "Rune - Cursed Ritual",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskOffensive1",
       "name": "Rune - Cursed Ritual",
@@ -2150,8 +2150,8 @@
   },
   {
     "name": "Rune - Gloomy Dice",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneDuskUtility1",
       "name": "Rune - Gloomy Dice",
@@ -2161,8 +2161,8 @@
   },
   {
     "name": "Rune - Last Stand",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneMechDefensive1",
       "name": "Rune - Last Stand",
@@ -2172,8 +2172,8 @@
   },
   {
     "name": "Rune - Adaptive Program",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneMechHybrid1",
       "name": "Rune - Adaptive Program",
@@ -2183,8 +2183,8 @@
   },
   {
     "name": "Rune - Zap Armor ",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneMechOffensive1",
       "name": "Rune - Zap Armor ",
@@ -2194,8 +2194,8 @@
   },
   {
     "name": "Rune - Shield Backup",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneNeutralOffensive1",
       "name": "Rune - Shield Backup",
@@ -2205,8 +2205,8 @@
   },
   {
     "name": "Rune - Gaia's Embrace",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RunePlantDefensive1",
       "name": "Rune - Gaia's Embrace",
@@ -2216,8 +2216,8 @@
   },
   {
     "name": "Rune - Miracle Leaf",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RunePlantOffensive1",
       "name": "Rune - Miracle Leaf",
@@ -2227,8 +2227,8 @@
   },
   {
     "name": "Rune - Healing Pulse",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RunePlantUtility1",
       "name": "Rune - Healing Pulse",
@@ -2238,8 +2238,8 @@
   },
   {
     "name": "Rune - Delayed Protection ",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileDefensive1",
       "name": "Rune - Delayed Protection ",
@@ -2249,8 +2249,8 @@
   },
   {
     "name": "Rune - Poison Touch",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileHybrid1",
       "name": "Rune - Poison Touch",
@@ -2260,8 +2260,8 @@
   },
   {
     "name": "Rune - Venom Master",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileOffensive1",
       "name": "Rune - Venom Master",
@@ -2271,8 +2271,8 @@
   },
   {
     "name": "Rune - Regenerator",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RuneReptileUtility1",
       "name": "Rune - Regenerator",
@@ -2282,8 +2282,8 @@
   },
   {
     "name": "Rusty",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Rusty",
       "name": "Rusty",
@@ -2293,8 +2293,8 @@
   },
   {
     "name": "Power - Sakura",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sakura",
       "name": "Power - Sakura",
@@ -2304,8 +2304,8 @@
   },
   {
     "name": "Salve",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Salve",
       "name": "Salve",
@@ -2315,8 +2315,8 @@
   },
   {
     "name": "Secret",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Secret",
       "name": "Secret",
@@ -2326,8 +2326,8 @@
   },
   {
     "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SecretFear",
       "name": "Secret Debuff",
@@ -2337,8 +2337,8 @@
   },
   {
     "name": "Shield Ascent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldAscent",
       "name": "Shield Ascent",
@@ -2348,8 +2348,8 @@
   },
   {
     "name": "Shield Boost",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldBoost",
       "name": "Shield Boost",
@@ -2359,8 +2359,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldBrokenDamageBoost",
       "name": "Secret Buff",
@@ -2370,8 +2370,8 @@
   },
   {
     "name": "Class Bonus - Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldClassBonus",
       "name": "Class Bonus - Shield",
@@ -2381,8 +2381,8 @@
   },
   {
     "name": "Shield Descent",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldDescent",
       "name": "Shield Descent",
@@ -2392,8 +2392,8 @@
   },
   {
     "name": "Shield Down",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldDown",
       "name": "Shield Down",
@@ -2403,8 +2403,8 @@
   },
   {
     "name": "Shield Reduction",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldReduction",
       "name": "Shield Reduction",
@@ -2414,8 +2414,8 @@
   },
   {
     "name": "Shield Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldUp",
       "name": "Shield Up",
@@ -2425,8 +2425,8 @@
   },
   {
     "name": "Showering",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Showering",
       "name": "Showering",
@@ -2436,8 +2436,8 @@
   },
   {
     "name": "Silence",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Silence",
       "name": "Silence",
@@ -2447,8 +2447,8 @@
   },
   {
     "name": "Sleep",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sleep",
       "name": "Sleep",
@@ -2458,8 +2458,8 @@
   },
   {
     "name": "Small Frill",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SmallFrill",
       "name": "Small Frill",
@@ -2469,8 +2469,8 @@
   },
   {
     "name": "Secret Curse",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SnailShell",
       "name": "Secret Curse",
@@ -2480,8 +2480,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SnakeJar",
       "name": "Secret Buff",
@@ -2491,8 +2491,8 @@
   },
   {
     "name": "Solo",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Solo",
       "name": "Solo",
@@ -2502,8 +2502,8 @@
   },
   {
     "name": "Sparrow",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sparrow",
       "name": "Sparrow",
@@ -2513,8 +2513,8 @@
   },
   {
     "name": "Secret Buff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Sponge",
       "name": "Secret Buff",
@@ -2524,8 +2524,8 @@
   },
   {
     "name": "Stacking Up",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "StackingUp",
       "name": "Stacking Up",
@@ -2535,8 +2535,8 @@
   },
   {
     "name": "Stalwart",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stalwart",
       "name": "Stalwart",
@@ -2546,8 +2546,8 @@
   },
   {
     "name": "Steal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Steal",
       "name": "Steal",
@@ -2557,8 +2557,8 @@
   },
   {
     "name": "Stealth",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stealth",
       "name": "Stealth",
@@ -2568,8 +2568,8 @@
   },
   {
     "name": "Stumble",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stumble",
       "name": "Stumble",
@@ -2579,8 +2579,8 @@
   },
   {
     "name": "Stunned",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Stunned",
       "name": "Stunned",
@@ -2590,8 +2590,8 @@
   },
   {
     "name": "Anti-Summon",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SummonCounter",
       "name": "Anti-Summon",
@@ -2601,8 +2601,8 @@
   },
   {
     "name": "Mini Legion - HP",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "SummonHpBoost",
       "name": "Mini Legion - HP",
@@ -2612,8 +2612,8 @@
   },
   {
     "name": "Swirl",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Swirl",
       "name": "Swirl",
@@ -2623,8 +2623,8 @@
   },
   {
     "name": "Steelskin",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TakenDamageReduction",
       "name": "Steelskin",
@@ -2634,8 +2634,8 @@
   },
   {
     "name": "Taunt",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Taunt",
       "name": "Taunt",
@@ -2645,8 +2645,8 @@
   },
   {
     "name": "Power - Tetrix (Cleanser)",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TetrixCleanser",
       "name": "Power - Tetrix (Cleanser)",
@@ -2656,8 +2656,8 @@
   },
   {
     "name": "Power - Tetrix (DMG Boost)",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TetrixDamageBoost",
       "name": "Power - Tetrix (DMG Boost)",
@@ -2667,8 +2667,8 @@
   },
   {
     "name": "Secret Debuff",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Thorn",
       "name": "Secret Debuff",
@@ -2678,8 +2678,8 @@
   },
   {
     "name": "Thorny Caterpillar",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ThornyCaterpillar",
       "name": "Thorny Caterpillar",
@@ -2689,8 +2689,8 @@
   },
   {
     "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Timber",
       "name": "Secret Card",
@@ -2700,8 +2700,8 @@
   },
   {
     "name": "Tiny Dino",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TinyDino",
       "name": "Tiny Dino",
@@ -2711,8 +2711,8 @@
   },
   {
     "name": "Tiny Fan",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TinyFan",
       "name": "Tiny Fan",
@@ -2722,8 +2722,8 @@
   },
   {
     "name": "Tiny Turtle",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "TinyTurtle",
       "name": "Tiny Turtle",
@@ -2733,8 +2733,8 @@
   },
   {
     "name": "Vulnerable",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Vulnerable",
       "name": "Vulnerable",
@@ -2744,8 +2744,8 @@
   },
   {
     "name": "Wall Gecko",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WallGecko",
       "name": "Wall Gecko",
@@ -2755,8 +2755,8 @@
   },
   {
     "name": "Secret Card",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WateringCan",
       "name": "Secret Card",
@@ -2766,8 +2766,8 @@
   },
   {
     "name": "Weak",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Weak",
       "name": "Weak",
@@ -2777,8 +2777,8 @@
   },
   {
     "name": "Wing Horn",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WingHorn",
       "name": "Wing Horn",
@@ -2788,8 +2788,8 @@
   },
   {
     "name": "Zen",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Zen",
       "name": "Zen",
@@ -2799,8 +2799,8 @@
   },
   {
     "name": "Cleanse",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Cleanse",
       "name": "Cleanse",
@@ -2810,8 +2810,8 @@
   },
   {
     "name": "Bonus Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainBonusShield",
       "name": "Bonus Shield",
@@ -2821,8 +2821,8 @@
   },
   {
     "name": "Bonus Heal",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainBonusHeal",
       "name": "Bonus Heal",
@@ -2832,8 +2832,8 @@
   },
   {
     "name": "Bonus Rage",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "RetainBonusRage",
       "name": "Bonus Rage",
@@ -2843,8 +2843,8 @@
   },
   {
     "name": "Energy Boost Even Round",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "EnergyBoostEvenRound",
       "name": "Energy Boost Even Round",
@@ -2854,8 +2854,8 @@
   },
   {
     "name": "Shield Damage Absorb",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldDamageAbsorb",
       "name": "Shield Damage Absorb",
@@ -2865,8 +2865,8 @@
   },
   {
     "name": "Damage Reflection",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageReflection",
       "name": "Damage Reflection",
@@ -2876,8 +2876,8 @@
   },
   {
     "name": "Bonus Damages Per Dead Ally",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "DamageBonusPerDeadAlly",
       "name": "Bonus Damages Per Dead Ally",
@@ -2887,8 +2887,8 @@
   },
   {
     "name": "Goo Revival",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Revival",
       "name": "Goo Revival",
@@ -2898,8 +2898,8 @@
   },
   {
     "name": "Taunt The Wounded",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "BleedingTaunt",
       "name": "Taunt The Wounded",
@@ -2909,8 +2909,8 @@
   },
   {
     "name": "Nature's Protection",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "NatureProtection",
       "name": "Nature's Protection",
@@ -2920,8 +2920,8 @@
   },
   {
     "name": "Wolf Pack",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "WolfPack",
       "name": "Wolf Pack",
@@ -2931,8 +2931,8 @@
   },
   {
     "name": "Slimey Shield",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ShieldBrokenAddGoo",
       "name": "Slimey Shield",
@@ -2942,8 +2942,8 @@
   },
   {
     "name": "Regrow",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "Regrow",
       "name": "Regrow",
@@ -2953,8 +2953,8 @@
   },
   {
     "name": "Last Resort",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ExplodeAndShuffleGoo",
       "name": "Last Resort",
@@ -2964,8 +2964,8 @@
   },
   {
     "name": "Floral Explosion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ExplodeAndApplySleep",
       "name": "Floral Explosion",
@@ -2975,8 +2975,8 @@
   },
   {
     "name": "Sticky Explosion",
-    "toolCard": "!1",
-    "status": "!0",
+    "toolCard": false,
+    "status": true,
     "data": {
       "id": "ExplodeAndDealDmg",
       "name": "Sticky Explosion",

@@ -19,9 +19,9 @@ router.get('/:symbol', validateExchangeSymbol, cache(60), async (req, res, next)
   const url = 'https://exchange-rate.skymavis.one'
 
   try {
-    const response = await axios.get(url)
-    const data = response.data[symbol]
-    res.json(data)
+    const { data } = await axios.get(url)
+    const dataSymbol = data[symbol]
+    res.json(dataSymbol)
   } catch (error) {
     next(error)
   }

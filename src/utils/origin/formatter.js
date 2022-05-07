@@ -1,4 +1,4 @@
-const AXIE_ORIGIN_CARDS_BASE_URL = 'https://cdn.axieinfinity.com/game/origin-cards/base/version-20220422'
+const AXIE_ORIGIN_CARDS_BASE_URL = 'https://cdn.axieinfinity.com/game/origin-cards/base/version-20220505'
 
 const formatCardsData = data => {
   let newData = []

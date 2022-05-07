@@ -12,7 +12,7 @@ const authRouter = require('./auth')
 const walletRouter = require('./wallet')
 
 const { GetAxieBriefListQuery, GetProfileNameByRoninAddressQuery } = require('@utils/queries')
-const { GRAPHQL_SERVER_URL, GAME_API_URL, GAME_API_URL_2, AXIE_MNG_API_URL } = process.env
+const { GRAPHQL_SERVER_URL2, GAME_API_URL, GAME_API_URL_2, AXIE_MNG_API_URL } = process.env
 
 const playerData = async (req, res, next) => {
   const { address } = req.params
@@ -85,7 +85,7 @@ router.get('/:address/axies', validateRonin, cache(600), async (req, res, next) 
   }
 
   try {
-    const response = await postRequest({ url: GRAPHQL_SERVER_URL, payload })
+    const response = await postRequest({ url: GRAPHQL_SERVER_URL2, payload })
     const axies = response.data.axies.results
     res.json(axies)
   } catch (error) {
@@ -103,7 +103,7 @@ router.get('/:address/name', validateRonin, cache(600), async (req, res, next) =
   }
 
   try {
-    const response = await postRequest({ url: GRAPHQL_SERVER_URL, payload })
+    const response = await postRequest({ url: GRAPHQL_SERVER_URL2, payload })
     const name = response.data.publicProfileWithRoninAddress.name
     res.json({ name: name })
   } catch (error) {

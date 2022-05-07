@@ -9,7 +9,7 @@ const {
 const { postRequest, getNumberOfDays } = require('./index')
 const Account = require('@models/Account')
 
-const { GRAPHQL_SERVER_URL, RPC_RONIN_URL, RONIN_CHAIN_ID, GAME_API_URL, GRAPHQL_SERVER_URL2 } = process.env
+const { RPC_RONIN_URL, RONIN_CHAIN_ID, GAME_API_URL, GRAPHQL_SERVER_URL2 } = process.env
 
 const fetchAccountData = async address => {
   const url = `${GAME_API_URL}/clients/${address.replace('ronin:', '0x')}/items/1`
@@ -21,7 +21,7 @@ const fetchAccountData = async address => {
     operationName: 'GetProfileNameByRoninAddress',
     variables: { roninAddress: address.replace('ronin:', '0x') }
   }
-  const response2 = await postRequest({ url: GRAPHQL_SERVER_URL, payload })
+  const response2 = await postRequest({ url: GRAPHQL_SERVER_URL2, payload })
   const inGameName = response2.data.publicProfileWithRoninAddress.name
 
   const now = new Date()

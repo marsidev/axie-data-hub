@@ -486,6 +486,24 @@
         }
       }
     },
+    "/game-data/origin/patches": {
+      "get": {
+        "summary": "Get IDs of different patches of origin game version",
+        "description": "Get IDs of different patches of origin game version",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/originPatches"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/game-data/origin/cards": {
       "get": {
         "summary": "Get origin ability cards data.",
@@ -1087,6 +1105,7 @@
       "cardsData": {},
       "originCardsData": {},
       "originToolsData": {},
+      "originPatches": {},
       "axieParts": {},
       "axieStats": {}
     }

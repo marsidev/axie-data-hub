@@ -8,7 +8,7 @@ router.get('/', cache(600), async (req, res, next) => {
   const { format = 'default' } = query
 
   try {
-    const data = require('@assets/cards-data/origin/tools')
+    const data = require('@assets/cards-data/origin/current/tools')
     if (format === 'original') res.json(data)
     else {
       res.json(formatToolsData(data))

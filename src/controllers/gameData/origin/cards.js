@@ -9,7 +9,7 @@ router.get('/', cache(600), async (req, res, next) => {
   const { format = 'default' } = query
 
   try {
-    const data = require('@assets/cards-data/origin/cards')
+    const data = require('@assets/cards-data/origin/current/cards')
     if (format === 'original') res.json(data)
     else {
       const formattedData = formatCardsData(data)

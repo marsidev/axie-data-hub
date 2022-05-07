@@ -1,0 +1,3018 @@
+[
+  {
+    "name": "Banish",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Banish",
+      "description": "Remove the card from your deck until the end of battle.",
+      "name": "Banish"
+    }
+  },
+  {
+    "name": "Cleanse",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Cleanse",
+      "description": "Remove a debuff from target, up to 5 stacks.",
+      "name": "Cleanse"
+    }
+  },
+  {
+    "name": "Dispel",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Dispel",
+      "description": "Remove 1 buff from target, up to 5 stacks.",
+      "name": "Dispel"
+    }
+  },
+  {
+    "name": "Deck",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Deck",
+      "description": "The combined set of cards in your Draw pile, Discard pile and on your hand.",
+      "name": "Deck"
+    }
+  },
+  {
+    "name": "Ethereal",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Ethereal",
+      "description": "When your turn ends, if the card is still in your hand, <Banish> it.",
+      "name": "Ethereal"
+    }
+  },
+  {
+    "name": "Initial",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Initial",
+      "description": "The first card played in a turn.",
+      "name": "Initial"
+    }
+  },
+  {
+    "name": "Innate",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Innate",
+      "description": "Start each battle with this card in your hand.",
+      "name": "Innate"
+    }
+  },
+  {
+    "name": "Little Robin",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Little Robin",
+      "description": "Bird | 18 HP | Teammates deal 16 more DMG. Loses 8 HP when your turn ends.",
+      "name": "Little Robin"
+    }
+  },
+  {
+    "name": "Mushroom",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Mushroom",
+      "description": "Plant | 18 HP | When your turn ends, this <Mushroom> restores 24 HP to your most injured ally and loses 8 HP.",
+      "name": "Mushroom"
+    }
+  },
+  {
+    "name": "Retain",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Retain",
+      "description": "This card will not be discarded from your hand at the end of your turn.",
+      "name": "Retain"
+    }
+  },
+  {
+    "name": "Trunk",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Trunk",
+      "description": "Plant | 60 HP. {Taunt}.",
+      "name": "Trunk"
+    }
+  },
+  {
+    "name": "Unplayable",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Unplayable",
+      "description": "This card cannot be played.",
+      "name": "Unplayable"
+    }
+  },
+  {
+    "name": "Clover",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Clover",
+      "description": "Plant | 35 HP | When your turn starts, randomly grant 1~2 Leafs to your Axies. Clover disappears after 4 leafs are granted.",
+      "name": "Clover"
+    }
+  },
+  {
+    "name": "Mavis",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Mavis",
+      "description": "Bird | 18 HP | When your turn starts (after card drawing), <Mavis> reduces 1 Energy of a random Attack card. Lose 8 HP when your turn ends.",
+      "name": "Mavis"
+    }
+  },
+  {
+    "name": "Fruit Sloth",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Fruit Sloth",
+      "description": "Plant | 18 HP | When your turn starts, deal 12 DMG to 1 random Enemy and restore 12 HP to your most injured Axie. Lose 8 HP when your turn ends.",
+      "name": "Fruit Sloth"
+    }
+  },
+  {
+    "name": "True-Fan Hermit Crab",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "True-Fan Hermit Crab",
+      "description": "Aquatic | 60 HP. {Taunt}.",
+      "name": "True-Fan Hermit Crab"
+    }
+  },
+  {
+    "name": "Sparrow",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Sparrow",
+      "description": "Bird | 18 HP | When your turn starts, deal 5 DMG to all enemies and grant 1 Feather to your Axies. Lose 8 HP when your turn ends.",
+      "name": "Sparrow"
+    }
+  },
+  {
+    "name": "Scry",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Scry",
+      "description": "Look at the top cards of your draw pile. You may discard any of them.",
+      "name": "Scry"
+    }
+  },
+  {
+    "name": "Revenge",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Revenge",
+      "description": "Transformed from a Dead Axie's Card based on its Original Type.",
+      "name": "Revenge"
+    }
+  },
+  {
+    "name": "Round",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Round",
+      "description": "1 Round includes 1 of your Turn and 1 of the opponent's Turn.",
+      "name": "Round"
+    }
+  },
+  {
+    "name": "Pure DMG",
+    "toolCard": false,
+    "status": false,
+    "data": {
+      "keyword": "Pure DMG",
+      "description": "Deal DMG that ignores Shield.",
+      "name": "Pure DMG"
+    }
+  },
+  {
+    "name": "Lumber Shield",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "1",
+      "name": "Lumber Shield",
+      "description": "<Retain>. Target any ally. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "12",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\",\"shield\"]",
+      "code": "LumberShield"
+    }
+  },
+  {
+    "name": "Strawberry",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "2",
+      "name": "Strawberry",
+      "description": "<Retain>. Target any ally. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "0",
+      "healing": "60",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\",\"heal\"]",
+      "code": "Strawberry"
+    }
+  },
+  {
+    "name": "Pure Water",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "3",
+      "name": "Pure Water",
+      "description": "<Retain>. Target any ally. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "0",
+      "healing": "6",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\",\"heal\"]",
+      "code": "PureWater"
+    }
+  },
+  {
+    "name": "Blackmail",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "4",
+      "name": "Blackmail",
+      "description": "Apply {Taunt} to your furthest Axie for 2 turns. If this is not used, put it onto the top of your draw pile. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[]",
+      "code": "Blackmail"
+    }
+  },
+  {
+    "name": "Jinx",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "5",
+      "name": "Jinx",
+      "description": "<Unplayable>. <Ethereal>. At the end of your turn, your furthest Axie takes 15 damage.",
+      "energy": "-1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Jinx"
+    }
+  },
+  {
+    "name": "Goo",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "6",
+      "name": "Goo",
+      "description": "<Banish>.",
+      "energy": "1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Goo"
+    }
+  },
+  {
+    "name": "Burn",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "7",
+      "name": "Burn",
+      "description": "<Unplayable>. <Ethereal>. At the end of your turn, all allies take 8 damage.",
+      "energy": "-1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Burn"
+    }
+  },
+  {
+    "name": "Shuriken",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "8",
+      "name": "Shuriken",
+      "description": "<Retain>. <Banish>.",
+      "energy": "0",
+      "attack": "20",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "AttackRanged",
+      "level": "1",
+      "tags": "[]",
+      "code": "Shuriken"
+    }
+  },
+  {
+    "name": "Confused",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "9",
+      "name": "Confused",
+      "description": "<Unplayable>. <Ethereal>.",
+      "energy": "-1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Confused"
+    }
+  },
+  {
+    "name": "Daze",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "10",
+      "name": "Daze",
+      "description": "<Unplayable>.",
+      "energy": "-1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Dazed"
+    }
+  },
+  {
+    "name": "Scorch",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "11",
+      "name": "Scorch",
+      "description": "<Unplayable>. At the end of your turn, all allies take 8 damage.",
+      "energy": "-1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Scorch"
+    }
+  },
+  {
+    "name": "Void",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "12",
+      "name": "Void",
+      "description": "<Unplayable>. <Ethereal>. When you draw 1 or more [Void], lose 1 Energy.",
+      "energy": "-1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Curse",
+      "level": "1",
+      "tags": "[]",
+      "code": "Void"
+    }
+  },
+  {
+    "name": "Energy Coin",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "13",
+      "name": "Energy Coin",
+      "description": "<Retain>. Gain 1 Energy. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\",\"energy\"]",
+      "code": "EnergyCoin"
+    }
+  },
+  {
+    "name": "Forest Breath",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "14",
+      "name": "Forest Breath",
+      "description": "<Retain>.Target an Ally. <Cleanse>.",
+      "energy": "1",
+      "attack": "0",
+      "defense": "0",
+      "healing": "50",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\",\"heal\",\"cleanse\"]",
+      "code": "ForestBreath"
+    }
+  },
+  {
+    "name": "Forest Wrath",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "15",
+      "name": "Forest Wrath",
+      "description": "Attack all Enemies. Deal 10 bonus <Pure DMG> per debuffed Allies.",
+      "energy": "1",
+      "attack": "30",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "AttackRanged",
+      "level": "1",
+      "tags": "[\"attack\",\"area\",\"non-multihit\"]",
+      "code": "ForestWrath"
+    }
+  },
+  {
+    "name": "Mandarine",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "16",
+      "name": "Mandarine",
+      "description": "<Retain>. Target any ally. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "0",
+      "healing": "30",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\",\"heal\"]",
+      "code": "Mandarine"
+    }
+  },
+  {
+    "name": "Pacu",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "17",
+      "name": "Pacu",
+      "description": "<Retain>. Target any enemy. Deal 5 DMG. Deal 10 bonus DMG against Bleeding enemy. <Banish>",
+      "energy": "0",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"skill\"]",
+      "code": "Pacu"
+    }
+  },
+  {
+    "name": "The Fallen's Shortsword",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "18",
+      "name": "The Fallen's Shortsword",
+      "description": "<Revenge>. Deal 15 DMG. <Ethereal>. <Banish>.",
+      "energy": "0",
+      "attack": "15",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "AttackRanged",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadAttack0"
+    }
+  },
+  {
+    "name": "The Fallen's Longsword",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "19",
+      "name": "The Fallen's Longsword",
+      "description": "<Revenge>. Deal 50 DMG. <Ethereal>. <Banish>.",
+      "energy": "1",
+      "attack": "50",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "AttackRanged",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadAttack1"
+    }
+  },
+  {
+    "name": "The Fallen's Axe",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "20",
+      "name": "The Fallen's Axe",
+      "description": "<Revenge>. Deal 100 DMG. <Ethereal>. <Banish>.",
+      "energy": "2",
+      "attack": "100",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "AttackRanged",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadAttack2"
+    }
+  },
+  {
+    "name": "DeadAttack3",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "21",
+      "name": "DeadAttack3",
+      "description": "<Revenge>. Deal 150 DMG. <Ethereal>. <Banish>.",
+      "energy": "3",
+      "attack": "150",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "AttackRanged",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadAttack3"
+    }
+  },
+  {
+    "name": "The Fallen's Gloves",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "22",
+      "name": "The Fallen's Gloves",
+      "description": "<Revenge>. Target any Ally. <Ethereal>. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "15",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSkill0"
+    }
+  },
+  {
+    "name": "The Fallen's Shield",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "23",
+      "name": "The Fallen's Shield",
+      "description": "<Revenge>. Target any Ally. <Ethereal>. <Banish>.",
+      "energy": "1",
+      "attack": "0",
+      "defense": "50",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSkill1"
+    }
+  },
+  {
+    "name": "The Fallen's Helmet",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "24",
+      "name": "The Fallen's Helmet",
+      "description": "<Revenge>. Target any Ally.  <Ethereal>. <Banish>.",
+      "energy": "2",
+      "attack": "0",
+      "defense": "100",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSkill2"
+    }
+  },
+  {
+    "name": "DeadSkill3",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "25",
+      "name": "DeadSkill3",
+      "description": "<Revenge>. Target any Ally. <Ethereal>. <Banish>.",
+      "energy": "3",
+      "attack": "0",
+      "defense": "150",
+      "healing": "0",
+      "ability_type": "Skill",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSkill3"
+    }
+  },
+  {
+    "name": "The Fallen's Tetsubishi",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "26",
+      "name": "The Fallen's Tetsubishi",
+      "description": "<Revenge>. Target any Ally.  Reflect 5 DMG from the next attack on targeted Ally. <Ethereal>. <Banish>.",
+      "energy": "0",
+      "attack": "0",
+      "defense": "10",
+      "healing": "0",
+      "ability_type": "Secret",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSecret0"
+    }
+  },
+  {
+    "name": "The Fallen's Hidden Knife",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "27",
+      "name": "The Fallen's Hidden Knife",
+      "description": "<Revenge>. Target any Ally.  Reflect 20 DMG from the next attack on targeted Ally. <Ethereal>. <Banish>.",
+      "energy": "1",
+      "attack": "0",
+      "defense": "30",
+      "healing": "0",
+      "ability_type": "Secret",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSecret1"
+    }
+  },
+  {
+    "name": "The Fallen's Hidden Bomb",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "28",
+      "name": "The Fallen's Hidden Bomb",
+      "description": "<Revenge>. Target any Ally.  Reflect 40 DMG from the next attack on targeted Ally. <Ethereal>. <Banish>.",
+      "energy": "2",
+      "attack": "0",
+      "defense": "60",
+      "healing": "0",
+      "ability_type": "Secret",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSecret2"
+    }
+  },
+  {
+    "name": "DeadSecret3",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "29",
+      "name": "DeadSecret3",
+      "description": "<Revenge>. Target any Ally.  Reflect 60 DMG from the next attack on targeted Ally. <Ethereal>. <Banish>.",
+      "energy": "3",
+      "attack": "0",
+      "defense": "90",
+      "healing": "0",
+      "ability_type": "Secret",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadSecret3"
+    }
+  },
+  {
+    "name": "The Fallen's Soul",
+    "toolCard": true,
+    "status": false,
+    "data": {
+      "id": "30",
+      "name": "The Fallen's Soul",
+      "description": "<Revenge>. Target any Ally.  Each turn, its first Attack deals 13 bonus DMG per Dead Ally. <Ethereal>. <Banish>.",
+      "energy": "2",
+      "attack": "0",
+      "defense": "0",
+      "healing": "0",
+      "ability_type": "Power",
+      "level": "1",
+      "tags": "[\"revenge\"]",
+      "code": "DeadPower2"
+    }
+  },
+  {
+    "name": "Aquatic Baby",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AquaticBaby",
+      "name": "Aquatic Baby",
+      "image": "status/power_aquatic_baby.png",
+      "description": "Attacks deal 33 bonus DMG if HP is above 66%."
+    }
+  },
+  {
+    "name": "Class Bonus - Attack",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AttackClassBonus",
+      "name": "Class Bonus - Attack",
+      "image": "status/rune_neutral_offensive_2.png",
+      "description": "This card deals bonus damage if used by an Axie of the same class."
+    }
+  },
+  {
+    "name": "Counter Attack",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AttackCounter",
+      "name": "Counter Attack",
+      "image": "status/secret_reflect.png",
+      "description": "Reflect DMG to the attacker."
+    }
+  },
+  {
+    "name": "Secret - Pure Water",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AttackedAddPureWater",
+      "name": "Secret - Pure Water",
+      "image": "status/secret_card.png",
+      "description": "After any ally is attacked, add 1 [Pure Water] to your hand."
+    }
+  },
+  {
+    "name": "Secret - Goo",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AttackedOpponentDiscardShuffleGoo",
+      "name": "Secret - Goo",
+      "image": "status/secret_curse.png",
+      "description": "Shuffle 1 [Goo] into your opponent's discard pile when attacked."
+    }
+  },
+  {
+    "name": "Secret - DMG Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AttackedSelfDamageBoost",
+      "name": "Secret - DMG Boost",
+      "image": "status/secret_buff.png",
+      "description": "Gain {Damage Boost} when attacked."
+    }
+  },
+  {
+    "name": "Secret - Weak",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AttackedWeak",
+      "name": "Secret - Weak",
+      "image": "status/secret_debuff.png",
+      "description": "Apply {Weak} to the attacker when attacked."
+    }
+  },
+  {
+    "name": "Auto Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "AutoShield",
+      "name": "Auto Shield",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Bang",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Bang",
+      "name": "Bang",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Banished Heal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "BanishedHeal",
+      "name": "Banished Heal",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Banished Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "BanishedShield",
+      "name": "Banished Shield",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Barricade",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Barricade",
+      "name": "Barricade",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Belieber",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Belieber",
+      "name": "Belieber",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Blackmail",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Blackmail",
+      "name": "Blackmail",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Bleed",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Bleed",
+      "name": "Bleed",
+      "image": "status/debuff_bleed.png",
+      "description": "Target loses 15 HP when playing a card."
+    }
+  },
+  {
+    "name": "Bloodlust",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Bloodlust",
+      "name": "Bloodlust",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Blood Moon",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "BloodMoon",
+      "name": "Blood Moon",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Brimstone",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Brimstone",
+      "name": "Brimstone",
+      "image": "status/power_brimstone.png",
+      "description": "Next turn, draw 3 random 0-Energy Cards from your deck into your hand."
+    }
+  },
+  {
+    "name": "Bubble",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Bubble",
+      "name": "Bubble",
+      "image": "status/buff_bubble.png",
+      "description": "Block 4 DMG per stack against non-multihit attacks. Block 2 DMG per stack against multihit attacks. Max: 3 stacks. Turn into {Bubble Bomb} upon reaching 3 stacks."
+    }
+  },
+  {
+    "name": "Bubble Bomb",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "BubbleBomb",
+      "name": "Bubble Bomb",
+      "image": "status/buff_bubble_bomb.png",
+      "description": "The next attack makes Bubble Bomb explode and deal 20 DMG to all Enemies."
+    }
+  },
+  {
+    "name": "Bumpy",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Bumpy",
+      "name": "Bumpy",
+      "image": "status/power_bumpy.png",
+      "description": "Whenever you play a card this battle, add 10 shield to this Axie."
+    }
+  },
+  {
+    "name": "Burn",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Burn",
+      "name": "Burn",
+      "image": "",
+      "description": "When [Burn] is drawn, deal 8 damage to all allies and <Banish>."
+    }
+  },
+  {
+    "name": "Card Drawer",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "CardDrawer",
+      "name": "Card Drawer",
+      "image": "",
+      "description": "At the start of your next turn, draw 1 more card per stack."
+    }
+  },
+  {
+    "name": "Card Energy In Fury",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "CardEnergyInFury",
+      "name": "Card Energy In Fury",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Card Removal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "CardRemoval",
+      "name": "Card Removal",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Carrot",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Carrot",
+      "name": "Carrot",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Clamshell",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Clamshell",
+      "name": "Clamshell",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Class Bonus",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ClassBonus",
+      "name": "Class Bonus",
+      "image": "status/rune_neutral_hybrid_2.png",
+      "description": "Increase (ATK/Heal/Shield) of this Card if used by an Axie of the same class."
+    }
+  },
+  {
+    "name": "Cleanser",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Cleanser",
+      "name": "Cleanser",
+      "image": "status/buff_cleanser.png",
+      "description": "Each stack negates 1 debuff applied to the target."
+    }
+  },
+  {
+    "name": "Clover",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Clover",
+      "name": "Clover",
+      "image": "status/buff_leaf.png",
+      "description": "When your turn starts, randomly grant 1~2 Leafs to your Axies. Clover disappears after 4 leafs are granted."
+    }
+  },
+  {
+    "name": "Cottontail",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Cottontail",
+      "name": "Cottontail",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Power Awaken",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Cuckoo",
+      "name": "Power Awaken",
+      "image": "status/buff_power_awaken.png",
+      "description": "Next attack deals more DMG."
+    }
+  },
+  {
+    "name": "Cursed Doll - Heal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "CursedDollHeal",
+      "name": "Cursed Doll - Heal",
+      "image": "status/power_cursed_doll.png",
+      "description": "Each turn, restore 3 HP per Cursed Card in your opponent's deck. (capped at 10 Cards)"
+    }
+  },
+  {
+    "name": "Cursed Doll - Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "CursedDollShield",
+      "name": "Cursed Doll - Shield",
+      "image": "status/power_cursed_doll.png",
+      "description": "Each turn, gain 5 Shield per each Cursed Card in your opponent's deck. (capped at 10 Cards)"
+    }
+  },
+  {
+    "name": "Damage Ascent",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageAscent",
+      "name": "Damage Ascent",
+      "image": "",
+      "description": "Apply 1 {Damage Boost} per stack to this unit when its turn starts."
+    }
+  },
+  {
+    "name": "Block Attack",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageBlock",
+      "name": "Block Attack",
+      "image": "status/secret_block_attack.png",
+      "description": "Negate 1 attack."
+    }
+  },
+  {
+    "name": "Damage Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageBoost",
+      "name": "Damage Boost",
+      "image": "status/buff_dmg_boost.png",
+      "description": "The target has Attack DMG increased by 1 per stack."
+    }
+  },
+  {
+    "name": "Damage Descent",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageDescent",
+      "name": "Damage Descent",
+      "image": "",
+      "description": "Apply 1 {Damage Reduction} per stack to this unit when its turn starts."
+    }
+  },
+  {
+    "name": "Damage Down",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageDown",
+      "name": "Damage Down",
+      "image": "",
+      "description": "At the end of its turn, apply 1 {Damage Reduction} per stack to the target and remove Damage Down."
+    }
+  },
+  {
+    "name": "Mini Legion",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageFromSummon",
+      "name": "Mini Legion",
+      "image": "status/rune_neutral_hybrid_1.png",
+      "description": "Deal 3 DMG per Summon to all Enemies at the start of your turn."
+    }
+  },
+  {
+    "name": "Damage Increment",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageIncrement",
+      "name": "Damage Increment",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Damage Reduction",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageReduction",
+      "name": "Damage Reduction",
+      "image": "",
+      "description": "The target has Attack DMG reduced by 1 per stack."
+    }
+  },
+  {
+    "name": "Anti-Summon",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageSummon",
+      "name": "Anti-Summon",
+      "image": "status/card_mystery_seed.png",
+      "description": "After your opponent summons a unit, deal 25 DMG to it."
+    }
+  },
+  {
+    "name": "Damage Up",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageUp",
+      "name": "Damage Up",
+      "image": "",
+      "description": "At the end of its turn, apply 1 {Damage Boost} per stack to the target and remove Damage Down."
+    }
+  },
+  {
+    "name": "Death Mark",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DeathMark",
+      "name": "Death Mark",
+      "image": "status/debuff_death_mark.png",
+      "description": "Whenever your opponent plays an Attack card, the target takes 13 DMG per Energy spent."
+    }
+  },
+  {
+    "name": "Disarmed",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Disarmed",
+      "name": "Disarmed",
+      "image": "status/debuff_disarmed.png",
+      "description": "The target cannot use Attack Abilities."
+    }
+  },
+  {
+    "name": "Doubt",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Doubt",
+      "name": "Doubt",
+      "image": "status/debuff_doubt.png",
+      "description": "The target gains 50% less HP from Healing."
+    }
+  },
+  {
+    "name": "Draw Binding",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DrawBinding",
+      "name": "Draw Binding",
+      "image": "",
+      "description": "Draw 1 less card when your turn starts."
+    }
+  },
+  {
+    "name": "Draw Promotion",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DrawPromotion",
+      "name": "Draw Promotion",
+      "image": "",
+      "description": "Draw 1 more card per stack during your next turn."
+    }
+  },
+  {
+    "name": "Ear Breathing",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "EarBreathing",
+      "name": "Ear Breathing",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Earwing",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Earwing",
+      "name": "Earwing",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Energy Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "EnergyBoost",
+      "name": "Energy Boost",
+      "image": "",
+      "description": "Gain 1 bonus Energy when your turn starts."
+    }
+  },
+  {
+    "name": "Energy Gain",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "EnergyGain",
+      "name": "Energy Gain",
+      "image": "",
+      "description": "Gain 1 bonus Energy during your next turn."
+    }
+  },
+  {
+    "name": "Fear",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Fear",
+      "name": "Fear",
+      "image": "status/debuff_fear.png",
+      "description": "Whenever this unit uses an Attack card, shuffle a Confused into its draw pile."
+    }
+  },
+  {
+    "name": "Feather",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Feather",
+      "name": "Feather",
+      "image": "status/buff_feather.png",
+      "description": "When Axie does a non-multihit attack, consume all Feather stacks to deal 3 bonus DMG per stack and heal 1 HP per stack. Max : 10 stack."
+    }
+  },
+  {
+    "name": "Feather Fan",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "FeatherFan",
+      "name": "Feather Fan",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Fish Snack",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "FishSnack",
+      "name": "Fish Snack",
+      "image": "status/secret_debuff.png",
+      "description": "After this Axie is attacked, apply {Weak} to the attacker."
+    }
+  },
+  {
+    "name": "Foxy",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Foxy",
+      "name": "Foxy",
+      "image": "",
+      "description": "If [Foxy] Retained, +1 {Rage}, up to 3 bonus {Rage}."
+    }
+  },
+  {
+    "name": "Fragile",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Fragile",
+      "name": "Fragile",
+      "image": "status/debuff_fragile.png",
+      "description": "This unit gains 20% less Shield from Abilities."
+    }
+  },
+  {
+    "name": "Fruit Sloth",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "FruitSloth",
+      "name": "Fruit Sloth",
+      "image": "status/z_snake_jar.png",
+      "description": "When your turn starts, deal 12 DMG to 1 random Enemy and heal most injured Axie for 12 HP."
+    }
+  },
+  {
+    "name": "Fury",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Fury",
+      "name": "Fury",
+      "image": "status/buff_fury.png",
+      "description": "Gain 1 Energy when transformed. Deal 75% more DMG until end of turn."
+    }
+  },
+  {
+    "name": "Fury Strikes",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "FuryStrikes",
+      "name": "Fury Strikes",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Gero",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Gero",
+      "name": "Gero",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Granma Fan",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "GranmaFan",
+      "name": "Granma Fan",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Power - Poison Candy",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "GreenThorns",
+      "name": "Power - Poison Candy",
+      "image": "status/power_poison_candy.png",
+      "description": "Apply 2 {Poison} to all Enemies when your turn starts."
+    }
+  },
+  {
+    "name": "Heal Block",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealBlock",
+      "name": "Heal Block",
+      "image": "status/debuff_heal_block.png",
+      "description": "Cannot gain HP."
+    }
+  },
+  {
+    "name": "Class Bonus - Healing",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealClassBonus",
+      "name": "Class Bonus - Healing",
+      "image": "status/rune_neutral_defensive_2.png",
+      "description": "Card's Healing is increased if used by same-class Axie."
+    }
+  },
+  {
+    "name": "Healing Ascent",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingAscent",
+      "name": "Healing Ascent",
+      "image": "",
+      "description": "Apply 1 {Healing Boost} to this unit when its turn starts."
+    }
+  },
+  {
+    "name": "Healing Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingBoost",
+      "name": "Healing Boost",
+      "image": "status/buff_healing_boost.png",
+      "description": "Increase healing card effects to this unit by 1 HP per stack."
+    }
+  },
+  {
+    "name": "Healing Descent",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingDescent",
+      "name": "Healing Descent",
+      "image": "",
+      "description": "Apply 1 {Healing Reduction} per stack to this unit when its turn starts."
+    }
+  },
+  {
+    "name": "Healing Down",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingDown",
+      "name": "Healing Down",
+      "image": "",
+      "description": "Apply 1 {Healing Reduction} per stack to this unit and remove Healing Down when its turn ends."
+    }
+  },
+  {
+    "name": "Healing Increment",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingIncrement",
+      "name": "Healing Increment",
+      "image": "",
+      "description": "Increase Healing card effects by 20%."
+    }
+  },
+  {
+    "name": "Healing Reduction",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingReduction",
+      "name": "Healing Reduction",
+      "image": "",
+      "description": "This unit has HP healed from cards reduced by 1 per stack."
+    }
+  },
+  {
+    "name": "Healing Up",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HealingUp",
+      "name": "Healing Up",
+      "image": "",
+      "description": "When its turn ends, apply 1 {Healing Boost} per stack to this target and remove Healing Up."
+    }
+  },
+  {
+    "name": "Hermit",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Hermit",
+      "name": "Hermit",
+      "image": "status/secret_block_attack.png",
+      "description": "Negate the next attack."
+    }
+  },
+  {
+    "name": "Hex",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Hex",
+      "name": "Hex",
+      "image": "status/debuff_hex.png",
+      "description": "Whenever the target uses a non-Attack card, shuffle a [Confused] into its draw pile."
+    }
+  },
+  {
+    "name": "Leftover Potion",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "HpRecover",
+      "name": "Leftover Potion",
+      "image": "status/rune_neutral_utility_1.png",
+      "description": "Recover 4% of max HP at the end of your turn."
+    }
+  },
+  {
+    "name": "Immortal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Immortal",
+      "name": "Immortal",
+      "image": "status/rune_mech_defensive_1.png",
+      "description": "This Axie cannot lose HP or be debuffed."
+    }
+  },
+  {
+    "name": "Impending Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ImpendingShield",
+      "name": "Impending Shield",
+      "image": "",
+      "description": "The target gains X Shield and loses Impending Shield during its next turn."
+    }
+  },
+  {
+    "name": "Indian Star",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "IndianStar",
+      "name": "Indian Star",
+      "image": "status/secret_reflect.png",
+      "description": "Reflect 25% of Shield lost when attacked."
+    }
+  },
+  {
+    "name": "Jinx",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Jinx",
+      "name": "Jinx",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Kingfisher",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Kingfisher",
+      "name": "Kingfisher",
+      "image": "status/secret_reflect.png",
+      "description": "After the next attack from an enemy, reflect DMG to the attacker."
+    }
+  },
+  {
+    "name": "Power - Ladybug",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "LadybugGoggles",
+      "name": "Power - Ladybug",
+      "image": "status/power_ladybug.png",
+      "description": "Each turn, if any Enemy has Shield, draw 2 additional Cards."
+    }
+  },
+  {
+    "name": "Leaf",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Leaf",
+      "name": "Leaf",
+      "image": "status/buff_leaf.png",
+      "description": "Regen 4 HP at the end of your turn. Max stack: 5"
+    }
+  },
+  {
+    "name": "Leafy",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Leafy",
+      "name": "Leafy",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Lethal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Lethal",
+      "name": "Lethal",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Lifesteal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Lifesteal",
+      "name": "Lifesteal",
+      "image": "",
+      "description": "Gain HP equal to 20% of unblocked attack DMG."
+    }
+  },
+  {
+    "name": "Mavis",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Mavis",
+      "name": "Mavis",
+      "image": "status/buff_robin.png",
+      "description": "At the start of your turn, {Mavis} reduces the energy cost of a random attack card by 1."
+    }
+  },
+  {
+    "name": "Meditate",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Meditate",
+      "name": "Meditate",
+      "image": "status/buff_meditate.png",
+      "description": "{Meditate} for 2  turns. If attacked while Meditating, awake and gain 3 {Rage}. If not, Cleanse 1 debuff and gain 1 Energy after effect ends."
+    }
+  },
+  {
+    "name": "Multihit Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "MultihitBoost",
+      "name": "Multihit Boost",
+      "image": "status/power_concentrate.png",
+      "description": "All Multihit Attack cards of this Axie gain +18 Damage."
+    }
+  },
+  {
+    "name": "Mushroom",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Mushroom",
+      "name": "Mushroom",
+      "image": "",
+      "description": "When your turn ends, this Mushroom restores 24 HP to your most injured ally and loses 8 HP."
+    }
+  },
+  {
+    "name": "Mystery Seed",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "MysterySeed",
+      "name": "Mystery Seed",
+      "image": "",
+      "description": "Select a Card, on your next turn, add 2 copies of it into your hand. (Cannot copy Power)."
+    }
+  },
+  {
+    "name": "Non Multihit Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "NonMultihitBoost",
+      "name": "Non Multihit Boost",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "One Two Three",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "OneTwoThree",
+      "name": "One Two Three",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Order Of Merit",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "OrderOfMerit",
+      "name": "Order Of Merit",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Perch",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Perch",
+      "name": "Perch",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Power - Phantom",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Phantom",
+      "name": "Power - Phantom",
+      "image": "status/power_phantom.png",
+      "description": "0-Energy Attacks deal 10 bonus DMG per each Cursed card your Opponent has (capped at 10 Cards)."
+    }
+  },
+  {
+    "name": "Poison",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Poison",
+      "name": "Poison",
+      "image": "status/debuff_poison.png",
+      "description": "The target loses 3 HP per stack at the start of its turn. Stacks are reduced by 1. Cap: 30 stacks."
+    }
+  },
+  {
+    "name": "Poison Spit",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "PoisonSpit",
+      "name": "Poison Spit",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Potato Leaf",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "PotatoLeaf",
+      "name": "Potato Leaf",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Pumpkin",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Pumpkin",
+      "name": "Pumpkin",
+      "image": "status/secret_card.png",
+      "description": "Draw 1 card when attacked."
+    }
+  },
+  {
+    "name": "Pupae",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Pupae",
+      "name": "Pupae",
+      "image": "status/secret_buff.png",
+      "description": "Gain 2 {Damage Boost} when attacked."
+    }
+  },
+  {
+    "name": "Rage",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Rage",
+      "name": "Rage",
+      "image": "status/buff_rage.png",
+      "description": "+2 DMG per {Rage} stack. Enter {Fury} Form at 10 Rage stacks."
+    }
+  },
+  {
+    "name": "Reflect - Shieldbase",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ReflectShieldbase",
+      "name": "Reflect - Shieldbase",
+      "image": "status/secret_reflect.png",
+      "description": "Reflect DMG equal to 25% of Shield lost when attacked."
+    }
+  },
+  {
+    "name": "Regeneration",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Regeneration",
+      "name": "Regeneration",
+      "image": "",
+      "description": "Restore 3 HP per stack to the target. Reduce stacks by 1 when its turn ends."
+    }
+  },
+  {
+    "name": "Retain Add Pacu",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RetainAddPacu",
+      "name": "Retain Add Pacu",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Robin",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Robin",
+      "name": "Robin",
+      "image": "status/buff_robin.png",
+      "description": "Your Allie's attack abilities deal 16 more damage. Little Robin loses 8 HP at the end of your turn."
+    }
+  },
+  {
+    "name": "Rune - Calcium Armor",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneAquaticDefensive1",
+      "name": "Rune - Calcium Armor",
+      "image": "status/rune_aquatic_defensive_1.png",
+      "description": "Axie HP +30\nAt the start of your turn, gain Shield equal to 3% of max HP."
+    }
+  },
+  {
+    "name": "Rune - Bloodlust",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneAquaticHybrid1",
+      "name": "Rune - Bloodlust",
+      "image": "status/rune_aquatic_hybrid_1.png",
+      "description": "Non-Multihit Attacks {Steal} 15 HP. Multihit Attacks {Steal} 4 HP per hit."
+    }
+  },
+  {
+    "name": "Rune - Hearty Warrior",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneAquaticOffensive1",
+      "name": "Rune - Hearty Warrior",
+      "image": "status/rune_aquatic_offensive_1.png",
+      "description": "Axie HP +30\nAttack Abilities deal bonus DMG equal to 3% of remaining HP."
+    }
+  },
+  {
+    "name": "Rune - Pangolin Scale",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBeastDefensive1",
+      "name": "Rune - Pangolin Scale",
+      "image": "status/rune_beast_defensive_1.png",
+      "description": "Cannot gain Shield. Take 25% less DMG."
+    }
+  },
+  {
+    "name": "Rune - Dominant Predator",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBeastHybrid1",
+      "name": "Rune - Dominant Predator",
+      "image": "status/rune_beast_hybrid_1.png",
+      "description": "Deal 20% more DMG against Bleeding Enemies\nTake 10% less DMG from Bleeding Enemies"
+    }
+  },
+  {
+    "name": "Rune - Reckless Hunter",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBeastOffensive1",
+      "name": "Rune - Reckless Hunter",
+      "image": "status/rune_beast_offensive_1.png",
+      "description": "Deal 20% more DMG.\nTake 10% more DMG."
+    }
+  },
+  {
+    "name": "Rune - Endless Anger",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBeastUtility1",
+      "name": "Rune - Endless Anger",
+      "image": "status/rune_beast_utility_1.png",
+      "description": "Gain 2 {Rage} when your turn starts. Each {Rage} grants 1 bonus DMG."
+    }
+  },
+  {
+    "name": "Rune - Venom Born",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBirdDefensive1",
+      "name": "Rune - Venom Born",
+      "image": "status/rune_bird_defensive_1.png",
+      "description": "{Poison} on this Axie grants \"Healing 1 HP per stack\" instead of HP loss."
+    }
+  },
+  {
+    "name": "Rune - Raven's Tactic",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBirdHybrid1",
+      "name": "Rune - Raven's Tactic",
+      "image": "status/rune_bird_hybrid_1.png",
+      "description": "Deal 20% bonus DMG if HP is above 50%. Take 20% less DMG if HP is below 50%."
+    }
+  },
+  {
+    "name": "Rune - Energy Guru",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBirdOffensive1",
+      "name": "Rune - Energy Guru",
+      "image": "status/rune_bird_offensive_1.png",
+      "description": "{Solo}. Attack Abilities also deal 5 DMG per Energy Cost to all Enemies."
+    }
+  },
+  {
+    "name": "Rune - Feather Descend",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBirdUtility1",
+      "name": "Rune - Feather Descend",
+      "image": "status/rune_bird_utility_1.png",
+      "description": "{Solo}. When your turn starts, grant 2 {Feather} to your team. This Axie gains back half of the Feather stack consumed when doing a non-multihit attack."
+    }
+  },
+  {
+    "name": "Rune - Vault Builder",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBugDefensive1",
+      "name": "Rune - Vault Builder",
+      "image": "status/rune_bug_defensive_1.png",
+      "description": "When your turn ends, gain Shield equal to (3 x the number of cards in your Discard Pile)."
+    }
+  },
+  {
+    "name": "Rune - Shield Leecher",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBugHybrid1",
+      "name": "Rune - Shield Leecher",
+      "image": "status/rune_bug_hybrid_1.png",
+      "description": "When your turn starts, steal 50% Shield from the Enemy with highest Shield."
+    }
+  },
+  {
+    "name": "Rune - Sturdy Fighter",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBugOffensive1",
+      "name": "Rune - Sturdy Fighter",
+      "image": "status/rune_bug_offensive_1.png",
+      "description": "Solo. Single Attack consumes 30% of current Shield and converts it into bonus DMG."
+    }
+  },
+  {
+    "name": "Rune - Collect And Protect",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneBugUtility1",
+      "name": "Rune - Collect And Protect",
+      "image": "status/rune_bug_utility_1.png",
+      "description": "In odd Rounds, draw 1 Additional Card when your turn starts. In even Rounds, gain 30 Shield when your turn starts."
+    }
+  },
+  {
+    "name": "Rune - Arcane Protection",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDawnDefensive1",
+      "name": "Rune - Arcane Protection",
+      "image": "status/rune_dawn_defensive_1.png",
+      "description": "Take 5% less DMG per Buff on this Axie (capped at 20%)."
+    }
+  },
+  {
+    "name": "Rune - Heaven's Echoes",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDawnHybrid1",
+      "name": "Rune - Heaven's Echoes",
+      "image": "status/rune_dawn_hybrid_1.png",
+      "description": "Other teammates gain 1 {Damage Boost} whenever this Axie attacks. Other teammates gain 8 Shield whenever this Axie uses a Skill."
+    }
+  },
+  {
+    "name": "Rune - Celestial Might",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDawnOffensive1",
+      "name": "Rune - Celestial Might",
+      "image": "status/rune_dawn_offensive_1.png",
+      "description": "Deal 5% more DMG per Buff on this Axie (capped at 20%)."
+    }
+  },
+  {
+    "name": "Rune - Holy Prayer",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDawnUtility1",
+      "name": "Rune - Holy Prayer",
+      "image": "status/rune_dawn_utility_1.png",
+      "description": "{Solo}. When your turn starts, remove 1 Curse in your deck. Heal all teammates for 10 HP and grant all teammate 1 DMG Boost when successfully removing a Curse this way."
+    }
+  },
+  {
+    "name": "Rune - Wicked Ward",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDuskDefensive1",
+      "name": "Rune - Wicked Ward",
+      "image": "status/rune_dusk_defensive_1.png",
+      "description": "Gain 15 Shield whenever you play a Curse card."
+    }
+  },
+  {
+    "name": "Rune - Malediction",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDuskHybrid1",
+      "name": "Rune - Malediction",
+      "image": "status/rune_dusk_hybrid_1.png",
+      "description": "Deal 10% more DMG against debuffed Enemies. Take 20% less DMG from debuffed Enemies"
+    }
+  },
+  {
+    "name": "Rune - Cursed Ritual",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDuskOffensive1",
+      "name": "Rune - Cursed Ritual",
+      "image": "status/rune_dusk_offensive_1.png",
+      "description": "Attacks deal 3 bonus DMG per Curse card in your deck (capped at 15 DMG)."
+    }
+  },
+  {
+    "name": "Rune - Gloomy Dice",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneDuskUtility1",
+      "name": "Rune - Gloomy Dice",
+      "image": "status/rune_dusk_utility_1.png",
+      "description": "{Solo}. In Odd <Round>s, randomly apply {Hex} or {Fear} to all enemies for 2 turns at the start of your turn."
+    }
+  },
+  {
+    "name": "Rune - Last Stand",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneMechDefensive1",
+      "name": "Rune - Last Stand",
+      "image": "status/rune_mech_defensive_1.png",
+      "description": "When taking a fatal hit, survive with 1 HP until end of turn (active 1 time per battle). Apply an irremovable {Heal Block}."
+    }
+  },
+  {
+    "name": "Rune - Adaptive Program",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneMechHybrid1",
+      "name": "Rune - Adaptive Program",
+      "image": "status/rune_mech_hybrid_1.png",
+      "description": "Gain 10 bonus Shield from cards. Gain 3 {Damage Boost} whenever using a Shield card."
+    }
+  },
+  {
+    "name": "Rune - Zap Armor",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneMechOffensive1",
+      "name": "Rune - Zap Armor",
+      "image": "status/rune_mech_offensive_1.png",
+      "description": "Deal 20% more DMG if this Axie has Shield."
+    }
+  },
+  {
+    "name": "Rune - Shield Backup",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneMechUtility1",
+      "name": "Rune - Shield Backup",
+      "image": "status/rune_mech_utility_1.png",
+      "description": "{Solo}. This Axie's Shield isn't removed when your enemy's turn ends."
+    }
+  },
+  {
+    "name": "Rune - Tough Strike",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneNeutralOffensive1",
+      "name": "Rune - Tough Strike",
+      "image": "status/rune_neutral_offensive_1.png",
+      "description": "Non Multihit Attack Abilities deal 10 bonus DMG."
+    }
+  },
+  {
+    "name": "Rune - Gaia's Embrace",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RunePlantDefensive1",
+      "name": "Rune - Gaia's Embrace",
+      "image": "status/rune_plant_defensive_1.png",
+      "description": "{Solo}. Shielding Abilities restore HP equal to 100% of Shield gained but grant 25% less Shield."
+    }
+  },
+  {
+    "name": "Rune - Miracle Leaf",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RunePlantOffensive1",
+      "name": "Rune - Miracle Leaf",
+      "image": "status/rune_plant_offensive_1.png",
+      "description": "Start Battle with 3 {Leaf}. Non-Multihit Attacks consume 1 {Leaf} and deal 15 bonus DMG"
+    }
+  },
+  {
+    "name": "Rune - Healing Pulse",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RunePlantUtility1",
+      "name": "Rune - Healing Pulse",
+      "image": "status/rune_plant_utility_1.png",
+      "description": "All teammates regen 4 HP when your turn ends. Increase Healing card effects by 10%."
+    }
+  },
+  {
+    "name": "Rune - Delayed Protection",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneReptileDefensive1",
+      "name": "Rune - Delayed Protection",
+      "image": "status/rune_reptile_defensive_1.png",
+      "description": "When your turn starts, gain 12 Shield for each attack this Axie took in the previous turn."
+    }
+  },
+  {
+    "name": "Rune - Poison Touch",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneReptileHybrid1",
+      "name": "Rune - Poison Touch",
+      "image": "status/rune_reptile_hybrid_1.png",
+      "description": "Apply 1 {Poison} to Attacker. Take 20% less DMG from Poisoned Enemy."
+    }
+  },
+  {
+    "name": "Rune - Venom Master",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneReptileOffensive1",
+      "name": "Rune - Venom Master",
+      "image": "status/rune_reptile_offensive_1.png",
+      "description": "Attack Abilities apply 1 additional {Poison}.\nNon- Multihit Attacks deal 1 bonus DMG per 2 {Poison} to target."
+    }
+  },
+  {
+    "name": "Rune - Regenerator",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RuneReptileUtility1",
+      "name": "Rune - Regenerator",
+      "image": "status/rune_reptile_utility_1.png",
+      "description": "{Solo}. When your turn start, {Cleanse} 2 random debuffs if HP is above 75% or recover 10% of max HP if not."
+    }
+  },
+  {
+    "name": "Rusty",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Rusty",
+      "name": "Rusty",
+      "image": "",
+      "description": "The target's next X attacks deal 20% less damage."
+    }
+  },
+  {
+    "name": "Power - Sakura",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Sakura",
+      "name": "Power - Sakura",
+      "image": "status/power_sakura.png",
+      "description": "Whenever you play a card this battle, restore 10 HP to this Axie."
+    }
+  },
+  {
+    "name": "Salve",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Salve",
+      "name": "Salve",
+      "image": "",
+      "description": "Whenever the target uses a card, restore 15 HP to this Axie."
+    }
+  },
+  {
+    "name": "Secret",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Secret",
+      "name": "Secret",
+      "image": "status/secret.png",
+      "description": "This target has a secret."
+    }
+  },
+  {
+    "name": "Secret - Fear",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "SecretFear",
+      "name": "Secret - Fear",
+      "image": "status/secret_debuff.png",
+      "description": "Apply Fear to the attacker when attacked."
+    }
+  },
+  {
+    "name": "Shield Ascent",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldAscent",
+      "name": "Shield Ascent",
+      "image": "",
+      "description": "Apply 1 {Shield Boost} per stack to the target when its turn starts."
+    }
+  },
+  {
+    "name": "Shield Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldBoost",
+      "name": "Shield Boost",
+      "image": "",
+      "description": "The target has Shield gained from cards increased by 1 per stack."
+    }
+  },
+  {
+    "name": "Secret - DMG Boost",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldBrokenDamageBoost",
+      "name": "Secret - DMG Boost",
+      "image": "status/secret_buff.png",
+      "description": "Target gains {Damage Boost} when attacked."
+    }
+  },
+  {
+    "name": "Class Bonus - Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldClassBonus",
+      "name": "Class Bonus - Shield",
+      "image": "status/rune_neutral_defensive_2.png",
+      "description": "Card's Shield is increased if used by an Axie of the same class."
+    }
+  },
+  {
+    "name": "Shield Descent",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldDescent",
+      "name": "Shield Descent",
+      "image": "",
+      "description": "Apply 1 {Shield Reduction} per stack to the target when its turn starts."
+    }
+  },
+  {
+    "name": "Shield Down",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldDown",
+      "name": "Shield Down",
+      "image": "",
+      "description": "Apply 1 {Shield Reduction} per stack to the target and remove Shield Down when its turn ends."
+    }
+  },
+  {
+    "name": "Shield Reduction",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldReduction",
+      "name": "Shield Reduction",
+      "image": "",
+      "description": "The target has Shield gains from cards reduced by 1 per stack."
+    }
+  },
+  {
+    "name": "Shield Up",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldUp",
+      "name": "Shield Up",
+      "image": "",
+      "description": "Apply 1 {Shield Boost} per stack to the target and remove Shield Up when its turn ends."
+    }
+  },
+  {
+    "name": "Showering",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Showering",
+      "name": "Showering",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Silence",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Silence",
+      "name": "Silence",
+      "image": "status/debuff_silence.png",
+      "description": "The target cannot use non-Attack Abilities.."
+    }
+  },
+  {
+    "name": "Sleep",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Sleep",
+      "name": "Sleep",
+      "image": "status/debuff_sleep.png",
+      "description": "The target cannot use Abilities. If it's attacked, remove {Sleep}."
+    }
+  },
+  {
+    "name": "Small Frill",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "SmallFrill",
+      "name": "Small Frill",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Snail Shell",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "SnailShell",
+      "name": "Snail Shell",
+      "image": "status/secret_curse.png",
+      "description": "Shuffle 1 [Goo] into your opponent's discard pile when attacked."
+    }
+  },
+  {
+    "name": "Snake Jar",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "SnakeJar",
+      "name": "Snake Jar",
+      "image": "status/secret_block_attack.png",
+      "description": "Prevent the next HP loss to this Axie, up to 80 HP."
+    }
+  },
+  {
+    "name": "Solo",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Solo",
+      "name": "Solo",
+      "image": "",
+      "description": "Only 1 Axie per team can have this Effect activated."
+    }
+  },
+  {
+    "name": "Sparrow",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Sparrow",
+      "name": "Sparrow",
+      "image": "status/buff_robin.png",
+      "description": "When your turn starts, deal 5 DMG to all enemies and grant 1 Feather to your Axies."
+    }
+  },
+  {
+    "name": "Sponge",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Sponge",
+      "name": "Sponge",
+      "image": "status/secret_buff.png",
+      "description": "Apply 5 {Damage Boost} to this target if its shield is broken."
+    }
+  },
+  {
+    "name": "Stacking Up",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "StackingUp",
+      "name": "Stacking Up",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Stalwart",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Stalwart",
+      "name": "Stalwart",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Steal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Steal",
+      "name": "Steal",
+      "image": "",
+      "description": "Deal pure DMG and gain HP."
+    }
+  },
+  {
+    "name": "Stealth",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Stealth",
+      "name": "Stealth",
+      "image": "status/buff_stealth.png",
+      "description": "The target cannot be targeted directly. If it uses a card, remove {Stealth}."
+    }
+  },
+  {
+    "name": "Stumble",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Stumble",
+      "name": "Stumble",
+      "image": "",
+      "description": "The target misses its next attack. After that, remove Stumble."
+    }
+  },
+  {
+    "name": "Stunned",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Stunned",
+      "name": "Stunned",
+      "image": "status/debuff_stunned.png",
+      "description": "Target cannot use any abilities."
+    }
+  },
+  {
+    "name": "Anti-Summon",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "SummonCounter",
+      "name": "Anti-Summon",
+      "image": "status/card_mystery_seed.png",
+      "description": "After opponent summons a unit, deal 25 DMG to it."
+    }
+  },
+  {
+    "name": "Mini Legion - HP",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "SummonHpBoost",
+      "name": "Mini Legion - HP",
+      "image": "status/rune_neutral_hybrid_1.png",
+      "description": "Summoned Unit HP +15"
+    }
+  },
+  {
+    "name": "Swirl",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Swirl",
+      "name": "Swirl",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Steelskin",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "TakenDamageReduction",
+      "name": "Steelskin",
+      "image": "status/buff_shield_boost.png",
+      "description": "Take 30% less DMG."
+    }
+  },
+  {
+    "name": "Taunt",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Taunt",
+      "name": "Taunt",
+      "image": "status/neutral_taunt.png",
+      "description": "The target is always targeted by enemy attack abilities."
+    }
+  },
+  {
+    "name": "Power - Tetrix (Cleanser)",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "TetrixCleanser",
+      "name": "Power - Tetrix (Cleanser)",
+      "image": "status/power_tetrix.png",
+      "description": "At the start of your turn, gain 1 {Cleanser}."
+    }
+  },
+  {
+    "name": "Power - Tetrix (DMG Boost)",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "TetrixDamageBoost",
+      "name": "Power - Tetrix (DMG Boost)",
+      "image": "status/power_tetrix.png",
+      "description": "At the start of your turn, gain 2 {Damage Boost}."
+    }
+  },
+  {
+    "name": "Thorn",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Thorn",
+      "name": "Thorn",
+      "image": "status/secret_debuff.png",
+      "description": "When this Axie is attacked, apply {Bleed} to the attacker for 2 turns."
+    }
+  },
+  {
+    "name": "Thorny Caterpillar",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ThornyCaterpillar",
+      "name": "Thorny Caterpillar",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Timber",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Timber",
+      "name": "Timber",
+      "image": "status/secret_card.png",
+      "description": "Target any ally. Next turn, after any ally is attacked, add 1 [Lumber Shield] to your hand."
+    }
+  },
+  {
+    "name": "Tiny Dino",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "TinyDino",
+      "name": "Tiny Dino",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Tiny Fan",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "TinyFan",
+      "name": "Tiny Fan",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Tiny Turtle",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "TinyTurtle",
+      "name": "Tiny Turtle",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Vulnerable",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Vulnerable",
+      "name": "Vulnerable",
+      "image": "status/debuff_vulnerable.png",
+      "description": "The target receives 20% more attack DMG."
+    }
+  },
+  {
+    "name": "Wall Gecko",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "WallGecko",
+      "name": "Wall Gecko",
+      "image": "status/buff_shield_boost.png",
+      "description": "Take 30% less DMG this round."
+    }
+  },
+  {
+    "name": "Watering Can",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "WateringCan",
+      "name": "Watering Can",
+      "image": "status/secret_card.png",
+      "description": "After an ally is attacked, add 1 [Pure Water] to your hand."
+    }
+  },
+  {
+    "name": "Weak",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Weak",
+      "name": "Weak",
+      "image": "status/debuff_weak.png",
+      "description": "The target deals 20% less attack DMG."
+    }
+  },
+  {
+    "name": "Wing Horn",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "WingHorn",
+      "name": "Wing Horn",
+      "image": "",
+      "description": "This Axie always targets an enemy this turn."
+    }
+  },
+  {
+    "name": "Zen",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Zen",
+      "name": "Zen",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Cleanse",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Cleanse",
+      "name": "Cleanse",
+      "image": "status/buff_cleanser.png",
+      "description": "Cleanse 1 debuff on this Axie during your next turn."
+    }
+  },
+  {
+    "name": "Bonus Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RetainBonusShield",
+      "name": "Bonus Shield",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Bonus Heal",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RetainBonusHeal",
+      "name": "Bonus Heal",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Bonus Rage",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "RetainBonusRage",
+      "name": "Bonus Rage",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Energy Boost Even Round",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "EnergyBoostEvenRound",
+      "name": "Energy Boost Even Round",
+      "image": "",
+      "description": ""
+    }
+  },
+  {
+    "name": "Shield Damage Absorb",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldDamageAbsorb",
+      "name": "Shield Damage Absorb",
+      "image": "",
+      "description": "Reduce the DMG taken if has Shield."
+    }
+  },
+  {
+    "name": "Damage Reflection",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageReflection",
+      "name": "Damage Reflection",
+      "image": "",
+      "description": "Reflect the DMG taken back to the attacker."
+    }
+  },
+  {
+    "name": "Bonus Damages Per Dead Ally",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "DamageBonusPerDeadAlly",
+      "name": "Bonus Damages Per Dead Ally",
+      "image": "",
+      "description": "Deal bonus DMG per dead ally."
+    }
+  },
+  {
+    "name": "Goo Revival",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Revival",
+      "name": "Goo Revival",
+      "image": "status/goo_revival.png",
+      "description": "Heal back 20 HP the first time got killed by the enemy. Trigger once per battle."
+    }
+  },
+  {
+    "name": "Taunt The Wounded",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "BleedingTaunt",
+      "name": "Taunt The Wounded",
+      "image": "status/bleed_taunt.png",
+      "description": "Enemies with Bleed will always target this unit."
+    }
+  },
+  {
+    "name": "Nature's Protection",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "NatureProtection",
+      "name": "Nature's Protection",
+      "image": "status/nature_protection.png",
+      "description": "When attacked by Beast/Bug abilities, consume all {Leaf} to block 8 DMG/{Leaf}."
+    }
+  },
+  {
+    "name": "Wolf Pack",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "WolfPack",
+      "name": "Wolf Pack",
+      "image": "status/wolf_pack.png",
+      "description": "If got attacked more than 1 time in a turn, all allies gain 3 {Rage}."
+    }
+  },
+  {
+    "name": "Slimey Shield",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ShieldBrokenAddGoo",
+      "name": "Slimey Shield",
+      "image": "status/shield_goo.png",
+      "description": "If Shield break, shuffle 1 [Goo] into opponent's hand."
+    }
+  },
+  {
+    "name": "Regrow",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "Regrow",
+      "name": "Regrow",
+      "image": "status/regrow.png",
+      "description": "Apply {Sleep} to self for 1 turn. If interrupted, heal 135 HP. Else gain 5 {Leaf}."
+    }
+  },
+  {
+    "name": "Last Resort",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ExplodeAndShuffleGoo",
+      "name": "Last Resort",
+      "image": "status/self_destruction.png",
+      "description": "When HP fall below 20%, explode and die, then shuffle 1 [Goo] into opponent's hand."
+    }
+  },
+  {
+    "name": "Floral Explosion",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ExplodeAndApplySleep",
+      "name": "Floral Explosion",
+      "image": "status/self_destruction.png",
+      "description": "When HP fall below 20%, explode and die, then apply {Sleep} for 1 turn to all enemies."
+    }
+  },
+  {
+    "name": "Sticky Explosion",
+    "toolCard": false,
+    "status": true,
+    "data": {
+      "id": "ExplodeAndDealDmg",
+      "name": "Sticky Explosion",
+      "image": "status/self_destruction.png",
+      "description": "When HP fall below 20%, explode and die, then deal 100 DMG to all enemies."
+    }
+  }
+]

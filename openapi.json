@@ -534,11 +534,91 @@
         }
       }
     },
+    "/game-data/origin/cards/{patchId}": {
+      "get": {
+        "summary": "Get origin cards data from specific patch.",
+        "description": "Get origin ability cards data from specific patch. You can filter by any valid card object property, such as 'class', 'type' or 'abilityType'. E.g. '/cards/origin?class=reptile&type=mouth&abilityType=AttackRanged'. Theese filters are not available if you use 'format=original'",
+        "parameters": [
+          {
+            "name": "patchId",
+            "in": "path",
+            "description": "Patch ID.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "current"
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity. Default is a better formatted version of the original response. Default format is 'default'.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "default"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/originCardsData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/game-data/origin/tools": {
       "get": {
         "summary": "Get origin card tools data.",
         "description": "Get origin card tools data.",
         "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "description": "Format of the response: 'default' or 'original'. Original has the original format response given by Axie Infinity. Default is a better formatted version of the original response. Default format is 'default'.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "default"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/originToolsData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/game-data/origin/tools/{patchId}": {
+      "get": {
+        "summary": "Get origin card tools data from specific patch.",
+        "description": "Get origin card tools data from specific patch.",
+        "parameters": [
+          {
+            "name": "patchId",
+            "in": "path",
+            "description": "Patch ID.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "example": "current"
+          },
           {
             "name": "format",
             "in": "query",
